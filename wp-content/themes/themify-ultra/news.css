@@ -1,0 +1,122 @@
+h1{
+  color: orange;
+}
+
+#jumbotron {
+  width: 100%;
+  height: 30vh;
+  border: 1px solid blue;
+}
+
+#banner{
+  height: 20vh;
+  width: 100%;
+}
+
+#post_container{
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 29%;
+  padding-left: 3%;
+  padding-bottom: 2%;
+  line-height: 1.5em;
+
+}
+
+p{
+  margin: 0;
+}
+
+#member_events{
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: bold;
+  color: #26378B;
+  letter-spacing: 0;
+  text-transform: none;
+  text-align: center;
+}
+
+#form_container{
+  /*position: relative;
+  margin-left: 41.5%;*/
+  text-align: center;
+}
+
+#location_text{
+  font-family: 'Roboto';
+  font-size: 19px;
+  font-weight: bold;
+  color: #777777;
+  margin-top: 1%;
+}
+
+#title_text{
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+#date_upcoming_wrapper{
+  display: flex;
+}
+
+#date_text{
+  font-family: 'Roboto';
+  font-size: 1em;
+}
+
+#upcoming_text{
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: bold;
+  color: #F4803E;
+  margin-left: 50%;
+}
+
+
+.custom-pagination span,
+.custom-pagination a {
+  display: inline-block;
+  padding: 2px 10px;
+}
+.custom-pagination a {
+  background-color: #ebebeb;
+  color: #ff3c50;
+}
+.custom-pagination a:hover {
+  background-color: #ff3c50;
+  color: #fff;
+}
+.custom-pagination span.page-num {
+  margin-right: 10px;
+  padding: 0;
+}
+.custom-pagination span.dots {
+  padding: 0;
+  color: gainsboro;
+}
+.custom-pagination span.current {
+  background-color: #ff3c50;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px){
+  article{
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  #post_container{
+    justify-content: space-around;
+  }
+
+  #upcoming_text{
+    margin-left: 2%;
+  }
+}
