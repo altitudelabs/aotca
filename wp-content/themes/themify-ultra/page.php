@@ -7,6 +7,7 @@
 ?>
 
 <?php get_header(); ?>
+<?php echo "testing" ?>
 
 <!-- if this is the news page -->
 <?php if(is_page(5587)){?>
