@@ -130,6 +130,15 @@ h5 {
    text-align: center;
 }
 
+#legal_title{
+   color: black;
+   font-family: roboto;
+   font-weight: bold;
+   font-size: 2em;
+   letter-spacing: 0px;
+   text-align: center;
+}
+
 .builder-contact-fields{
    display: flex;
    flex-wrap: wrap;
@@ -180,6 +189,24 @@ h5 {
    margin-left: 20%;
 }
 
+#legal_header{
+   font-family: Roboto;
+   color: black;
+   font-size: 21px;
+   margin-top: 5%;
+}
+
+/* terms of service paragraph */
+#text-5678-1-0-1{
+   width: 75%;
+   left: 12.5%;
+}
+#text-5678-1-0-1 p{
+   font-family: Roboto;
+   margin: 1.5em;
+   font-size: 17px;
+}
+
 
 .ptb_module.ptb_text.ptb_news_date {
     background-color: white;
@@ -215,6 +242,107 @@ h5 {
    width: 80%;
 }
 
+
+/* About AOTCA */
+#text-196-1-0-1{
+   width: 60%;
+   left: 20%;
+   padding-top: 5%;
+   padding-bottom: 7%;
+}
+
+/* Past Presidents & Officers Caption */
+.tablepress-table-name.tablepress-table-name-id-1{
+   color: #F4803E;
+   font-size: 20px;
+}
+
+.tablepress thead th{
+   background-color: transparent;
+   color: black;
+}
+
+/*Organisation Image */
+#image-5654-1-0-2 {
+   width: 60%;
+   left: 20%;
+}
+
+/*Organisation Text */
+#organisation_description{
+   color: #26378B;
+   font-weight: bold;
+   text-align: center;
+   font-family: Roboto;
+   font-size: 17px;
+}
+
+/*Committee Header */
+#committee_title{
+   color: black;
+   font-weight: bold;
+   font-size: 21px;
+   font-family: roboto;
+   margin-bottom: 2%;
+   margin-left: 15%;
+}
+
+#committee_header{
+   font-family: Roboto;
+   font-size: 17px;
+   font-weight: bold;
+   color: black;
+   margin: 0px;
+   margin-left: 15%;
+}
+
+#officer_link{
+   margin-left:15%;
+   color: #F4803E;
+}
+
+#officer_council_header{
+   font-family: 'Roboto';
+   font-size: 21px;
+   font-weight: bold;
+   letter-spacing:0;
+   margin-left: 15%;
+}
+
+#officer_council_paragraph{
+   margin-left: 15%;
+   padding-bottom: 5%;
+}
+
+/* Statues CSS Page */
+#statutes_black_header{
+   font-family: 'Roboto';
+   letter-spacing:0;
+   text-transform: none;
+   font-size: 21px;
+   font-weight: bold;
+}
+
+#statutes_blue_header{
+   font-family: 'Roboto';
+   letter-spacing:0;
+   text-transform: none;
+   font-size: 21px;
+   font-weight: bold;
+   color: #26378B;
+}
+
+#page-5667{
+   margin-left: 22%;
+}
+
+#statutes_title{
+   color: white;
+   font-family: roboto;
+   font-weight: bold;
+   font-size: 2em;
+   letter-spacing: 0px;
+}
 
 @media screen and (max-width: 480px){
 

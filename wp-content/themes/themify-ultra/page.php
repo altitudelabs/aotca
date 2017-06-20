@@ -7,7 +7,6 @@
 ?>
 
 <?php get_header(); ?>
-<?php echo "testing" ?>
 
 <!-- if this is the news page -->
 <?php if(is_page(5587)){?>
@@ -47,8 +46,11 @@ global $themify; ?>
 		?>
 		<!-- If this is the news page then apply a different page, in this case include "news.php"-->
 		<?php
+		    $post = get_post();
 			if (is_page(5587)):
 				 include 'news.php';
+		    elseif (is_page() && $post->post_parent==5652):
+		    	 include 'officer.php';
 			elseif ( ! is_404() && have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<div id="page-<?php the_ID(); ?>" class="type-page">
 
