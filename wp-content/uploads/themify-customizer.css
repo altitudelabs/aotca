@@ -1,48 +1,57 @@
 /* Themify Customize Styling */
-h5 {	
-	font-family:Roboto;	font-weight:bold;
-	font-size:17px;
+h5 {  
+  font-family:Roboto; font-weight:bold;
+  font-size:17px;
 
-	color: #28367c; 
+  color: #28367c; 
 }
-#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo img {		width: 350px;
-	height: 40px; 
+#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo img {    width: 350px;
+  height: 40px; 
 }
-#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {		width: 350px; 
+#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {    width: 350px; 
 }
-#site-logo {		position:relative;
+#site-logo {    position:relative;
 
-	bottom: 4px;
-	left: 20%; 
+  bottom: 4px;
+  left: 20%; 
 }
-#main-nav {		position:relative;
+#main-nav {   position:relative;
 
-	top: 10px;
-	right: 5%; 
+  top: 10px;
+  right: 5%; 
 }
-#main-nav a {	
-	font-family:Roboto;	font-weight:500;
+#main-nav a { 
+  font-family:Roboto; font-weight:500;
  
 }
-#main-nav a, #main-nav > li > a {	
-	color: #26378b; 
+#main-nav a, #main-nav > li > a { 
+  color: #26378b; 
 }
-#main-nav a:hover, #main-nav > li > a:hover {	
-	color: #ed3434; 
+#main-nav a:hover, #main-nav > li > a:hover { 
+  color: #ed3434; 
 }
-#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {	
-	background-color: #ffffff; 
+#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {  
+  background-color: #ffffff; 
 }
-#main-nav li:not(.themify-widget-menu):not(.has-mega-column):not(.has-mega-sub-menu) > ul {	
-	margin-right: -165%; 
+#main-nav li:not(.themify-widget-menu):not(.has-mega-column):not(.has-mega-sub-menu) > ul { 
+  margin-right: -165%; 
 }
-#footerwrap {	
-	background-color: #28367c;
-	padding-top: 30px;
-	padding-bottom: 30px; 
+#footerwrap { 
+  background-color: #28367c;
+  padding-top: 30px;
+  padding-bottom: 30px; 
 }
 
 /* Themify Custom CSS */
+html *{
+   font-family: 'Roboto';
+}
+
+html, body{
+   max-width: 100%;
+   overflow-x: hidden;
+}
+
 .themify_builder .text-12-0-0-2.module-text {
     width: 74.5%;
     left: 13%;
@@ -77,28 +86,6 @@ h5 {
    margin-bottom: 0em;
 }
 
-#footer_code{
-   display: flex;
-   width: 100%;
-
-}
-
-#ft1{
-   color: white;
-}
-
-#ft2{
-   margin-left: 20%;
-}
-
-#ft2 a{
-   color: white;
-}
-
-
-.footer-horizontal-left .footer-left-wrap, .footer-horizontal-right .footer-left-wrap {
-    width: 0;
-}
 
 .row_inner_wrapper {
     margin-top: 3%;
@@ -121,6 +108,8 @@ h5 {
    font-size: 2em;
 }
 
+
+/*BANNER CSS FOR EVERY PAGE */
 #banner_title{
    color: white;
    font-family: roboto;
@@ -129,6 +118,8 @@ h5 {
    letter-spacing: 0px;
    text-align: center;
 }
+
+/*LEGAL PAGE */
 
 #legal_title{
    color: black;
@@ -139,6 +130,22 @@ h5 {
    text-align: center;
 }
 
+
+#legal_paragraph{
+   position: relative;
+   margin-top: 10%;
+   width: 60%;
+   margin-left: 20%;
+}
+
+#legal_header{
+   font-family: Roboto;
+   color: black;
+   font-size: 21px;
+   margin-top: 5%;
+}
+
+/*CONTACT PAGE */
 .builder-contact-fields{
    display: flex;
    flex-wrap: wrap;
@@ -182,21 +189,7 @@ h5 {
    display: none;
 }
 
-#legal_paragraph{
-   position: relative;
-   margin-top: 10%;
-   width: 60%;
-   margin-left: 20%;
-}
-
-#legal_header{
-   font-family: Roboto;
-   color: black;
-   font-size: 21px;
-   margin-top: 5%;
-}
-
-/* terms of service paragraph */
+/* TERMS OF SERVICE PAGE */
 #text-5678-1-0-1{
    width: 75%;
    left: 12.5%;
@@ -208,6 +201,7 @@ h5 {
 }
 
 
+/*NEWS PAGE */
 .ptb_module.ptb_text.ptb_news_date {
     background-color: white;
     font-family: roboto;
@@ -344,25 +338,240 @@ h5 {
    letter-spacing: 0px;
 }
 
+/*Nav Bar fix */
+li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.has-sub-menu>ul{
+   margin-right: -44%;
+}
+
+#main-nav li:not(.themify-widget-menu) > ul{
+   background-color: #26378B;
+}
+
+#main-nav > li > a:hover {
+    color: orange;
+}
+
+#main-nav ul a{
+   color: white;
+   font-weight: bold;
+}
+
+#main-nav ul a:hover{
+   color: orange;
+}
+
+/*Fixed mobile menu active state to be orange */
+.mobile_menu_active #main-nav .current-menu-item > a {
+    color: orange;
+}
+
+/*Fixed mobile menu hover state to be orange */
+.mobile_menu_active #main-nav a:hover, .mobile_menu_active #main-nav ul a:hover {
+    color: orange;
+}
+
+/*Fixed main nav hover state to be orange */
+#main-nav .current-menu-item > a {
+    color: orange;
+}
+
+/*FRONT PAGE*/
+/*Hides feature image gap during responsive stretch */
+.themify_builder_sub_row .module-feature-image {
+    display: none;
+}
+
+/*Adds gap between button and feature image */
+.themify_builder .button-12-0-0-3.module-button {
+    padding-bottom: 10%;
+}
+
+/*Adds bottom gap */
+.themify_builder #feature-12-sub_row_0-0-5-0-0 {    
+}
+
+/* Fixed full width gap for feature front page */
+.sub_row_0-0-5{
+    width: 90%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-top: 8%;
+
+}
+
+/*Fixed the horizontal reel full width problem */
+.page-id-12 .pagewidth{
+   width: 100%;
+}
+
+/*Fixed content going to full width on front page */
+#themify_builder_content-12 {
+  width: 100%;
+}
+
+/*For "Our Story", equalized top and bottom spacing */
+#text-12-0-0-1{
+   padding-top: 50px;
+}
+
+#text-12-0-0-1 p{
+   margin-bottom: 1em;
+}
+
+/*Message the President Header Styling */
+#message_from_the_president{
+   font-size: 30px;
+   font-weight: bold;
+   color: #26378B;
+   margin-bottom: 1em;
+}
+
+/*Fixed president text to not extend to full width */
+#feature-12-0-0-4 p {
+  width: 60%;
+  padding-left: 20%;
+
+}
+
+#feature-12-0-0-4 .module-feature-image {
+  display: none;
+}
+
+/*Fixed story content spacing */
+#text-12-0-0-2{
+  width: 60%;
+  left: 20%;
+}
+
+/*footer fix */
+.footer-horizontal-left .footer-right-wrap {
+    margin-left: 15%;
+    float: left;
+}
+
+/*#footer_code{
+   display: flex;
+   width: 100%;
+
+}*/
+
+
+#ft_1{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   color: white;
+}
+
+#ft_1 a{
+   color: white;
+   text-align: center;
+   font-family: 'Roboto';
+   font-size: 17px;
+
+}
+
+#footer_code p{
+    margin-bottom: 0em;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+}
+
+.footer-horizontal-left .footer-left-wrap, .footer-horizontal-right .footer-left-wrap {
+    width: 0;
+}
+
+/* For horizontal reel effect to work nicely */
+#test2 img{
+  width: 65px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+#test3 img{
+  width: 65px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+/*Find out more button to not have underline */
+.themify_builder .button-12-0-0-3.module-button a:hover{
+   text-decoration: none;
+}
+
+.themify_builder .button-12-0-0-3.module-button a{
+   padding-bottom: 50px;
+}
+
+/*Orange button */
+/*div#n2-ss-2 .n2-font-130df1a75407fb1671603329ff9054a9-link a{
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 20%;
+    padding-right: 20%;
+}*/
+
+
+/*Fixed menu icon color */
+.header-icons a{
+    color: #26378B;
+}
+
+/*Fixed menu icon hover spin effect */
+#headerwrap #menu-icon-close:hover {
+    transform: none;
+}
+
+
 @media screen and (max-width: 480px){
 
+/* Removed featured image gap in responsive mode */
 .module-feature.layout-icon-top .module-feature-image {
     display: none;
 }
 
-.col3-1{
-   margin-top: 10%;
+/* Showed our story header */
+.module-feature-content p:nth-child(1){
+    margin-bottom: 1em;
 }
 
+/* Showed the first paragraph of our story */
+#text-12-0-0-2 p:nth-child(2){
+    display: none;
+}
+
+/* Disabled the president section in responsive mode */
+#feature-12-0-0-4{
+    display: none;
+}
+
+/*Changed width and height of logo */
+.header-top-bar #site-logo {
+    height: 30px;
+    width: 300px;
+    margin-top: 0;
+}
+
+/*Shifted logo to the left */
+#site-logo a {
+   margin-left: 2%;
+}
+
+/* Made site logo only 80% */
 #site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {
-    width: 90%;
+    width: 80%;
 }
 
+#
+
+/*Responsive gallery images */
 #body .gallery-columns-6 .gallery-item {
     width: 75%;
     position: relative;
     left: 12.5%;
 }
+
 
 }
 
@@ -372,71 +581,100 @@ body #content {
    padding-top: 0%;
 }
 
+.page-id-12 .pagewidth{
+   width: 100%;
 }
 
+/*fixed responsive footer issue */
+
+.footer-horizontal-left .footer-right-wrap {
+  width: 75%;
+}
+
+#site-logo a {
+   margin-left: 5%;
+}
+
+}
+
+@media screen and (max-width: 1200px){
+
+/*Fixed front page width issues */
+.page-id-12 .pagewidth{
+   max-width: 100%;
+}
+
+/*Made sure logo shifted correcltly on different screen sizes */
+#site-logo a{
+   margin-left: 10%;
+}
+
+
+
+}
 
 
 @media screen and (max-width: 976px) { /* Themify Customize Styling */
-h5 {	
-	color: #28367c; 
+h5 {  
+  color: #28367c; 
 }
-#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo img {		width: 350px;
-	height: 40px; 
+#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo img {    width: 350px;
+  height: 40px; 
 }
-#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {		width: 350px; 
+#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {    width: 350px; 
 }
-#main-nav a, #main-nav > li > a {	
-	color: #26378b; 
+#main-nav a, #main-nav > li > a { 
+  color: #26378b; 
 }
-#main-nav a:hover, #main-nav > li > a:hover {	
-	color: #ed3434; 
+#main-nav a:hover, #main-nav > li > a:hover { 
+  color: #ed3434; 
 }
-#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {	
-	background-color: #ffffff; 
+#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {  
+  background-color: #ffffff; 
 }
-#footerwrap {	
-	background-color: #28367c; 
+#footerwrap { 
+  background-color: #28367c; 
 }
  }@media screen and (max-width: 768px) { /* Themify Customize Styling */
-h5 {	
-	color: #28367c; 
+h5 {  
+  color: #28367c; 
 }
-#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo img {		width: 350px;
-	height: 40px; 
+#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo img {    width: 350px;
+  height: 40px; 
 }
-#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {		width: 350px; 
+#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {    width: 350px; 
 }
-#main-nav a, #main-nav > li > a {	
-	color: #26378b; 
+#main-nav a, #main-nav > li > a { 
+  color: #26378b; 
 }
-#main-nav a:hover, #main-nav > li > a:hover {	
-	color: #ed3434; 
+#main-nav a:hover, #main-nav > li > a:hover { 
+  color: #ed3434; 
 }
-#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {	
-	background-color: #ffffff; 
+#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {  
+  background-color: #ffffff; 
 }
-#footerwrap {	
-	background-color: #28367c; 
+#footerwrap { 
+  background-color: #28367c; 
 }
  }@media screen and (max-width: 480px) { /* Themify Customize Styling */
-h5 {	
-	color: #28367c; 
+h5 {  
+  color: #28367c; 
 }
-#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo img {		width: 350px;
-	height: 40px; 
+#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo img {    width: 350px;
+  height: 40px; 
 }
-#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {		width: 350px; 
+#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {    width: 350px; 
 }
-#main-nav a, #main-nav > li > a {	
-	color: #26378b; 
+#main-nav a, #main-nav > li > a { 
+  color: #26378b; 
 }
-#main-nav a:hover, #main-nav > li > a:hover {	
-	color: #ed3434; 
+#main-nav a:hover, #main-nav > li > a:hover { 
+  color: #ed3434; 
 }
-#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {	
-	background-color: #ffffff; 
+#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {  
+  background-color: #ffffff; 
 }
-#footerwrap {	
-	background-color: #28367c; 
+#footerwrap { 
+  background-color: #28367c; 
 }
  }

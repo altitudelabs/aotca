@@ -14,27 +14,35 @@
 .themify_builder .text-12-0-0-2.module-text h6 { font-family: Roboto; color: #777777;  } 
 .themify_builder .button-12-0-0-3.module-button a { background-color: #f4803e; font-family: Roboto; color: #ffffff; font-size: 14px; line-height: 100%; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 20px;  } 
 .themify_builder .button-12-0-0-3.module-button { text-align: center;  } 
-.themify_builder .feature-12-sub_row_0-0-4-0-0.module-feature { font-family: Roboto; font-size: 16px; line-height: 20px; text-align: left;  } 
-.themify_builder .feature-12-sub_row_0-0-4-0-0.module-feature .module-feature-title { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-0-0.module-feature h1 { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-0-0.module-feature h2 { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-0-0.module-feature h3:not(.module-title) { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-0-0.module-feature h4 { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-0-0.module-feature h5 { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-0-0.module-feature h6 { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-1-0.module-feature { font-family: Roboto; font-size: 16px; line-height: 20px; text-align: left;  } 
-.themify_builder .feature-12-sub_row_0-0-4-1-0.module-feature .module-feature-title { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-1-0.module-feature h1 { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-1-0.module-feature h2 { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-1-0.module-feature h3:not(.module-title) { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-1-0.module-feature h4 { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-1-0.module-feature h5 { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-1-0.module-feature h6 { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-2-0.module-feature { font-family: Roboto; font-size: 16px; line-height: 20px; text-align: left;  } 
-.themify_builder .feature-12-sub_row_0-0-4-2-0.module-feature .module-feature-title { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-2-0.module-feature h1 { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-2-0.module-feature h2 { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-2-0.module-feature h3:not(.module-title) { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-2-0.module-feature h4 { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-2-0.module-feature h5 { font-family: Roboto;  } 
-.themify_builder .feature-12-sub_row_0-0-4-2-0.module-feature h6 { font-family: Roboto;  } 
+.themify_builder .feature-12-0-0-4.module-feature { background-color: #f2f3f7; font-family: Roboto; font-size: 17px; text-align: center;  } 
+.themify_builder .feature-12-0-0-4.module-feature .module-feature-title { font-family: Roboto;  } 
+.themify_builder .feature-12-0-0-4.module-feature h1 { font-family: Roboto;  } 
+.themify_builder .feature-12-0-0-4.module-feature h2 { font-family: Roboto;  } 
+.themify_builder .feature-12-0-0-4.module-feature h3:not(.module-title) { font-family: Roboto;  } 
+.themify_builder .feature-12-0-0-4.module-feature h4 { font-family: Roboto;  } 
+.themify_builder .feature-12-0-0-4.module-feature h5 { font-family: Roboto;  } 
+.themify_builder .feature-12-0-0-4.module-feature h6 { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-0-0.module-feature { font-family: Roboto; font-size: 16px; line-height: 20px; text-align: left;  } 
+.themify_builder .feature-12-sub_row_0-0-5-0-0.module-feature .module-feature-title { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-0-0.module-feature h1 { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-0-0.module-feature h2 { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-0-0.module-feature h3:not(.module-title) { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-0-0.module-feature h4 { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-0-0.module-feature h5 { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-0-0.module-feature h6 { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-1-0.module-feature { font-family: Roboto; font-size: 16px; line-height: 20px; text-align: left;  } 
+.themify_builder .feature-12-sub_row_0-0-5-1-0.module-feature .module-feature-title { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-1-0.module-feature h1 { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-1-0.module-feature h2 { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-1-0.module-feature h3:not(.module-title) { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-1-0.module-feature h4 { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-1-0.module-feature h5 { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-1-0.module-feature h6 { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-2-0.module-feature { font-family: Roboto; font-size: 16px; line-height: 20px; text-align: left;  } 
+.themify_builder .feature-12-sub_row_0-0-5-2-0.module-feature .module-feature-title { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-2-0.module-feature h1 { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-2-0.module-feature h2 { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-2-0.module-feature h3:not(.module-title) { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-2-0.module-feature h4 { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-2-0.module-feature h5 { font-family: Roboto;  } 
+.themify_builder .feature-12-sub_row_0-0-5-2-0.module-feature h6 { font-family: Roboto;  } 
