@@ -8,75 +8,62 @@
 	<h1>PUBLICATIONS</h1>
 </div>
 
-<?php 
+<?php
 
-	$post_ID = 5864;
-	$fields = get_fields($post_ID);
-	//echo var_dump($fields);
-	// echo count($fields);
-
-	// echo $fields['image_1']['url'];
-	// echo "<br>";
-	// echo $fields['image_2']['url'];
-	// echo "<br>";
-	// echo $fields['image_3']['url'];
-
-	// for($i =0; $i< count($fields); $i++){
-	// 	echo $fields[$i];
-	// }
-
-	// $arr = array("image_1", "image_2", "image_3", "image_4", "image_5", "image_6", "image_7");
-
+	$repeater = get_fields(5975);
+	$names = array();
 	$images = array();
-	foreach($fields as $key => $value){
-		$images[] = $value['url'];
-	}
-	//echo var_dump($final_array);
+	$links = array();
+	$member_settings = array();
+	$lock_images = array();
 
-	// $f = array_combine($arr,$final_array);
-	// echo var_dump($f);
-
-	$lock_image = $images[6];
-
-	if(have_rows("settings")){
-		echo "TRUE";
+	foreach($repeater['publication_settings'] as $key=>$value){
+		$names[] = $value['name'];
+		$images[] = $value['image']['url'];
+		$links[] = $value['link'];
+		$member_settings[] = $value['member_content'];
+		$lock_images[] = $value['lock_image']['url'];
 	}
-	else{
-		echo "FALSE";
-	}
+
+	// echo count($repeater['publication_settings']);
+	// echo var_dump($repeater['publication_settings'][0])."<br>";
+	// echo var_dump($names);
+	// echo "<br>"."<br>";
+	// echo var_dump($images);
+	// echo "<br>"."<br>";
+	// echo var_dump($links);
+	// echo "<br>"."<br>";
 
 ?>
 
 <body>
 	<p id = "publication_description">You may download past presentations, technical reports, opinion statements and other documents in the links provided below.</p>
 	<div id = "box_container">
-		<div id = "box_1">
-			<img class = "publication_images" src = "<?php echo $images[0]?>">
+	<?php
+		for($i=0; $i<count($repeater['publication_settings']); $i++){?>
+		<div class = "box" id = "box_<?php echo $i?>" onclick="redirect_link("<?php $links[$i]?>")">
+			<img class = "publication_images" src = "<?php echo $images[$i]?>">
 			<div class = "lock_wrapper">
-				<p class = "publication_images_description">Presentations </p>
-				<img src = "<?php echo $lock_image?>">
+				<p class = "publication_images_description"><?php echo $names[$i]?></p>
+				<?php if($member_settings[$i]==1){?>
+					<img src = "<?php echo $lock_images[$i]?>" onload = "append_member(<?php echo $i ?>);">
+				<?php }?>
 			</div>
 		</div>
-		<div id = "box_2">
-			<img class = "publication_images" src = "<?php echo $images[1]?>">
-			<p class = "publication_images_description">Technical Reports </p>
-		</div>
-		<div id = "box_3">
-			<img class = "publication_images" src = "<?php echo $images[2]?>">
-			<p class = "publication_images_description">Opinion Statements </p>
-		</div>
-		<div id = "box_4">
-			<img class = "publication_images" src = "<?php echo $images[3]?>">
-			<p class = "publication_images_description">Minutes </p>
-		</div>
-		<div id = "box_5">
-			<img class = "publication_images" src = "<?php echo $images[4]?>">
-			<p class = "publication_images_description">Agenda </p>
-		</div>
-		<div id = "box_6">
-			<img class = "publication_images" src = "<?php echo $images[5]?>">
-			<p class = "publication_images_description">Other Documents </p>
+		<?php }?>
+	</div>
+
+<!-- Modal Code -->
+	<div id = "my_modal" class = "modal">
+		<div class = "modal_content">
+			<span class = "close" onclick = "close_modal();">&times;</span>
+			<p>Enter your member's password </p>
+			<input type = "text">
+			<button> Login </button>
 		</div>
 	</div>
+
+
+
 
 </body>

@@ -56,6 +56,10 @@ global $themify; ?>
 		    	 include 'officer.php';
 		    elseif (is_page(189)):
 		    	 include 'publications.php';
+				elseif (is_page(5994)):
+					 include 'documents.php';
+				elseif (is_page(5676)):
+				   include 'event.php';
 			elseif ( ! is_404() && have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<div id="page-<?php the_ID(); ?>" class="type-page">
 

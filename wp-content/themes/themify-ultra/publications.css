@@ -1,7 +1,7 @@
 #jumbotron{
 	width: 100%;
 	height: 27vh;
-	background-image: url(http://localhost:8888/aotca/wp-content/uploads/2017/06/PublicationsBanner@2x.png);
+	background-image: url(http://ec2-54-255-203-71.ap-southeast-1.compute.amazonaws.com/wp-content/uploads/2017/06/PublicationsBanner@2x-1-1024x183.png);
 	background-size: cover;
 	background-position: top top;
 }
@@ -39,36 +39,12 @@ h1{
 	justify-content: space-around;
 }
 
-#box_1{
+.box{
 	width: 30%;
 	height: 40%;
+	border: 1px solid #C9C9C9;
+	border-radius: 5px;
 }
-
-#box_2{
-	width: 30%;
-	height: 40%;
-}
-
-#box_3{
-	width: 30%;
-	height: 40%;
-}
-
-#box_4{
-	width: 30%;
-	height: 40%;
-}
-
-#box_5{
-	width: 30%;
-	height: 40%;
-}
-
-#box_6{
-	width: 30%;
-	height: 40%;
-}
-
 
 .publication_images{
 	width: 100%;
@@ -85,7 +61,48 @@ h1{
 
 .lock_wrapper {
 	display: flex;
-
 }
 
+.lock_wrapper img{
+	width: 30px;
+	height: 30px;
+	margin-left: 70%;
+}
 
+/* Modal Textbox to display member login information */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal_content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

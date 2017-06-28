@@ -3,7 +3,7 @@
 
 <link type="text/css" href="<?php echo get_template_directory_uri();?>/officer.css" rel="stylesheet">
 
-<?php 
+<?php
 	global $post;
 	$post_slug = $post->post_name;
 	$post_ID = $post->ID;
@@ -20,12 +20,17 @@
 
 <head>
 	<div id = "officer_banner">
-		<img id = "officer_img" src = "<?php echo $imageURL ?>">
-		<div id = "description_wrapper">
-			<h1 id="name"> <?php echo $name ?></h1>
-			<p  id="position"> <?php echo $position ?></p>
+		<div id = "officer_content">
+			<div id = "officer_img_wrapper">
+				<img id = "officer_img" src = "<?php echo $imageURL ?>">
+			</div>
+			<div id = "officer_description_wrapper">
+				<div id = "description_wrapper">
+					<h1 id="name"> <?php echo $name ?></h1>
+					<p  id="position"> <?php echo $position ?></p>
+				</div>
+			</div>
 		</div>
-
 	</div>
 </head>
 
@@ -42,6 +47,6 @@
 
 
 </body>
-		
+
 
 </html>

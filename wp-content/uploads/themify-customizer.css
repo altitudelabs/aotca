@@ -1,48 +1,49 @@
 /* Themify Customize Styling */
-h5 {  
+h5 {
   font-family:Roboto; font-weight:bold;
   font-size:17px;
 
-  color: #28367c; 
+  color: #28367c;
 }
 #site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo img {    width: 350px;
-  height: 40px; 
+  height: 40px;
 }
-#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {    width: 350px; 
+#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {    width: 350px;
 }
 #site-logo {    position:relative;
 
   bottom: 4px;
-  left: 20%; 
+  left: 20%;
 }
 #main-nav {   position:relative;
 
   top: 10px;
-  right: 5%; 
+  right: 5%;
 }
-#main-nav a { 
+#main-nav a {
   font-family:Roboto; font-weight:500;
- 
+
 }
-#main-nav a, #main-nav > li > a { 
-  color: #26378b; 
+#main-nav a, #main-nav > li > a {
+  color: #26378b;
 }
-#main-nav a:hover, #main-nav > li > a:hover { 
-  color: #ed3434; 
+#main-nav a:hover, #main-nav > li > a:hover {
+  color: #ed3434;
 }
-#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {  
-  background-color: #ffffff; 
+#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {
+  background-color: #ffffff;
 }
-#main-nav li:not(.themify-widget-menu):not(.has-mega-column):not(.has-mega-sub-menu) > ul { 
-  margin-right: -165%; 
+#main-nav li:not(.themify-widget-menu):not(.has-mega-column):not(.has-mega-sub-menu) > ul {
+  margin-right: -165%;
 }
-#footerwrap { 
+#footerwrap {
   background-color: #28367c;
   padding-top: 30px;
-  padding-bottom: 30px; 
+  padding-bottom: 30px;
 }
 
 /* Themify Custom CSS */
+
 html *{
    font-family: 'Roboto';
 }
@@ -52,35 +53,6 @@ html, body{
    overflow-x: hidden;
 }
 
-.themify_builder .text-12-0-0-2.module-text {
-    width: 74.5%;
-    left: 13%;
-}
-
-.themify_builder .button-12-0-0-3.module-button a {
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.module-feature.layout-icon-top .module-feature-content {
-    text-align: left;
-}
-
-#hp-caret{
-   color: #f4803e;
-}
-
-.p17{
-   color: #28367C;
-   font-size: 17px;
-   font-weight: 500;
-}
-
-.p16{
-   font-size: 14px;
-   position: relative;
-   left: 2.5%;
-}
 
 #hp-image{
    margin-bottom: 0em;
@@ -133,7 +105,6 @@ html, body{
 
 #legal_paragraph{
    position: relative;
-   margin-top: 10%;
    width: 60%;
    margin-left: 20%;
 }
@@ -182,7 +153,7 @@ html, body{
     font-size: 14px;
     background-color: #F4803E;
     position: relative;
-    
+
 }
 
 .fa.fa-cog.fa-spin{
@@ -241,8 +212,8 @@ html, body{
 #text-196-1-0-1{
    width: 60%;
    left: 20%;
-   padding-top: 5%;
-   padding-bottom: 7%;
+   padding-top: 3%;
+   padding-bottom: 3%;
 }
 
 /* Past Presidents & Officers Caption */
@@ -290,9 +261,13 @@ html, body{
    margin-left: 15%;
 }
 
+.module_column_5652-1-0 p{
+  margin-left: 15%;
+}
+
 #officer_link{
-   margin-left:15%;
    color: #F4803E;
+   font-size: 17px;
 }
 
 #officer_council_header{
@@ -308,6 +283,11 @@ html, body{
    padding-bottom: 5%;
 }
 
+/*COMMITEES PAGE WEB */
+.module_column_5656-1-0 p{
+  margin-left: 15%;
+}
+
 /* Statues CSS Page */
 #statutes_black_header{
    font-family: 'Roboto';
@@ -315,6 +295,7 @@ html, body{
    text-transform: none;
    font-size: 21px;
    font-weight: bold;
+   padding-bottom: 20px;
 }
 
 #statutes_blue_header{
@@ -326,16 +307,18 @@ html, body{
    color: #26378B;
 }
 
-#page-5667{
-   margin-left: 22%;
-}
-
 #statutes_title{
    color: white;
    font-family: roboto;
    font-weight: bold;
    font-size: 2em;
    letter-spacing: 0px;
+}
+
+.module_column_6061-1-0 {
+  width: 60%;
+  position: relative;
+  left: 20%;
 }
 
 /*Nav Bar fix */
@@ -375,29 +358,99 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
     color: orange;
 }
 
+
 /*FRONT PAGE*/
 /*Hides feature image gap during responsive stretch */
+
+
+.module-feature.layout-icon-top .module-feature-content {
+    text-align: left;
+}
+
+#hp-caret{
+   color: #f4803e;
+}
+
+.p17{
+   color: #28367C;
+   font-size: 17px;
+   font-weight: 500;
+}
+
+.p16{
+   font-size: 14px;
+   position: relative;
+   left: 2.5%;
+}
+
 .themify_builder_sub_row .module-feature-image {
     display: none;
 }
 
+.themify_builder .text-12-0-0-2.module-text {
+    width: 74.5%;
+    left: 13%;
+}
+
+/* button to have curves and text to be bold */
+.themify_builder .button-12-0-0-5.module-button a {
+    border-radius: 5px;
+    font-weight: bold;
+}
+
 /*Adds gap between button and feature image */
-.themify_builder .button-12-0-0-3.module-button {
+.themify_builder .button-12-0-0-5.module-button {
     padding-bottom: 10%;
 }
 
-/*Adds bottom gap */
-.themify_builder #feature-12-sub_row_0-0-5-0-0 {    
-}
-
 /* Fixed full width gap for feature front page */
-.sub_row_0-0-5{
+.sub_row_0-0-7{
     width: 90%;
     padding-left: 5%;
     padding-bottom: 5%;
     padding-top: 8%;
-
 }
+
+ /*Hides the second row for mobile design */
+.sub_row_0-0-8{
+  display: none;
+}
+
+/* Fixed full width gap for feature front page */
+.sub_row_0-0-8{
+    width: 90%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-top: 8%;
+}
+
+
+/*Got the new display to look on the phone */
+.feature_description{
+   font-size: 14px;
+   z-index: 2;
+   position: absolute;
+   left: 10px;
+   top: 190px;
+   color: white;
+}
+
+.sub_row_0-0-8 img{
+  margin-bottom: 0;
+}
+
+/*Image Gradient Effect */
+#img_wrapper::after{
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #000 100%);
+  margin-top: -150px;
+  height: 150px;
+  width: 100%;
+  content: '';
+  }
+
+
 
 /*Fixed the horizontal reel full width problem */
 .page-id-12 .pagewidth{
@@ -427,13 +480,13 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 }
 
 /*Fixed president text to not extend to full width */
-#feature-12-0-0-4 p {
+#feature-12-0-0-6 p {
   width: 60%;
   padding-left: 20%;
 
 }
 
-#feature-12-0-0-4 .module-feature-image {
+#feature-12-0-0-6 .module-feature-image {
   display: none;
 }
 
@@ -447,6 +500,14 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 .footer-horizontal-left .footer-right-wrap {
     margin-left: 15%;
     float: left;
+}
+
+#up_arrow{
+  display: none;
+}
+
+#down_arrow{
+  display: none;
 }
 
 /*#footer_code{
@@ -467,7 +528,7 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
    color: white;
    text-align: center;
    font-family: 'Roboto';
-   font-size: 17px;
+   font-size: 12px;
 
 }
 
@@ -475,7 +536,7 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
     margin-bottom: 0em;
     color: white;
     text-align: center;
-    font-size: 17px;
+    font-size: 12px;
 }
 
 .footer-horizontal-left .footer-left-wrap, .footer-horizontal-right .footer-left-wrap {
@@ -496,11 +557,11 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 }
 
 /*Find out more button to not have underline */
-.themify_builder .button-12-0-0-3.module-button a:hover{
+.themify_builder .button-12-0-0-5.module-button a:hover{
    text-decoration: none;
 }
 
-.themify_builder .button-12-0-0-3.module-button a{
+.themify_builder .button-12-0-0-5.module-button a{
    padding-bottom: 50px;
 }
 
@@ -526,6 +587,47 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 
 @media screen and (max-width: 480px){
 
+/*Aligns title and body text to left */
+#text-12-0-0-1 p{
+  text-align: left;
+  padding-left: 5%;
+}
+
+#text-12-0-0-2{
+  width: 90%;
+  left: 5%;
+}
+
+#text-12-0-0-2 p{
+  text-align: left;
+  width: 100%;
+}
+
+/*Hides it in mobile screen */
+#text-12-0-0-2 p:nth-child(2){
+  display: none;
+}
+
+#up_arrow{
+  display: none;
+  padding-bottom: 10%;
+}
+
+#down_arrow{
+  display: block;
+  padding-bottom: 10%;
+}
+
+/* New display content */
+
+.sub_row_0-0-7{
+  display: none;
+}
+
+.sub_row_0-0-8{
+  display: block;
+}
+
 /* Removed featured image gap in responsive mode */
 .module-feature.layout-icon-top .module-feature-image {
     display: none;
@@ -541,8 +643,12 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
     display: none;
 }
 
+#text-12-0-0-2 p:nth-child(1){
+    line-height: 20px;
+}
+
 /* Disabled the president section in responsive mode */
-#feature-12-0-0-4{
+#feature-12-0-0-6{
     display: none;
 }
 
@@ -554,8 +660,8 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 }
 
 /*Shifted logo to the left */
-#site-logo a {
-   margin-left: 2%;
+.header-bar #site-logo a {
+    margin-left: 0%;
 }
 
 /* Made site logo only 80% */
@@ -563,13 +669,192 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
     width: 80%;
 }
 
-#
+/*Removed Carat for Nav*/
+#menu-item-15 i {
+  display: none;
+}
+
+#menu-item-17 i {
+  display: none;
+}
 
 /*Responsive gallery images */
 #body .gallery-columns-6 .gallery-item {
     width: 75%;
     position: relative;
     left: 12.5%;
+}
+
+/*Footer looks nice */
+#footer_wrap{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*Footer Address and Copy Right */
+#footer_code p{
+    margin-bottom: 0em;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+/*Legal Link */
+#ft_1 a{
+   color: white;
+   text-align: center;
+   font-family: 'Roboto';
+   font-size: 12px;
+
+}
+
+#ft_1{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   color: white;
+}
+
+/*About Us Page */
+#text-196-1-0-1{
+  width: 90%;
+  left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/*Fixed uneven footer distribution */
+.footer-horizontal-left .footer-right-wrap {
+  margin-left:0;
+}
+
+/* Fixed Banner Title */
+.themify_builder_row.fullwidth .row_inner, .module_row.fullwidth .row_inner {
+  width: auto;
+  left: auto;
+  top: auto;
+}
+
+/*AOTCA Officers Page Mobile */
+.col-full first tb-column  tb_5652_column module_column_0 module_column_5652-1-0 module_column
+
+/*Organisation Chart of AOTCA */
+#image-5654-1-0-2{
+  width:auto;
+  left:0;
+}
+
+/*Fixed Vertical Align for Banner Title */
+.themify_builder .fullcover{
+  height:140px;
+}
+
+/*Organisation Page */
+
+/*Fixed Gap between image and header */
+#text-5654-1-0-1 p{
+  margin-bottom: 0;
+}
+
+.module-image .image-wrap {
+  padding-bottom: 1em;
+}
+
+/*Officers Page */
+
+/*Shifts Links */
+.module_column_5652-1-0 p{
+  margin-left: 10%;
+}
+
+/*Shifts Titles */
+#committee_header{
+   margin-left: 10%;
+}
+
+/*Changes width of container for header and links to be 90% */
+.module_column_5652-1-0 .module-text{
+  width: 90%;
+}
+
+/*Council paragraph Title */
+#officer_council_header{
+  margin-left: 10%;
+}
+
+/*Changes width of council paragraph to be 90% (Wrapper)*/
+.module_column_5652-2-0-2 .module-text{
+  width: 90%;
+}
+
+/*Moves council paragraph over */
+#officer_council_paragraph{
+  margin-left: 10%;
+}
+
+/*COMMITTEES PAGE */
+.module_column_5656-1-0 p{
+  margin-left: 10%;
+}
+
+#committee_header{
+  margin-left: 10%;
+}
+
+#committee_title{
+  margin-left: 10%;
+}
+
+/*Statutes Page */
+
+/*Extends text container to 90% */
+.module_column_6061-1-0 {
+  width: 90%;
+  left: 5%;
+}
+
+.module_column_6061-1-0 p {
+  margin-bottom: 1em;
+}
+
+p#statutes_paragraph{
+  margin-bottom: 1em;
+}
+
+/*Legal Page */
+
+.module_column_5533-1-0{
+  width: 90%;
+  margin-left: 5%;
+}
+
+#legal_paragraph{
+  width: 100%;
+  margin-left: 0;
+  margin-top: 10%;
+}
+
+/* Mobile Menu Customization */
+
+.mobile_menu_active .sidemenu {
+    overflow-x: hidden;
+}
+
+/*Changed mobile nav to be blue with white text */
+.mobile_menu_active #mobile-menu.sidemenu-on {
+  color: white;
+  background-color: #28367C;
+}
+
+/*Removed transition of text in mobile nav*/
+#main-nav li:not(.themify-widget-menu) > ul {
+  transition: none;
+  transform: none;
+}
+
+#main_nav{
+  transition: none;
+  -webkit-transition: none;
 }
 
 
@@ -586,9 +871,8 @@ body #content {
 }
 
 /*fixed responsive footer issue */
-
 .footer-horizontal-left .footer-right-wrap {
-  width: 75%;
+  width: 100%;
 }
 
 #site-logo a {
@@ -615,66 +899,66 @@ body #content {
 
 
 @media screen and (max-width: 976px) { /* Themify Customize Styling */
-h5 {  
-  color: #28367c; 
+h5 {
+  color: #28367c;
 }
 #site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo img {    width: 350px;
-  height: 40px; 
+  height: 40px;
 }
-#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {    width: 350px; 
+#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {    width: 350px;
 }
-#main-nav a, #main-nav > li > a { 
-  color: #26378b; 
+#main-nav a, #main-nav > li > a {
+  color: #26378b;
 }
-#main-nav a:hover, #main-nav > li > a:hover { 
-  color: #ed3434; 
+#main-nav a:hover, #main-nav > li > a:hover {
+  color: #ed3434;
 }
-#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {  
-  background-color: #ffffff; 
+#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {
+  background-color: #ffffff;
 }
-#footerwrap { 
-  background-color: #28367c; 
+#footerwrap {
+  background-color: #28367c;
 }
  }@media screen and (max-width: 768px) { /* Themify Customize Styling */
-h5 {  
-  color: #28367c; 
+h5 {
+  color: #28367c;
 }
 #site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo img {    width: 350px;
-  height: 40px; 
+  height: 40px;
 }
-#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {    width: 350px; 
+#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {    width: 350px;
 }
-#main-nav a, #main-nav > li > a { 
-  color: #26378b; 
+#main-nav a, #main-nav > li > a {
+  color: #26378b;
 }
-#main-nav a:hover, #main-nav > li > a:hover { 
-  color: #ed3434; 
+#main-nav a:hover, #main-nav > li > a:hover {
+  color: #ed3434;
 }
-#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {  
-  background-color: #ffffff; 
+#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {
+  background-color: #ffffff;
 }
-#footerwrap { 
-  background-color: #28367c; 
+#footerwrap {
+  background-color: #28367c;
 }
  }@media screen and (max-width: 480px) { /* Themify Customize Styling */
-h5 {  
-  color: #28367c; 
+h5 {
+  color: #28367c;
 }
 #site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo img {    width: 350px;
-  height: 40px; 
+  height: 40px;
 }
-#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {    width: 350px; 
+#site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {    width: 350px;
 }
-#main-nav a, #main-nav > li > a { 
-  color: #26378b; 
+#main-nav a, #main-nav > li > a {
+  color: #26378b;
 }
-#main-nav a:hover, #main-nav > li > a:hover { 
-  color: #ed3434; 
+#main-nav a:hover, #main-nav > li > a:hover {
+  color: #ed3434;
 }
-#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {  
-  background-color: #ffffff; 
+#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {
+  background-color: #ffffff;
 }
-#footerwrap { 
-  background-color: #28367c; 
+#footerwrap {
+  background-color: #28367c;
 }
  }
