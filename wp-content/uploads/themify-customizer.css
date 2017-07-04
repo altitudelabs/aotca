@@ -60,14 +60,14 @@ html, body{
 
 
 .row_inner_wrapper {
-    margin-top: 3%;
+    margin-top: 67px;
 }
 
 .themify_builder_row.fullwidth .row_inner, .module_row.fullwidth .row_inner {
     width: 50%;
     position: relative;
     left: 25%;
-    top: -8vh;
+    top: -95px;
 }
 
 #event_date{
@@ -208,18 +208,20 @@ html, body{
 }
 
 
-/* About AOTCA */
+/* About AOTCA Page*/
 #text-196-1-0-1{
    width: 60%;
    left: 20%;
    padding-top: 3%;
-   padding-bottom: 3%;
+   padding-bottom: 118px;
 }
 
+/* Past Presidents Page */
 /* Past Presidents & Officers Caption */
 .tablepress-table-name.tablepress-table-name-id-1{
    color: #F4803E;
    font-size: 20px;
+   font-weight: bold;
 }
 
 .tablepress thead th{
@@ -227,10 +229,17 @@ html, body{
    color: black;
 }
 
+.tablepress tbody tr:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+/*Organisation Page */
 /*Organisation Image */
 #image-5654-1-0-2 {
    width: 60%;
    left: 20%;
+   padding-top: 30px;
+   padding-bottom: 70px;
 }
 
 /*Organisation Text */
@@ -238,9 +247,14 @@ html, body{
    color: #26378B;
    font-weight: bold;
    text-align: center;
-   font-family: Roboto;
    font-size: 17px;
+   margin-bottom:0;
 }
+
+/*Added padding between image and bottom */
+/*.module-image .image-wrap {
+    padding-bottom: 20px;
+}*/
 
 /*Committee Header */
 #committee_title{
@@ -261,8 +275,10 @@ html, body{
    margin-left: 15%;
 }
 
+/*Officers Page */
 .module_column_5652-1-0 p{
   margin-left: 15%;
+  margin-bottom: 1em;
 }
 
 #officer_link{
@@ -288,7 +304,11 @@ html, body{
   margin-left: 15%;
 }
 
-/* Statues CSS Page */
+.module_column_5656-1-0{
+  margin-bottom: 100px;
+}
+
+/* Statues Page */
 #statutes_black_header{
    font-family: 'Roboto';
    letter-spacing:0;
@@ -305,6 +325,7 @@ html, body{
    font-size: 21px;
    font-weight: bold;
    color: #26378B;
+   padding-top: 12px;
 }
 
 #statutes_title{
@@ -321,6 +342,10 @@ html, body{
   left: 20%;
 }
 
+.module_column_6061-1-0 p {
+  margin-bottom: 1em;
+}
+
 /*Nav Bar fix */
 li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.has-sub-menu>ul{
    margin-right: -44%;
@@ -331,7 +356,7 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 }
 
 #main-nav > li > a:hover {
-    color: orange;
+    color: #F4803E;
 }
 
 #main-nav ul a{
@@ -340,22 +365,22 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 }
 
 #main-nav ul a:hover{
-   color: orange;
+   color: #F4803E;
 }
 
-/*Fixed mobile menu active state to be orange */
+/*Fixed mobile menu active state to be #F4803E */
 .mobile_menu_active #main-nav .current-menu-item > a {
-    color: orange;
+    color: #F4803E;
 }
 
-/*Fixed mobile menu hover state to be orange */
+/*Fixed mobile menu hover state to be #F4803E */
 .mobile_menu_active #main-nav a:hover, .mobile_menu_active #main-nav ul a:hover {
-    color: orange;
+    color: #F4803E;
 }
 
-/*Fixed main nav hover state to be orange */
+/*Fixed main nav hover state to be #F4803E */
 #main-nav .current-menu-item > a {
-    color: orange;
+    color: #F4803E;
 }
 
 
@@ -400,7 +425,7 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 
 /*Adds gap between button and feature image */
 .themify_builder .button-12-0-0-5.module-button {
-    padding-bottom: 10%;
+    padding-bottom: 81.23px;
 }
 
 /* Fixed full width gap for feature front page */
@@ -408,7 +433,7 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
     width: 90%;
     padding-left: 5%;
     padding-bottom: 5%;
-    padding-top: 8%;
+    padding-top: 57px;
 }
 
  /*Hides the second row for mobile design */
@@ -483,6 +508,12 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 #feature-12-0-0-6 p {
   width: 60%;
   padding-left: 20%;
+
+}
+
+/*Equalized Padding at bottom of presidents section (81.23px total)*/
+#feature-12-0-0-6 .module-feature-content {
+  padding-bottom: 48px;
 
 }
 
@@ -584,6 +615,32 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
     transform: none;
 }
 
+/*Gallery Page */
+/*Styles the Date */
+.module_column_133-1-0 .image-content a{
+  color: #95989A;
+  font-size: 15px;
+}
+
+/*Styles the Title */
+.module_column_133-1-0 .image-caption{
+  color: #505050;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 23px;
+}
+
+/*Removes gap between date and title */
+.module-image .image-title {
+    margin:0;
+}
+
+/*Changes margins between photo and banner */
+.module-image.image-top .image-content {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
 
 @media screen and (max-width: 480px){
 
@@ -601,6 +658,7 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 #text-12-0-0-2 p{
   text-align: left;
   width: 100%;
+  line-height: 23px;
 }
 
 /*Hides it in mobile screen */
@@ -638,15 +696,6 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
     margin-bottom: 1em;
 }
 
-/* Showed the first paragraph of our story */
-#text-12-0-0-2 p:nth-child(2){
-    display: none;
-}
-
-#text-12-0-0-2 p:nth-child(1){
-    line-height: 20px;
-}
-
 /* Disabled the president section in responsive mode */
 #feature-12-0-0-6{
     display: none;
@@ -661,7 +710,7 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 
 /*Shifted logo to the left */
 .header-bar #site-logo a {
-    margin-left: 0%;
+    margin-left: 10%;
 }
 
 /* Made site logo only 80% */
@@ -715,12 +764,16 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
    color: white;
 }
 
-/*About Us Page */
+/*About Us Page Mobile*/
 #text-196-1-0-1{
   width: 90%;
   left: 5%;
-  padding-top: 5%;
+  padding-top: 20px;
   padding-bottom: 5%;
+}
+
+#text-196-1-0-1 p{
+  line-height: 23px;
 }
 
 /*Fixed uneven footer distribution */
@@ -735,8 +788,12 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
   top: auto;
 }
 
-/*AOTCA Officers Page Mobile */
-.col-full first tb-column  tb_5652_column module_column_0 module_column_5652-1-0 module_column
+/*Fixed Vertical Align for Banner Title */
+.themify_builder .fullcover{
+  height:140px;
+}
+
+/*Organisation Page Mobile */
 
 /*Organisation Chart of AOTCA */
 #image-5654-1-0-2{
@@ -744,40 +801,31 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
   left:0;
 }
 
-/*Fixed Vertical Align for Banner Title */
-.themify_builder .fullcover{
-  height:140px;
-}
-
-/*Organisation Page */
-
 /*Fixed Gap between image and header */
 #text-5654-1-0-1 p{
   margin-bottom: 0;
+  line-height: 23px;
+  padding-top: 20px;
 }
 
 .module-image .image-wrap {
-  padding-bottom: 1em;
+  margin-bottom: 20px;
+  margin-top: 0px;
 }
 
-/*Officers Page */
+/*Officers Page Mobile */
+
+/*Shifts whole text down by 20px */
+.module_column_5652-1-0{
+  padding-top: 20px;
+}
 
 /*Shifts Links */
 .module_column_5652-1-0 p{
   margin-left: 10%;
 }
 
-/*Shifts Titles */
-#committee_header{
-   margin-left: 10%;
-}
-
-/*Changes width of container for header and links to be 90% */
-.module_column_5652-1-0 .module-text{
-  width: 90%;
-}
-
-/*Council paragraph Title */
+/*Council paragraph Title (GENERAL COUNCIL HEADER) */
 #officer_council_header{
   margin-left: 10%;
 }
@@ -792,25 +840,59 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
   margin-left: 10%;
 }
 
-/*COMMITTEES PAGE */
+/*Past Presidents Page */
+#tablepress-1{
+  font-size: 12px;
+  line-height: 23px;
+}
+
+/*Tightens the gap between table elements */
+.tablepress td, .tablepress th {
+  padding: 0px;
+}
+
+/*Adds 20px gap between table and banner */
+.module_column_5650-1-0{
+  padding-top: 20px;
+}
+
+
+
+/*Committee Page Mobile */
+
+/*Shifts Titles */
+#committee_header{
+   margin-left: 10%;
+}
+
+#committee_title{
+   padding-bottom: 20px;
+   margin-left: 10%;
+}
+
 .module_column_5656-1-0 p{
   margin-left: 10%;
 }
 
-#committee_header{
-  margin-left: 10%;
+.module_column_5656-1-0{
+  padding-top: 20px;
 }
 
-#committee_title{
-  margin-left: 10%;
+/*Changes width of container for header and links to be 90% */
+.module_column_5652-1-0 .module-text{
+  width: 90%;
 }
 
-/*Statutes Page */
+
+
+/*Statutes Page Mobile*/
 
 /*Extends text container to 90% */
 .module_column_6061-1-0 {
   width: 90%;
   left: 5%;
+  line-height: 23px;
+  padding-top: 20px;
 }
 
 .module_column_6061-1-0 p {
@@ -819,6 +901,16 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 
 p#statutes_paragraph{
   margin-bottom: 1em;
+}
+
+/*Gallery Page Mobile */
+.module-image.image-top .image-content {
+    margin:0;
+}
+
+#page-133 .module-image .image-wrap {
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 /*Legal Page */
@@ -832,6 +924,42 @@ p#statutes_paragraph{
   width: 100%;
   margin-left: 0;
   margin-top: 10%;
+}
+
+/*Contact Us Page */
+.builder-contact-fields{
+  width: 100%;
+  left: 0;
+}
+
+.builder-contact-field.builder-contact-field-name {
+    width: 100%;
+}
+
+.builder-contact-field.builder-contact-field-email{
+    width: 100%;
+}
+
+.builder-contact-field.builder-contact-field-subject{
+    width: 100%;
+}
+/* Shifts button back to the left */
+.builder-contact-field.builder-contact-field-send {
+    margin-left: 0;
+    margin: 0 auto;
+}
+
+.control-input button{
+    padding: 10px 30px;
+    letter-spacing: 0;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Adds padding between form and banner */
+.module_column_187-1-0{
+    padding-top: 20px;
 }
 
 /* Mobile Menu Customization */

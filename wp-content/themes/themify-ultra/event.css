@@ -5,7 +5,6 @@ html,body *{
 #jumbotron{
 	width: 100%;
 	height: 27vh;
-	background-image: url(http://ec2-54-255-203-71.ap-southeast-1.compute.amazonaws.com/wp-content/uploads/2017/06/PublicationsBanner@2x-1-1024x183.png);
 	background-size: cover;
 	background-position: top top;
 }
@@ -21,12 +20,14 @@ h1{
 }
 
 #event_update{
-  background-color: #26378B;
   width: 80%;
   left: 10%;
   position: relative;
   margin-top: 2%;
   margin-bottom: 4%;
+  background-size: 100% 100%;
+  padding-top:20px;
+  padding-bottom: 50px;
 }
 
 #main_text{
@@ -82,11 +83,16 @@ h1{
 #past_meetings p{
   font-size: 17px;
   color: #777777;
-  padding-bottom: 1em;
+  padding-bottom: 0em;
+}
+
+#past_meetings #past_meetings_descriptions p:nth-child(6){
+  padding-top: 20px;
 }
 
 table{
   margin: 0 auto;
+  padding-top: 50px;
 }
 
 #border_top{
@@ -107,4 +113,121 @@ td{
 #table_location{
   margin-left: 20%;
   width: 60%;
+}
+
+/*Member Events Section */
+
+#post_container{
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 29%;
+  padding-left: 3%;
+  padding-bottom: 2%;
+  line-height: 1.5em;
+}
+
+article p{
+  text-align: left;
+}
+
+p{
+  margin: 0;
+}
+
+#member_events{
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: bold;
+  color: #26378B;
+  letter-spacing: 0;
+  text-transform: none;
+  text-align: center;
+}
+
+#location_text{
+  font-family: 'Roboto';
+  font-size: 19px;
+  font-weight: bold;
+  color: #777777;
+  margin-top: 1%;
+}
+
+#title_text{
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  display: block;
+  text-align: left;
+}
+
+#title_text:hover{
+  text-decoration: none;
+}
+
+#date_upcoming_wrapper{
+  display: flex;
+  padding-top: 30px;
+}
+
+#date_upcoming_wrapper #date_text{
+  width: 60%;
+}
+
+#date_text{
+  font-family: 'Roboto';
+  font-size: 1em;
+}
+
+#upcoming_text{
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: bold;
+  color: #F4803E;
+  margin-left: 20%;
+}
+
+#pagination_wrapper{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+
+}
+
+#pagination_wrapper a{
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+  color: #26378B;
+  border: 1px solid #D9D9D9;
+  margin: 0px 8px;
+}
+
+#pagination_wrapper a.active{
+  color: white;
+  background-color: #26378B;
+}
+
+#pagination_wrapper a:hover{
+  color: white;
+  background-color: #26378B;
+}
+
+@media screen and (max-width: 768px){
+  article{
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  #post_container{
+    justify-content: space-around;
+  }
+
+  #upcoming_text{
+    margin-left: 2%;
+  }
 }

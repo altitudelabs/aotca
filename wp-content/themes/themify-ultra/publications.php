@@ -41,7 +41,7 @@
 	<div id = "box_container">
 	<?php
 		for($i=0; $i<count($repeater['publication_settings']); $i++){?>
-		<div class = "box" id = "box_<?php echo $i?>" onclick="redirect_link("<?php $links[$i]?>")">
+		<div class = "box" id = "box_<?php echo $i?>" onclick="redirect_link("<?php echo $links[$i]?>");">
 			<img class = "publication_images" src = "<?php echo $images[$i]?>">
 			<div class = "lock_wrapper">
 				<p class = "publication_images_description"><?php echo $names[$i]?></p>

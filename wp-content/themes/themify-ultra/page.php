@@ -56,6 +56,8 @@ global $themify; ?>
 		    	 include 'officer.php';
 		    elseif (is_page(189)):
 		    	 include 'publications.php';
+				elseif (is_page(191)):
+					 include 'members.php';
 				elseif (is_page(5994)):
 					 include 'documents.php';
 				elseif (is_page(5676)):

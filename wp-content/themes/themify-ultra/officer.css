@@ -102,10 +102,15 @@ article {
 	article {
 		width: 90%;
 		margin-left: 5%;
+		margin-top: 20px;
 	}
 
 	article>p{
 		margin-bottom: 1em;
+	}
+
+	article ul{
+		line-height: 23px;
 	}
 
 }

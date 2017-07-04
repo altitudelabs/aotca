@@ -1914,7 +1914,7 @@ var acf = {
 		
 		o : {},
 		api: {
-			sensor:		false,
+			key:		"AIzaSyBcfGSS80hOyFTFc00xAvE7XnYRh6WKRUQ",
 			libraries:	'places'
 		},
 		

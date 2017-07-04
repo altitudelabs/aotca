@@ -17,3 +17,9 @@ window.onclick = function(event) {
       document.getElementById("my_modal").style.display = "none";
     }
 }
+
+//Redirect to correct url
+function redirect_link(link){
+  console.log(link);
+  window.location.href = link;
+}
