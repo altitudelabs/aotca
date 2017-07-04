@@ -11,8 +11,7 @@ README.md
 4.	Navigate to the htdocs folder inside the MAMP application folder
 a.	eg. It should be in the directory /Applications/MAMP/htdocs
 
-5.	Git clone the repository into the htdocs folder by navigating to the directory in terminal and pasting the following command.
-a.	Git clone https://github.com/altitudelabs/aotca.git
+5.	Git clone the repository into the htdocs folder by navigating to the directory in terminal and pasting the following command. \na.	Git clone https://github.com/altitudelabs/aotca.git
 
 6.	Next go to localhost:8888/phpmyadmin
 
