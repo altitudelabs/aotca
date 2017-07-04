@@ -9,9 +9,10 @@ README.md
 3.	Next click “Start Servers” (MySQL and Apache Server should both be checked on the upper right hand corner)
 
 4.	Navigate to the htdocs folder inside the MAMP application folder
-a.	eg. It should be in the directory /Applications/MAMP/htdocs
+<br /> a.	eg. It should be in the directory /Applications/MAMP/htdocs
 
-5.	Git clone the repository into the htdocs folder by navigating to the directory in terminal and pasting the following command. \na.	Git clone https://github.com/altitudelabs/aotca.git
+5.	Git clone the repository into the htdocs folder by navigating to the directory in terminal and pasting the following command.
+<br /> a.	Git clone https://github.com/altitudelabs/aotca.git
 
 6.	Next go to localhost:8888/phpmyadmin
 
@@ -28,12 +29,12 @@ a.	eg. It should be in the directory /Applications/MAMP/htdocs
 12.	Next navigate to localhost:8888/aotca (It should prompt you to a wordpress configuration setup page)
 
 13.	When prompted to enter in details, enter the following details
-a.	Database: aotca
-b.	Username: root
-c.	Password: root
+<br /> a.	Database: aotca
+<br /> b.	Username: root
+<br /> c.	Password: root
 
 14.	Click next and run the installation.
 
 15.	Login with the following details
-a.	Username: ryan.to
-b.	Password: Ryan1997
+<br /> a.	Username: ryan.to
+<br /> b.	Password: Ryan1997
