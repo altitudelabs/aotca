@@ -38,3 +38,13 @@ README.md
 15.	Login with the following details
 <br /> a.	Username: ryan.to
 <br /> b.	Password: Ryan1997
+
+
+
+***Deploy***
+
+*staging*
+```
+  cd <Project>
+  bash deploy/staging
+```
