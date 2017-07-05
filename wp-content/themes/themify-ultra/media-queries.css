@@ -7,14 +7,6 @@
 		max-width: 100%;
 	}
 
-	.pagewidth,
-	.full_width .themify_builder_row .row_inner,
-	.full_width .related-posts,
-	.full_width .post-nav,
-	.full_width .commentwrap	{
-		max-width: 96%;
-	}
-
 	.header-gallery#headerwrap.fixed-header #header {
 		padding-left: 0;
 		padding-right: 0;
@@ -69,13 +61,6 @@
 	/************************************************************************************
 	STRUCTURE
 	*************************************************************************************/
-	body .pagewidth,
-	body.full_width .themify_builder_row .row_inner,
-	body.full_width .related-posts,
-	.full_width .post-nav,
-	.full_width .commentwrap	{
-		max-width: 90%;
-	}
 	body #content {
 		width: 100%;
 		max-width: 100%;
@@ -92,7 +77,7 @@
 		clear: both;
 		padding-top: 10%;
 	}
-	
+
 }
 
 @media screen and (max-width: 680px) {
@@ -112,7 +97,7 @@
 
 	/************************************************************************************
 	HEADER
-	*************************************************************************************/	
+	*************************************************************************************/
 	/* prevent logo img extend the fixed header on mobile */
 	.fixed-header #headerwrap #site-logo img {
 		width: auto;
@@ -125,7 +110,7 @@
 	}
 
 	/* menu icon */
-	#headerwrap .header-icons { 
+	#headerwrap .header-icons {
 		right: 5%;
 	}
 
@@ -190,7 +175,7 @@
 	.loops-wrapper.list-post .post-meta, .single .post-meta {
 		font-size: .9em;
 	}
-	
+
 	/* all post date */
 	.loops-wrapper.list-post .post-date-wrap,
 	.single .post-content .post-date-wrap,
@@ -246,7 +231,7 @@
 	.fixed-header-on #headerwrap.header-gallery.header-gallery-ready .header-icons {
 		right: 5%;
 	}
-	
+
 	/* related post */
 	.related-posts .post {
 		width: auto;
@@ -259,7 +244,7 @@
 	/************************************************************************************
 	COMMENT FORM
 	*************************************************************************************/
-	#commentform input[type=text], 
+	#commentform input[type=text],
 	#contactform input[type=text] {
 		max-width: 50%;
 	}
@@ -277,7 +262,7 @@
 	.commentwrap .pagenav.top {
 		position: static;
 	}
-	
+
 	/*
 	SINGLE SPLIT LAYOUT
 	================================================ */
@@ -327,7 +312,7 @@
 	.single.single-split-layout .post-meta {
 		margin-bottom: 0.5em;
 	}
-	
+
 	/*
 	SINGLE POST LAYOUTS
 	================================================ */
@@ -386,7 +371,7 @@
 	#footerwrap {
 		padding-top: 35px;
 	}
-	
+
 	/* footer logo */
 	#footer-logo {
 		font-size: 2em;
@@ -394,7 +379,7 @@
 	.back-top a:before {
 		font-size: 2.8em;
 	}
-	
+
 	/* FOOTER LEFT COL, FOOTER RIGHT COL, FOOTER HORIZONTAL LEFT, FOOTER HORIZONTAL RIGHT
 	================================================ */
 	.footer-horizontal-left .footer-left-wrap,
@@ -410,7 +395,7 @@
 		width: 100%;
 		max-width: 100%;
 	}
-	
+
 	.footer-horizontal-left .back-top,
 	.footer-horizontal-right .back-top,
 	.footer-left-col .back-top,
@@ -441,7 +426,7 @@ HEADER WIDGETS
 	.sidebar2 #layout {
 		display: block;
 	}
-	
+
 	body:not(.sidebar2):not(.sidebar-none):not(.sidebar-left):not(.full_width) #content,
 	body:not(.sidebar2):not(.sidebar-left) #sidebar,
 	.sidebar-left #content,
@@ -761,7 +746,7 @@ body.slide-cart-visible .header-icons {
 .mobile_menu_active #searchform .icon-search:hover + #s {
 	width: 100%;
 	background-color: #fff;
-}	
+}
 .mobile_menu_active #headerwrap #searchform .icon-search:before {
 	left: 7px;
 	top: 3px;

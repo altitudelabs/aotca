@@ -8,7 +8,7 @@
 <?php
 /** Themify Default Variables
  *  @var object */
-	global $themify; 
+	global $themify;
         if(themify_theme_show_area( 'footer_widgets' )){
             $footer_position = themify_get('footer_widget_position');
             if(!$footer_position){
@@ -44,12 +44,12 @@
 						<div class="main-col first clearfix">
 							<div class="footer-left-wrap first">
 								<?php if ( themify_theme_show_area( 'footer_site_logo' ) ) : ?>
-									<div class="footer-logo-wrapper clearfix"> 
-										<?php echo themify_logo_image( 'footer_logo', 'footer-logo' ); ?>																	  
+									<div class="footer-logo-wrapper clearfix">
+										<?php echo themify_logo_image( 'footer_logo', 'footer-logo' ); ?>
 										<!-- /footer-logo -->
 									</div>
 								<?php endif; ?>
-							
+
 								<?php if ( is_active_sidebar( 'footer-social-widget' ) ) : ?>
 									<div class="social-widget">
 										<?php dynamic_sidebar( 'footer-social-widget' ); ?>
@@ -57,7 +57,7 @@
 									<!-- /.social-widget -->
 								<?php endif; ?>
 							</div>
-							
+
 							<div class="footer-right-wrap">
 
 								<?php if ( themify_theme_show_area( 'footer_menu_navigation' ) ) : ?>
