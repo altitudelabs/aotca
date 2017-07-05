@@ -3,27 +3,20 @@
 
 <link type="text/css" href="<?php echo get_template_directory_uri();?>/members.css" rel="stylesheet">
 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/members.js"></script>
-<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous">
-</script>
 
 <?php
-
-  class Member{
-
+  class Member {
     public $image;
     public $link_text;
     public $link_url;
     public $location;
-
   }
 
   $members_array = array();
 
   $member_page = get_fields(6127);
   $member_settings = $member_page['member_settings'];
+  $associate_member_settings = $member_page['associate_member_settings'];
 
   for($i=0; $i < count($member_settings); $i++){
     $member_temp = new Member;
@@ -34,35 +27,85 @@
     $members_array[] = $member_temp;
   }
 
+  for($i=0; $i < count($associate_member_settings); $i++){
+    $associate_member_temp = new Member;
+    $associate_member_temp->image = $associate_member_settings[$i]['image'];
+    $associate_member_temp->link_text = $associate_member_settings[$i]['link_text'];
+    $associate_member_temp->link_url = $associate_member_settings[$i]['link_url'];
+    $associate_member_temp->location = $associate_member_settings[$i]['location'];
+    $associate_members_array[] = $associate_member_temp;
+  }
 ?>
 
-<div id = "jumbotron" style = "background-image:url(http://ec2-54-255-203-71.ap-southeast-1.compute.amazonaws.com/wp-content/uploads/2017/06/GalleryBanner@2x-2.png)">
+<div id="jumbotron">
 	<h1>Members</h1>
 </div>
+<div id="aotca-content-container">
 
-<div id = "description_wrapper">
-  <p>
-    Our members are organisations comprised of tax consultants, lawyers and professionals, established in the
-    Asian and Oceanic region and with good standing as recognized by general consensus or domestic law in their
-    own countries or regions. Please refer to Article 5 of the Statutes for details.
-  </p>
-</div>
+  <div id="description-wrapper">
+    <p>
+      Our members are organisations comprised of tax consultants, lawyers and professionals, established in the
+      Asian and Oceanic region and with good standing as recognized by general consensus or domestic law in their
+      own countries or regions. Please refer to Article 5 of the Statutes for details.
+    </p>
+  </div>
 
-<div id = "header_wrapper">
-  <h1>Members</h1>
-</div>
+  <section class="header-wrapper">
+    <h1>Members</h1>
+  </section>
+  <div class="members-container">
+    <?php
+      function roundUpToAny($n, $x=3) {
+        return (ceil($n)%$x === 0) ? ceil($n) : round(($n+$x/2)/$x)*$x;
+      }
 
-<div id = "logo_container">
-  <?php for($i=0; $i<count($members_array); $i++){?>
-    <div class = "logo">
-      <div class = "img_wrapper">
-        <img src = "<?php echo $members_array[$i]->image?>" />
+      for($i = 0; $i < roundUpToAny(count($members_array)); $i++) {
+    ?>
+      <div class="member-container <?php if ($i >= count($members_array)) echo "empty" ?>">
+        <?php
+          if ($i < count($members_array)) {
+        ?>
+        <a class="naked member" href="<?php echo $members_array[$i]->link_url?>">
+          <div class="logo-wrapper">
+            <img src="<?php echo $members_array[$i]->image?>" />
+          </div>
+          <div class="description">
+            <div>
+                <span class="description-title"><?php echo $members_array[$i]->link_text?></span>
+            </div>
+            <span class="description-text"><?php echo $members_array[$i]->location?></span>
+          </div>
+        </a>
+        <?php }?>
       </div>
-      <div class = "img_description">
-        <a href = "<?php echo $members_array[$i]->link_url?>"><?php echo $members_array[$i]->link_text?></a>
-        <p><?php echo $members_array[$i]->location?></p>
-      </div>
-    </div>
-<?php }?>
+    <?php }?>
+  </div>
 
+  <section class="header-wrapper">
+    <h1>Associate Members</h1>
+  </section>
+
+  <div class="members-container">
+    <?php
+      for($i = 0; $i < roundUpToAny(count($associate_members_array)); $i++) {
+    ?>
+      <div class="member-container <?php if ($i >= count($associate_members_array)) echo "empty" ?>">
+        <?php
+          if ($i < count($associate_members_array)) {
+        ?>
+        <a class="naked member" href="<?php echo $associate_members_array[$i]->link_url?>">
+          <div class="logo-wrapper">
+            <img src="<?php echo $associate_members_array[$i]->image?>" />
+          </div>
+          <div class="description">
+            <div>
+                <span class="description-title"><?php echo $associate_members_array[$i]->link_text?></span>
+            </div>
+            <span class="description-text"><?php echo $associate_members_array[$i]->location?></span>
+          </div>
+        </a>
+        <?php }?>
+      </div>
+    <?php }?>
+  </div>
 </div>
