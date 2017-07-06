@@ -1,2 +1,3 @@
 wp-config.php
-wp-config/uploads/
+wp-content/uploads/
+wp-content/cache/
