@@ -218,11 +218,30 @@ html, body{
 }
 
 /* Past Presidents Page */
+
+/*Changed the Header for Past Presidents Page */
+.themify_builder .module_row_5650-0.module_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 229px;
+}
+
+#tablepress-1{
+  width: 750px;
+  margin: 0 auto;
+  margin-bottom: 163.5px;
+}
+
 /* Past Presidents & Officers Caption */
 .tablepress-table-name.tablepress-table-name-id-1{
    color: #F4803E;
    font-size: 20px;
    font-weight: bold;
+   padding-top: 83px;
+   padding-bottom: 20px;
+   width: 750px;
+   margin: 0 auto;
 }
 
 .tablepress thead th{
@@ -297,6 +316,7 @@ html, body{
    font-size: 21px;
    font-weight: bold;
    letter-spacing:0;
+   line-height: 27px;
    padding-top: 49px;
    padding-bottom: 25px;
    padding-left: 297px;
@@ -336,13 +356,13 @@ html, body{
    font-size: 17px;
    font-weight: bold;
    color: black;
-   padding-bottom: 8px;
+   padding-bottom: 0px;
 }
 /* Used in both AOTCA officers and committee page */
 #officer_link{
    color: #F4803E;
    font-size: 17px;
-   padding-bottom: 21px;
+   padding-bottom: 15px;
 }
 
 
@@ -911,16 +931,8 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 
 #committee_title{
    padding-bottom: 20px;
-   margin-left: 10%;
 }
 
-.module_column_5656-1-0 p{
-  margin-left: 10%;
-}
-
-.module_column_5656-1-0{
-  padding-top: 20px;
-}
 
 /*Statutes Page Mobile*/
 
@@ -1064,6 +1076,21 @@ body #content {
   .module_column_5656-1-0 p{
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  /*Past Presidents Page */
+  #tablepress-1{
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-collapse: separate;
+  }
+
+  /* Past Presidents & Officers Caption */
+  .tablepress-table-name.tablepress-table-name-id-1{
+     width: auto;
+     padding-left: 50px;
+     padding-right: 50px;
   }
 
 }
