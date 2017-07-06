@@ -370,7 +370,7 @@ html, body{
    text-transform: none;
    font-size: 21px;
    font-weight: bold;
-   padding-top: 45px;
+   padding-top: 35px;
    padding-bottom: 25px;
 }
 
@@ -381,6 +381,7 @@ html, body{
    font-size: 21px;
    font-weight: bold;
    color: #26378B;
+   padding-bottom: 16px;
 }
 
 #statutes_title{
@@ -391,6 +392,11 @@ html, body{
    letter-spacing: 0px;
 }
 
+#statutes_paragraph{
+  padding-bottom: 25px;
+  margin-bottom: 0px;
+}
+
 .module_column_6061-1-0 {
   width: 60%;
   position: relative;
@@ -399,6 +405,10 @@ html, body{
 
 .module_column_6061-1-0 p {
   margin-bottom: 1em;
+}
+
+.module_row_6061-1 div p:last-child{
+  padding-bottom: 38px;
 }
 
 /*Nav Bar fix */
@@ -923,10 +933,6 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 }
 
 .module_column_6061-1-0 p {
-  margin-bottom: 1em;
-}
-
-p#statutes_paragraph{
   margin-bottom: 1em;
 }
 
