@@ -58,18 +58,6 @@ html, body{
    margin-bottom: 0em;
 }
 
-
-.row_inner_wrapper {
-    margin-top: 67px;
-}
-
-.themify_builder_row.fullwidth .row_inner, .module_row.fullwidth .row_inner {
-    width: 50%;
-    position: relative;
-    left: 25%;
-    top: -95px;
-}
-
 #event_date{
    color: white;
 }
@@ -210,10 +198,23 @@ html, body{
 
 /* About AOTCA Page*/
 #text-196-1-0-1{
-   width: 60%;
-   left: 20%;
-   padding-top: 3%;
-   padding-bottom: 118px;
+   width: 785px;
+   margin: 0 auto;
+   padding-top: 79px;
+   padding-bottom: 93px;
+   padding-left: 50px;
+   padding-right: 50px;
+}
+
+#text-196-1-0-1 p{
+   padding-bottom: 25px;
+}
+
+.themify_builder .module_row_196-0.module_row {
+    height: 229px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Past Presidents Page */
@@ -233,13 +234,25 @@ html, body{
     border-bottom: 1px solid #ddd;
 }
 
+.themify_builder_row{
+  padding-right: 0px;
+}
+
 /*Organisation Page */
+
+/*Fixed Banner Title */
+.themify_builder .module_row_5654-0.module_row {
+  height: 229px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*Organisation Image */
 #image-5654-1-0-2 {
-   width: 60%;
-   left: 20%;
-   padding-top: 30px;
-   padding-bottom: 70px;
+   width: 700px;
+   margin: 0 auto;
+   padding-top: 15px;
+   padding-bottom: 50px;
 }
 
 /*Organisation Text */
@@ -249,41 +262,34 @@ html, body{
    text-align: center;
    font-size: 17px;
    margin-bottom:0;
+   padding-top: 53px;
 }
 
-/*Added padding between image and bottom */
-/*.module-image .image-wrap {
-    padding-bottom: 20px;
-}*/
+/*AOTCA Officers Page */
 
-/*Committee Header */
-#committee_title{
-   color: black;
-   font-weight: bold;
-   font-size: 21px;
-   font-family: roboto;
-   margin-bottom: 2%;
-   margin-left: 15%;
+.themify_builder .module_row_5652-0.module_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 229px;
 }
 
-#committee_header{
-   font-family: Roboto;
-   font-size: 17px;
-   font-weight: bold;
-   color: black;
-   margin: 0px;
-   margin-left: 15%;
+.module_column_5652-1-0, .module_column_5652-2-0{
+  margin: 0 auto;
 }
 
-/*Officers Page */
 .module_column_5652-1-0 p{
-  margin-left: 15%;
-  margin-bottom: 1em;
+  padding-bottom: 21px;
+  padding-left: 297px;
+  padding-right: 50px;
 }
 
-#officer_link{
-   color: #F4803E;
-   font-size: 17px;
+.module_column_5652-1-0 p:first-child{
+  padding-bottom: 8px;
+}
+
+#text-5652-1-0-1 p:first-child{
+  padding-top: 56px;
 }
 
 #officer_council_header{
@@ -291,31 +297,81 @@ html, body{
    font-size: 21px;
    font-weight: bold;
    letter-spacing:0;
-   margin-left: 15%;
+   padding-top: 49px;
+   padding-bottom: 25px;
+   padding-left: 297px;
 }
 
 #officer_council_paragraph{
-   margin-left: 15%;
-   padding-bottom: 5%;
+   padding-bottom: 128px;
+   padding-left: 297px;
 }
 
-/*COMMITEES PAGE WEB */
-.module_column_5656-1-0 p{
-  margin-left: 15%;
+/*Committees Page Web */
+.themify_builder .module_row_5656-0.module_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 229px;
 }
+
+#text-5656-1-0-1 p:first-child{
+  padding-top: 56px;
+}
+
+.module_column_5656-1-0 p{
+  padding-left: 297px;
+}
+
+/*Committee Header */
+#committee_title{
+   color: black;
+   font-weight: bold;
+   font-size: 21px;
+   padding-top: 48px;
+   padding-bottom: 28px;
+}
+
+#committee_header{
+   font-size: 17px;
+   font-weight: bold;
+   color: black;
+   padding-bottom: 8px;
+}
+/* Used in both AOTCA officers and committee page */
+#officer_link{
+   color: #F4803E;
+   font-size: 17px;
+   padding-bottom: 21px;
+}
+
 
 .module_column_5656-1-0{
-  margin-bottom: 100px;
+  padding-bottom: 125px;
 }
 
 /* Statues Page */
+/*Fixed title for banner page */
+.themify_builder .module_row_6061-0.module_row {
+  height: 229px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*82px padding top for first header */
+#text-6061-1-0-1 h1{
+  padding-top: 82px;
+}
+
 #statutes_black_header{
    font-family: 'Roboto';
    letter-spacing:0;
    text-transform: none;
    font-size: 21px;
    font-weight: bold;
-   padding-bottom: 20px;
+   padding-top: 45px;
+   padding-bottom: 25px;
 }
 
 #statutes_blue_header{
@@ -325,7 +381,6 @@ html, body{
    font-size: 21px;
    font-weight: bold;
    color: #26378B;
-   padding-top: 12px;
 }
 
 #statutes_title{
@@ -767,14 +822,17 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 /*About Us Page Mobile*/
 #text-196-1-0-1{
   width: 90%;
-  left: 5%;
-  padding-top: 20px;
-  padding-bottom: 5%;
+  margin: 0 auto;
+  padding-top: 79px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 93px;
 }
 
 #text-196-1-0-1 p{
-  line-height: 23px;
+  line-height: 27px;
 }
+
 
 /*Fixed uneven footer distribution */
 .footer-horizontal-left .footer-right-wrap {
@@ -815,30 +873,11 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 
 /*Officers Page Mobile */
 
-/*Shifts whole text down by 20px */
-.module_column_5652-1-0{
-  padding-top: 20px;
-}
-
-/*Shifts Links */
-.module_column_5652-1-0 p{
-  margin-left: 10%;
-}
-
-/*Council paragraph Title (GENERAL COUNCIL HEADER) */
-#officer_council_header{
-  margin-left: 10%;
-}
-
 /*Changes width of council paragraph to be 90% (Wrapper)*/
 .module_column_5652-2-0-2 .module-text{
   width: 90%;
 }
 
-/*Moves council paragraph over */
-#officer_council_paragraph{
-  margin-left: 10%;
-}
 
 /*Past Presidents Page */
 #tablepress-1{
@@ -860,11 +899,6 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 
 /*Committee Page Mobile */
 
-/*Shifts Titles */
-#committee_header{
-   margin-left: 10%;
-}
-
 #committee_title{
    padding-bottom: 20px;
    margin-left: 10%;
@@ -877,13 +911,6 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 .module_column_5656-1-0{
   padding-top: 20px;
 }
-
-/*Changes width of container for header and links to be 90% */
-.module_column_5652-1-0 .module-text{
-  width: 90%;
-}
-
-
 
 /*Statutes Page Mobile*/
 
@@ -1006,6 +1033,32 @@ body #content {
 #site-logo a {
    margin-left: 5%;
 }
+
+}
+
+@media screen and (max-width: 900px){
+  /*AOTCA Officer Page */
+  /*Changing the padding for AOTCA officers: position and name */
+  .module_column_5652-1-0 p {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  /*Changing the padding for AOTCA officers: Council header and council paragraph */
+  #officer_council_header{
+     padding-left: 50px;
+     padding-right: 50px;
+  }
+
+  #officer_council_paragraph{
+     padding-left: 50px;
+     padding-right: 50px;
+  }
+
+  /*AOTCA Commitee Page */
+  .module_column_5656-1-0 p{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
 }
 

@@ -59,5 +59,5 @@ RewriteRule . /aotca/index.php [L]
 *staging*
 ```
   cd <Project>
-  bash deploy/staging
+  bash deploy/staging.sh
 ```
