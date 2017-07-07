@@ -323,7 +323,7 @@ html, body{
 }
 
 #officer_council_paragraph{
-   padding-bottom: 128px;
+   padding-bottom: 75px;
    padding-left: 297px;
    line-height: 27px;
 }
@@ -353,8 +353,8 @@ html, body{
    color: black;
    font-weight: bold;
    font-size: 21px;
-   padding-top: 33px;
-   padding-bottom: 28px;
+   padding-top: 30px;
+   padding-bottom: 20px;
 }
 
 #committee_header{
@@ -505,21 +505,42 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
     left: 13%;
 }
 
+.themify_builder .text-12-0-0-2.module-text p {
+    padding-bottom: 33px;
+}
+
 /* button to have curves and text to be bold */
-.themify_builder .button-12-0-0-5.module-button a {
+.button-12-0-0-5.module-button a {
     border-radius: 5px;
     font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #F4803E;
+
 }
 
 /*Adds gap between button and feature image */
-.themify_builder .button-12-0-0-5.module-button {
+/*.themify_builder .button-12-0-0-5.module-button {
     padding-bottom: 81.23px;
+}*/
+
+#buttons-12-0-0-5{
+  text-align: center;
 }
+
+#buttons-12-0-0-5 a{
+  color: white;
+  background-color: #F4803E;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 86px;
+}
+
 
 /* Fixed full width gap for feature front page */
 .sub_row_0-0-7{
     width: 90%;
-    padding-left: 5%;
+    margin: 0 auto;
     padding-bottom: 5%;
     padding-top: 57px;
 }
@@ -595,7 +616,8 @@ li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-ite
 /*Fixed president text to not extend to full width */
 #feature-12-0-0-6 p {
   width: 60%;
-  padding-left: 20%;
+  margin: 0 auto;
+  padding-bottom: 30px;
 
 }
 
@@ -738,7 +760,7 @@ div#text-196-1-0-1{
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 40px;
-  padding-bottom: 105px;
+  padding-bottom: 50px;
 }
 
 /*Aligns title and body text to left */
@@ -781,6 +803,12 @@ div#text-196-1-0-1{
 
 .sub_row_0-0-8{
   display: block;
+}
+
+.sub_row_0-0-8 #img_wrapper::before{
+  content:'';
+  padding-bottom: 60px;
+  width: 100%;
 }
 
 /* Removed featured image gap in responsive mode */
@@ -910,26 +938,47 @@ div#text-196-1-0-1{
   padding-right: 24px;
 }
 
+#organisation_description{
+  text-align: left;
+}
+
 .module-image .image-wrap {
   margin-bottom: 20px;
   margin-top: 0px;
 }
 
-/*AOTCA Officers Page Mobile */
+/*AOTCA Officers Mobile Page */
 
 /*Changes width of council paragraph to be 90% (Wrapper)*/
 .module_column_5652-2-0-2 .module-text{
   width: 90%;
 }
 
-.module_column_5652-1-0 p{
+/*Ensures links have 24px padding left and right */
+.module_column_5652-1-0 .tb-column-inner p{
   padding-bottom: 21px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
+.module_column_5652-2-0 #officer_council_header{
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.module_column_5652-2-0 #officer_council_paragraph{
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/*Initial padding top of 40px for consistency */
 #text-5652-1-0-1 p:first-of-type{
   padding-top: 40px;
+}
+
+/*Fixed Line Height */
+#officer_council_paragraph{
+  line-height: 23px;
 }
 
 /*Past President Mobile Page */
@@ -957,6 +1006,7 @@ div#text-196-1-0-1{
 #text-5650-1-0-1 #tablepress-1{
   padding-left: 24px;
   padding-right: 24px;
+  padding-bottom: 75px;
 }
 
 /*Committee Page Mobile */
@@ -985,6 +1035,10 @@ div#text-196-1-0-1{
   padding-top: 40px;
   width: auto;
   left: auto;
+}
+
+#text-6061-1-0-2 p{
+  padding-bottom: 20px;
 }
 
 .module_column_6061-1-0 p {
@@ -1137,6 +1191,7 @@ body #content {
     padding-left: 50px;
     padding-right: 50px;
     border-collapse: separate;
+    margin:0 0;
   }
 
   /* Past Presidents & Officers Caption */
