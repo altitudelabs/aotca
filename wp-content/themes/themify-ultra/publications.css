@@ -39,12 +39,14 @@ h1{
 	padding-bottom: 50px;
 }
 
+
 .box{
 	width: 30%;
 	height: 40%;
 	border: 1px solid #C9C9C9;
 	border-radius: 5px;
 	margin-top: 27px;
+
 }
 
 .publication_images{
