@@ -13,10 +13,13 @@
   }
 
   $members_array = array();
+  $associate_members_array = array();
 
   $member_page = get_fields(6127);
   $member_settings = $member_page['member_settings'];
   $associate_member_settings = $member_page['associate_member_settings'];
+  $member_page_jumbotron = $member_page['member_page_jumbotron'];
+  $member_page_description = $member_page['member_page_description'];
 
   for($i=0; $i < count($member_settings); $i++){
     $member_temp = new Member;
@@ -37,16 +40,14 @@
   }
 ?>
 
-<div id="jumbotron">
+<div id="jumbotron" style="background-image:url(<?php echo $member_page_jumbotron?>)">
 	<h1>Members</h1>
 </div>
 <div id="aotca-content-container">
 
   <div id="description-wrapper">
     <p>
-      Our members are organisations comprised of tax consultants, lawyers and professionals, established in the
-      Asian and Oceanic region and with good standing as recognized by general consensus or domestic law in their
-      own countries or regions. Please refer to Article 5 of the Statutes for details.
+      <?php echo $member_page_description?>
     </p>
   </div>
 

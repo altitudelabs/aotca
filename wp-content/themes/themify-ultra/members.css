@@ -9,8 +9,8 @@
   align-items: center;
 	background-size: cover;
 	background-position: top top;
-  background-image: url(http://ec2-54-255-203-71.ap-southeast-1.compute.amazonaws.com/wp-content/uploads/2017/06/GalleryBanner@2x-2.png);
 }
+
 #jumbotron h1 {
   padding: 0px;
   margin: 0px;
