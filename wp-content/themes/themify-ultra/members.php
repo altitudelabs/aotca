@@ -59,12 +59,9 @@
         return (ceil($n)%$x === 0) ? ceil($n) : round(($n+$x/2)/$x)*$x;
       }
 
-      for($i = 0; $i < roundUpToAny(count($members_array)); $i++) {
+      for($i = 0; $i < count($members_array); $i++) {
     ?>
-      <div class="member-container <?php if ($i >= count($members_array)) echo "empty" ?>">
-        <?php
-          if ($i < count($members_array)) {
-        ?>
+      <div class="member-container">
         <a class="naked member" href="<?php echo $members_array[$i]->link_url?>">
           <div class="logo-wrapper">
             <img src="<?php echo $members_array[$i]->image?>" />
@@ -76,7 +73,6 @@
             <span class="description-text"><?php echo $members_array[$i]->location?></span>
           </div>
         </a>
-        <?php }?>
       </div>
     <?php }?>
   </div>
@@ -87,12 +83,9 @@
 
   <div class="members-container">
     <?php
-      for($i = 0; $i < roundUpToAny(count($associate_members_array)); $i++) {
+      for($i = 0; $i < count($associate_members_array); $i++) {
     ?>
-      <div class="member-container <?php if ($i >= count($associate_members_array)) echo "empty" ?>">
-        <?php
-          if ($i < count($associate_members_array)) {
-        ?>
+      <div class="member-container">
         <a class="naked member" href="<?php echo $associate_members_array[$i]->link_url?>">
           <div class="logo-wrapper">
             <img src="<?php echo $associate_members_array[$i]->image?>" />
@@ -104,7 +97,6 @@
             <span class="description-text"><?php echo $associate_members_array[$i]->location?></span>
           </div>
         </a>
-        <?php }?>
       </div>
     <?php }?>
   </div>
