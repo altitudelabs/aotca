@@ -60,6 +60,8 @@ global $themify; ?>
 					 include 'members.php';
 				elseif (is_page(5994)):
 					 include 'documents.php';
+				 elseif (is_page('gallery')):
+					 include 'gallery.php';
 				elseif (is_page(5676)):
 				   include 'event.php';
 			elseif ( ! is_404() && have_posts() ) : while ( have_posts() ) : the_post(); ?>
