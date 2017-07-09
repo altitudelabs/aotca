@@ -39,6 +39,19 @@ README.md
 <br /> a.	Username: ryan.to
 <br /> b.	Password: Ryan1997
 
+16. Need to replace .htaccess file in aotca folder with the following# BEGIN WordPress
+<br /><IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /aotca/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /aotca/index.php [L]
+</IfModule>
+
+# END WordPress
+
+
 
 
 ***Deploy***
@@ -46,5 +59,5 @@ README.md
 *staging*
 ```
   cd <Project>
-  bash deploy/staging
+  bash deploy/staging.sh
 ```
