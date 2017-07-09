@@ -47,20 +47,14 @@ section.header-wrapper h1 {
 .members-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.#members-container .row {
-  display: flex;
+  justify-content: flex-start;
 }
 
 .member-container {
   padding: 28px 19px;
   display: flex;
   flex-basis: 33.3%;
-  flex-grow: 1;
 }
-
 
 @media (max-width: 900px) {
   .member-container {
@@ -72,19 +66,17 @@ section.header-wrapper h1 {
   .member-container {
     flex-basis: 100%;
   }
-  .member-container.empty {
-    display: none;
-  }
 }
 
 .member {
   transition: box-shadow 0.3s ease-in-out;
-  box-shadow: 0px 2px 8px rgba(8, 9, 13, 0.38);
+  box-shadow: 0px 0.5px 5px rgba(121, 121, 121, 0.6);
   border-radius: 10px;
   width: 100%;
 }
+
 .member:hover {
-  box-shadow: 0px 7px 25px rgba(177, 177, 177, 0.8);
+  box-shadow: 0px 1px 16px rgba(119, 119, 119, 0.27);
 }
 
 .member .logo-wrapper {
