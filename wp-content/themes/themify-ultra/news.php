@@ -6,7 +6,7 @@
 
 
 
-<div id="jumbotron" style="background-image:url(https://s3-ap-southeast-1.amazonaws.com/aotca/news/Light+Grey+Box.png)">
+<div id="jumbotron" style="background-image:url(<?php echo $member_page_jumbotron?>)">
 	<h1>Members</h1>
 </div>
 <div id="aotca-content-container">

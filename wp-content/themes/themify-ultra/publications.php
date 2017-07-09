@@ -38,7 +38,7 @@
 
 <body>
 	<p id = "publication_description">You may download past presentations, technical reports, opinion statements and other documents in the links provided below.</p>
-	<div id = "box_container">
+	<!-- <div id = "box_container">
 	<?php
 		for($i=0; $i<count($repeater['publication_settings']); $i++){?>
 		<div class = "box" id = "box_<?php echo $i?>" onclick="redirect_link("<?php echo $links[$i]?>");">
@@ -50,6 +50,25 @@
 				<?php }?>
 			</div>
 		</div>
+		<?php }?>
+	</div> -->
+
+	<div class="members-container">
+		<?php
+			for($i = 0; $i < count($repeater['publication_settings']); $i++) {
+		?>
+			<div class="member-container">
+				<a class="naked member" href="<?php echo $links[$i]?>">
+					<div class="logo-wrapper">
+						<img src="<?php echo $images[$i]?>" />
+					</div>
+					<div class="description">
+						<div>
+								<span class="description-title"><?php echo $names[$i]?></span>
+						</div>
+					</div>
+				</a>
+			</div>
 		<?php }?>
 	</div>
 
