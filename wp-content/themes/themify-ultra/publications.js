@@ -1,6 +1,6 @@
 function append_member(number){
-  console.log("box_"+number);
-  var box = document.getElementById("box_"+number).onclick= function(){
+  console.log("member-container "+number);
+  var box = document.getElementById("member_"+number).onclick= function(){
     console.log("clicked");
     document.getElementById("my_modal").style.display = "block";
   }

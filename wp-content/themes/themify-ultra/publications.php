@@ -55,19 +55,20 @@
 
 	<div class="members-container">
 		<?php
-			for($i = 0; $i < count($repeater['publication_settings']); $i++) {
+			for($i = 0; $i < count($repeater['publication_settings'])-1; $i++) {
 		?>
-			<div class="member-container">
-				<a class="naked member" href="<?php echo $links[$i]?>">
+			<div class="member-container" id="member_<?php echo $i?>">
+				<div class="naked member">
 					<div class="logo-wrapper">
 						<img src="<?php echo $images[$i]?>" />
 					</div>
 					<div class="description">
-						<div>
-								<span class="description-title"><?php echo $names[$i]?></span>
-						</div>
+						<span class="description-title"><?php echo $names[$i]?></span>
+						<?php if($member_settings[$i]==1){?>
+							<img src = "<?php echo $lock_images[$i]?>" onload = "append_member(<?php echo $i ?>);">
+						<?php }?>
 					</div>
-				</a>
+				</div>
 			</div>
 		<?php }?>
 	</div>

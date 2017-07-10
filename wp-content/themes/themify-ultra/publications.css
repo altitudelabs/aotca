@@ -129,7 +129,6 @@ h1{
   padding: 22.5px 19px;
   display: flex;
   flex-basis: 33.3%;
-  flex-grow: 1;
 }
 
 .member {
@@ -145,14 +144,14 @@ h1{
   align-items: center;
 }
 
-.member .logo-wrapper::before {
+/*.member .logo-wrapper::before {
   content: '';
   padding-bottom: 60%;
   width: 100%;
-}
+}*/
 
 .member .logo-wrapper img {
-  position: absolute;
+  width: 100%;
 
 }
 
@@ -162,6 +161,7 @@ h1{
 	border-radius: 10px;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
+	display: flex;
 }
 
 .member .description-title {
