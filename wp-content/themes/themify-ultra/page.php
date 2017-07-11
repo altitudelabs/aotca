@@ -49,20 +49,21 @@ global $themify; ?>
 		     If this is the publications page (189), then apply publications file
 		     If this is the members page, apply members file-->
 		<?php
-		    $post = get_post();
+	    $post = get_post();
 			if (is_page(5587)):
-				 include 'news.php';
-		    elseif (is_page() && $post->post_parent==5652):
-		    	include 'officer.php';
-				elseif (is_page(189));
-					include 'publications.php';
-				elseif (is_page(5994)):
-					include 'documents.php';
-				elseif (is_page('gallery')):
-					include 'gallery.php';
-				elseif (is_page(5676)):
-				  include 'event.php';
-			  endif;
+				include 'news.php';
+			elseif (is_page() && $post->post_parent==5652):
+				include 'officer.php';
+			elseif (is_page('publications')):
+				include 'publications.php';
+			elseif (is_page(5994)):
+				include 'documents.php';
+			elseif (is_page('gallery')):
+				include 'gallery.php';
+			elseif (is_page(5676)):
+				include 'event.php';
+		  endif;
+
 			if ( ! is_404() && have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<div id="page-<?php the_ID(); ?>" class="type-page">
 
