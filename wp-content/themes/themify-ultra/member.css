@@ -1,0 +1,105 @@
+/*section class="info">
+  <div class="logo-container">
+    <img src="<?php echo $temp_member->image?>" />
+  </div>
+  <div class="text-info">
+    <h1 class="title"><?php echo $temp_member->title?></hi>
+    <div class="field">
+      <span class="key">Address</span>
+      <span class="value"><?php echo $temp_member->address?></span>
+    </div>
+    <div class="field">
+      <span class="key">Phone</span>
+      <span class="value"><?php echo $temp_member->phone?></span>
+    </div>
+    <div class="field">
+      <span class="key">Fax</span>
+      <span class="value"><?php echo $temp_member->fax?></span>
+    </div>
+    <div class="field">
+      <span class="key">Email</span>
+      <span class="value"><?php echo $temp_member->email?></span>
+    </div>
+    <div class="field">
+      <span class="key">Website</span>
+      <span class="value"><?php echo $temp_member->website?></span>
+    </div>
+  </div>
+</section>
+<section class="overview">
+  <h2>Overview</h2>
+  <span><?php echo $temp_member->overview?></span>
+</section>
+<section class="map">
+  <h2>Location Map</h2>
+</section>*/
+#aotca-content-container {
+  padding-bottom: 155px;
+}
+
+section {
+  padding-top: 57px;
+  color: #505050;
+}
+
+.info {
+  padding-top: 79px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 57px;
+  border-bottom: 1px solid #C9C9C9;
+}
+
+.info .logo-container {
+  background-color: #F2F2F2;
+  min-width: 200px;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .text-info {
+  padding-left: 37px;
+}
+
+.info h1.title {
+  padding-top: 28px;
+  color: #26378B;
+  font-size: 24px;
+  font-weight: bold;
+}
+.info .field {
+  font-size: 17px;
+}
+.info .field > span {
+  display: block;
+}
+.info .field .key {
+  padding-top: 33px;
+  font-weight: bold;
+}
+.info .field .value {
+  color: #777777;
+}
+
+section h2 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+section.overview > span {
+  display: block;
+  color: #777777;
+  font-size: 17px;
+}
+/*<section class="overview">
+  <h2>Overview</h2>
+  <span><?php echo $temp_member->overview?></span>
+</section>
+<section class="map">
+  <h2>Location Map</h2>
+</section>*/

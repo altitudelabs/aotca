@@ -268,7 +268,6 @@ img, textarea, input, #pagewrap, .pagewidth, #headerwrap, #header, #main-nav, #m
 /* main page width */
 .pagewidth,
 .full_width .themify_builder_row .row_inner {
-	width: 1160px;
 	max-width: 100%;
 	margin: 0 auto;
 }
@@ -5257,12 +5256,10 @@ CONTACT US PAGE MOBILE
 }
 
 @media screen and (max-width: 760px){
-
-/*Removes Gap Between Slider and Nav */
-body #content {
-   padding-top: 0%;
-}
-
+	/*Removes Gap Between Slider and Nav */
+	body #content {
+	   padding-top: 0%;
+	}
 }
 
 #jumbotron {
@@ -5273,8 +5270,8 @@ body #content {
   align-items: center;
 	background-size: cover;
 	background-position: top top;
+	background-color: #F2F2F2;
 }
-
 
 #jumbotron h1 {
   padding: 0px;
@@ -5283,3 +5280,4 @@ body #content {
 	letter-spacing: 0;
 	text-align: center;
 	color: white;
+}
