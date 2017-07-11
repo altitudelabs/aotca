@@ -4,10 +4,6 @@
 <link type="text/css" href="<?php echo get_template_directory_uri();?>/publications.css" rel="stylesheet">
 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/publications.js"></script>
 
-<div id = "jumbotron">
-	<h1>PUBLICATIONS</h1>
-</div>
-
 <?php
 
 	$repeater = get_fields(5975);

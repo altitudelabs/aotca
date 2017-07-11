@@ -22,10 +22,6 @@
   }
 ?>
 
-<div id="jumbotron">
-	<h1> <?php echo wp_title() ?></h1>
-</div>
-
 <section class="grid-container gallery-section" id="aotca-content-container">
   <?php
     function roundUpToAny($n, $x=3) {

@@ -31,10 +31,6 @@
 
 ?>
 
-<div id = "jumbotron" style = "background-image:url(<?php echo $banner_background_image?>)">
-	<h1>Events</h1>
-</div>
-
 <div id = "event_update" style = "background-image:url(<?php echo $box_background_image?>)">
   <div id = "main_text">
     <h2> <?php echo $upper_left_text?> </h2>

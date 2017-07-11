@@ -4077,6 +4077,19 @@ html, body
    text-align: center;
 }
 
+#page-12 .themify_builder .module_row_0{
+	height: auto;
+	display: block;
+}
+
+/*Jumbotron CSS for every pag e*/
+.themify_builder .module_row_0 {
+    height: 229px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /************************************************************************************
 NAV BAR CSS
 *************************************************************************************/
@@ -4538,23 +4551,11 @@ FRONT PAGE
    padding-bottom: 25px;
 }
 
-.themify_builder .module_row_196-0.module_row {
-    height: 229px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /************************************************************************************
  PAST PRESIDENT PAGE
 *************************************************************************************/
 /*Changed the Header for Past Presidents Page */
-.themify_builder .module_row_5650-0.module_row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 229px;
-}
+
 
 #tablepress-1{
   width: 750px;
