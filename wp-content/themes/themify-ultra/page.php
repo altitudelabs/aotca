@@ -50,21 +50,7 @@ global $themify; ?>
 		     If this is the members page, apply members file-->
 		<?php
 		    $post = get_post();
-			if (is_page(5587)):
-				 include 'news.php';
-		    elseif (is_page() && $post->post_parent==5652):
-		    	 include 'officer.php';
-		    elseif (is_page(189)):
-		    	 include 'publications.php';
-				elseif (is_page(191)):
-					 include 'members.php';
-				elseif (is_page(5994)):
-					 include 'documents.php';
-				 elseif (is_page('gallery')):
-					 include 'gallery.php';
-				elseif (is_page(5676)):
-				   include 'event.php';
-			elseif ( ! is_404() && have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			if ( ! is_404() && have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<div id="page-<?php the_ID(); ?>" class="type-page">
 
 			<!-- page-title -->
@@ -82,6 +68,24 @@ global $themify; ?>
 				<?php endif; ?>
 
 				<?php the_content(); ?>
+
+				<?php
+				if (is_page(5587)):
+					 include 'news.php';
+			    elseif (is_page() && $post->post_parent==5652):
+			    	 include 'officer.php';
+					elseif (is_page(191)):
+						 include 'members.php';
+					elseif (is_page(5994)):
+						 include 'documents.php';
+					 elseif (is_page('gallery')):
+						 include 'gallery.php';
+					elseif (is_page(5676)):
+					   include 'event.php';
+					elseif(is_page(189)):
+					 	 include 'publications.php';
+				 	endif;
+				?>
 
 				<?php wp_link_pages(array('before' => '<p class="post-pagination"><strong>'.__('Pages:','themify').'</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 

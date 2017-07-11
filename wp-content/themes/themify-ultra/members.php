@@ -40,9 +40,6 @@
   }
 ?>
 
-<div id="jumbotron" style="background-image:url(<?php echo $member_page_jumbotron?>)">
-	<h1>Members</h1>
-</div>
 <div id="aotca-content-container">
 
   <div id="description-wrapper">
