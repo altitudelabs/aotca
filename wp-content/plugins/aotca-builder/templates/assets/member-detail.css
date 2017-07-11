@@ -61,10 +61,3 @@ section.overview > span {
   color: #777777;
   font-size: 17px;
 }
-/*<section class="overview">
-  <h2>Overview</h2>
-  <span><?php echo $temp_member->overview?></span>
-</section>
-<section class="map">
-  <h2>Location Map</h2>
-</section>*/
