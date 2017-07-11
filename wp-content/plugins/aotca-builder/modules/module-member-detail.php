@@ -60,8 +60,8 @@ class Member_Detail_Module extends Themify_Builder_Module {
         'label' => __( 'Overview', 'member-detail' ),
         'class' => '',
       ),
-		);
-	}
+    );
+  }
 }
 
 Themify_Builder_Model::register_module( 'Member_Detail_Module' );
