@@ -10,8 +10,6 @@ wp_enqueue_style('member-page', plugin_dir_url( __FILE__ ) . '/assets/member-det
 
 $member_detail_default = array(
 	'logo' => '',
-  'image' => '',
-  'logo' => '',
   'title' => '',
   'address' => '',
   'phone' => '',
@@ -21,7 +19,7 @@ $member_detail_default = array(
   'overview' => '',
 );
 
-$fields_args = wp_parse_args( $mod_settings, $fields_default );
+$fields_args = wp_parse_args( $mod_settings, $member_detail_default );
 extract( $fields_args );
 
 $container_class = implode( ' ', apply_filters( 'themify_builder_module_classes', array(
