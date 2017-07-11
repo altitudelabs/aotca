@@ -10,6 +10,13 @@
     public $link_text;
     public $link_url;
     public $location;
+    public $address;
+    public $phone;
+    public $fax;
+    public $email;
+    public $website;
+    public $organisation_overview;
+    public $location_map;
   }
 
   $members_array = array();
@@ -27,6 +34,15 @@
     $member_temp->link_text = $member_settings[$i]['link_text'];
     $member_temp->link_url = $member_settings[$i]['link_url'];
     $member_temp->location = $member_settings[$i]['location'];
+
+    /*NEW MEMBER FIELDS */
+    $member_temp->address = $member_settings[$i]['address'];
+    $member_temp->phone = $member_settings[$i]['phone'];
+    $member_temp->fax = $member_settings[$i]['fax'];
+    $member_temp->email = $member_settings[$i]['email'];
+    $member_temp->website = $member_settings[$i]['website'];
+    $member_temp->organisation_overview = $member_settings[$i]['organisation_overview'];
+    $member_temp->location_map = $member_settings[$i]['location_map'];
     $members_array[] = $member_temp;
   }
 
@@ -36,6 +52,15 @@
     $associate_member_temp->link_text = $associate_member_settings[$i]['link_text'];
     $associate_member_temp->link_url = $associate_member_settings[$i]['link_url'];
     $associate_member_temp->location = $associate_member_settings[$i]['location'];
+
+    /*NEW ASSOCIATE MEMBER FIELDS */
+    $associate_member_temp->address = $member_settings[$i]['address'];
+    $associate_member_temp->phone = $member_settings[$i]['phone'];
+    $associate_member_temp->fax = $member_settings[$i]['fax'];
+    $associate_member_temp->email = $member_settings[$i]['email'];
+    $associate_member_temp->website = $member_settings[$i]['website'];
+    $associate_member_temp->organisation_overview = $member_settings[$i]['organisation_overview'];
+    $associate_member_temp->location_map = $member_settings[$i]['location_map'];
     $associate_members_array[] = $associate_member_temp;
   }
 ?>
