@@ -1,38 +1,3 @@
-/*section class="info">
-  <div class="logo-container">
-    <img src="<?php echo $temp_member->image?>" />
-  </div>
-  <div class="text-info">
-    <h1 class="title"><?php echo $temp_member->title?></hi>
-    <div class="field">
-      <span class="key">Address</span>
-      <span class="value"><?php echo $temp_member->address?></span>
-    </div>
-    <div class="field">
-      <span class="key">Phone</span>
-      <span class="value"><?php echo $temp_member->phone?></span>
-    </div>
-    <div class="field">
-      <span class="key">Fax</span>
-      <span class="value"><?php echo $temp_member->fax?></span>
-    </div>
-    <div class="field">
-      <span class="key">Email</span>
-      <span class="value"><?php echo $temp_member->email?></span>
-    </div>
-    <div class="field">
-      <span class="key">Website</span>
-      <span class="value"><?php echo $temp_member->website?></span>
-    </div>
-  </div>
-</section>
-<section class="overview">
-  <h2>Overview</h2>
-  <span><?php echo $temp_member->overview?></span>
-</section>
-<section class="map">
-  <h2>Location Map</h2>
-</section>*/
 #aotca-content-container {
   padding-bottom: 155px;
 }
