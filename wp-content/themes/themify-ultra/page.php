@@ -58,8 +58,6 @@ global $themify; ?>
 				include 'publications.php';
 			elseif (is_page(5994)):
 				include 'documents.php';
-			elseif (is_page('gallery')):
-				include 'gallery.php';
 			elseif (is_page(5676)):
 				include 'event.php';
 		  endif;
