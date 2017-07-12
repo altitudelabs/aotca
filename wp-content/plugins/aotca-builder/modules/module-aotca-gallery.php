@@ -1,11 +1,11 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) exit;  // Exit if accessed directly
 
-class Gallery_Module extends Themify_Builder_Module {
+class AOTCA_Gallery_Module extends Themify_Builder_Module {
 	function __construct() {
 		parent::__construct(array(
-			'name' => __( 'AOTCA Gallery', 'gallery' ),
-			'slug' => 'gallery'
+			'name' => __( 'AOTCA Gallery', 'aotca gallery' ),
+			'slug' => 'aotca-gallery'
 		));
 	}
 
@@ -18,19 +18,25 @@ class Gallery_Module extends Themify_Builder_Module {
           array(
             'id' => 'image',
             'type' => 'image',
-            'label' => __( 'Image', 'gallery' ),
+            'label' => __( 'Image', 'aotca gallery' ),
             'class' => '',
           ),
           array(
             'id' => 'date',
             'type' => 'text',
-            'label' => __( 'Date', 'gallery' ),
+            'label' => __( 'Date', 'aotca gallery' ),
             'class' => '',
           ),
           array(
             'id' => 'title',
             'type' => 'text',
-            'label' => __( 'Title', 'gallery' ),
+            'label' => __( 'Title', 'aotca gallery' ),
+            'class' => '',
+          ),
+          array(
+            'id' => 'link',
+            'type' => 'text',
+            'label' => __( 'Link', 'aotca gallery' ),
             'class' => '',
           ),
         ),
@@ -39,4 +45,4 @@ class Gallery_Module extends Themify_Builder_Module {
   }
 }
 
-Themify_Builder_Model::register_module( 'Gallery_Module' );
+Themify_Builder_Model::register_module( 'AOTCA_Gallery_Module' );
