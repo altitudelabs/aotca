@@ -9,11 +9,6 @@
 <?php get_header(); ?>
 
 <!-- if this is the news page -->
-<?php if(is_page(5587)){?>
-	<div id="jumbotron">
-	</div>
-<?php }?>
-
 <?php
 /** Themify Default Variables
  *  @var object */
@@ -44,15 +39,13 @@ global $themify; ?>
 		// PAGE
 		/////////////////////////////////////////////
 		?>
-		<!-- If this is the news page then apply a different page, in this case include "news.php"
+		<!--
 		     If this is the officers page (5652, then apply officers file
 		     If this is the publications page (189), then apply publications file
 		     If this is the members page, apply members file-->
 		<?php
 	    $post = get_post();
-			if (is_page(5587)):
-				include 'news.php';
-			elseif (is_page() && $post->post_parent==5652):
+			if (is_page() && $post->post_parent==5652):
 				include 'officer.php';
 			elseif (is_page('publications')):
 				include 'publications.php';

@@ -8,48 +8,7 @@ class Members_Module extends Themify_Builder_Module {
 			'slug' => 'members'
 		));
 	}
-	// array(
-  //   'group' => '',
-  //   'members' => array(
-  //     'logo' => '',
-  //     'title' => '',
-  //     'address' => '',
-  //     'link' => '',
-  //   )
-  // )
-	// 'options' => array(
-	// 	array(
-	// 		'id' => 'text',
-	// 		'type' => 'text',
-	// 		'label' => __('Text', 'builder-fields'),
-	// 		'class' => 'large'
-	// 	),
-	// 	array(
-	// 		'id' => 'editor',
-	// 		'type' => 'wp_editor',
-	// 		'label' => false,
-	// 		'class' => 'fullwidth',
-	// 		'rows' => 3
-	// 	),
-	// 	array(
-	// 		'id' => 'radio',
-	// 		'type' => 'radio',
-	// 		'label' => __('Radio', 'builder-fields'),
-	// 		'default' => '',
-	// 		'options' => array(
-	// 			'choice1' => __('Choice 1', 'builder-fields'),
-	// 			'choice2' => __('Choice 2', 'builder-fields')
-	// 		)
-	// 	),
-	// 	array(
-	// 		'id' => 'image',
-	// 		'type' => 'image',
-	// 		'label' => __('Image', 'builder-fields'),
-	// 		'class' => 'large',
-	// 		'help' => array(
-	// 			'text' => ''
-	// 		)
-	// 	),
+	
 	public function get_options() {
 		return array(
 			array(
