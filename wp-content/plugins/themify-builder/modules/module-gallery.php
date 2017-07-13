@@ -200,7 +200,7 @@ class TB_Gallery_Module extends Themify_Builder_Module {
 
 	public function get_default_settings() {
 		$settings = array(
-			'gallery_columns' => 4
+			'gallery_columns' => 6
 		);
 		return $settings;
 	}
