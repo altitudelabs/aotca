@@ -1,0 +1,143 @@
+.news-detail-container {
+  padding-top: 33px;
+  color: #777777;
+}
+.news-itinerary {
+  border-radius: 5px;
+  background-color: #EFEFEF;
+  padding: 35px 40px;
+  display: flex;
+  flex-direction: row;
+  color: #777777;
+  justify-content: space-between;
+}
+.news-itinerary h3 {
+  color: #222222;
+  font-size: 17px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.news-itinerary .date-time,
+.news-itinerary .location,
+.news-itinerary .itinerary {
+}
+
+.news-itinerary .date-time .start-date::after {
+  content: '–';
+}
+.news-itinerary .itinerary button {
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #F4803E;
+  text-transform: capitalize;
+  font-weight: normal;
+  padding: 17px 20px;
+}
+
+section > h2 {
+  color: #26378B;
+  font-size: 21px;
+  font-weight: bold;
+}
+.sections {
+  padding-top: 63px;
+}
+
+.sections ul {
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+
+.sections li {
+  margin: 0px;
+  color: #26378B;
+  font-size: 21px;
+  padding: 3px 0px;
+}
+.sections li a {
+  color: #F4803E;
+}
+.divider {
+  height: 1px;
+  background-color: #E5E5E5;
+}
+
+.event-detail {
+  color: #777777;
+}
+
+.conference-documents {
+  /*padding-top: 72px;*/
+}
+
+.general-council-documents {
+  /*padding-top: 52px;*/
+}
+
+.sgatar-documents {
+  /*padding-top: 45px;*/
+}
+
+.event-images {
+  /*padding-top: 45px;*/
+}
+.documents ul {
+  padding-top: 27px;
+  padding-bottom: 58px;
+}
+.documents h4 {
+  margin: 0px;
+  padding-top: 29px;
+}
+.documents li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #E5E5E5;
+  padding: 20px 0px;
+}
+
+.documents li:last-child {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.documents li .title {
+  font-size: 17px;
+  font-weight: bold;
+  color: #505050;
+  display: block;
+}
+
+.documents li button {
+  padding: 17px;
+  font-size: 14px;
+  text-align: center;
+}
+/*<div class="news-itinerary">
+  <div class="date-time">
+    <h2 class="title">
+      <?php echo $date_time_title ?>
+    </h2>
+    <div class="start-date">
+    </div>
+    <div class="end-date">
+      <?php echo $end_date . " " . $timezone ?>
+    </div>
+  </div>
+  <div class="location">
+    <h2 class="title">
+      <?php echo $location_title ?>
+    </h2>
+    <div class="address">
+      <?php echo $location ?>
+    </div>
+  </div>
+  <div class="itinerary">
+    <h2 class="title">
+      <?php echo $program_itinerary_title ?>
+    </h2>
+    <button>
+      Download Now
+    </button>
+  </div>
+</div>*/

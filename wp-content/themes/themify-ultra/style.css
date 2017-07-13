@@ -107,6 +107,14 @@ a:hover {
 a.naked {
 	text-decoration: none;
 }
+ul.naked {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+ul.naked li {
+	margin: 0px;
+}
 
 p {
 	padding: 0;
@@ -286,7 +294,7 @@ img, textarea, input, #pagewrap, .pagewidth, #headerwrap, #header, #main-nav, #m
 	padding: 0 0;
 }
 
-#aotca-content-container {
+#aotca-content-container, .aotca-viewport {
 	max-width: 1051px;
 	margin: auto;
 }
