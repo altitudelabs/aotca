@@ -4810,6 +4810,28 @@ GALLERY PAGE
     margin-bottom: 50px;
 }
 
+/************************************************************************************
+ GALLERY DETAIL PAGE
+*************************************************************************************/
+.module.module-gallery{
+	width: 1050px;
+	padding-top: 35.5px;
+	display: block;
+	/*Needed important to override themify css */
+	margin: 0 auto !important;
+}
+
+#body .gallery-columns-6 .gallery-item{
+	width: 175px;
+	margin: 0;
+}
+
+#body .gallery-columns-6 .gallery-item img{
+    width: 175px;
+		height: 175px;
+		padding: 12.5px;
+
+}
 
 @media screen and (max-width: 480px){
 /************************************************************************************
@@ -5215,6 +5237,26 @@ CONTACT US PAGE MOBILE
 
 }
 
+@media screen and (max-width: 1050px){
+
+/************************************************************************************
+ GALLERY DETAIL PAGE
+*************************************************************************************/
+.module.module-gallery{
+	width: 600px;
+}
+
+#body .gallery-columns-6 .gallery-item{
+	width: 200px;
+}
+
+#body .gallery-columns-6 .gallery-item img{
+    width: 200px;
+		height: 200px;
+}
+
+}
+
 @media screen and (max-width: 900px){
   /*About Us Page */
   #text-196-1-0-1{
@@ -5288,4 +5330,24 @@ CONTACT US PAGE MOBILE
 	letter-spacing: 0;
 	text-align: center;
 	color: white;
+}
+
+@media screen and (max-width: 600px){
+
+/************************************************************************************
+ GALLERY DETAIL PAGE
+*************************************************************************************/
+.module.module-gallery{
+	width: 350px;
+}
+
+#body .gallery-columns-6 .gallery-item{
+	width: 350px;
+}
+
+#body .gallery-columns-6 .gallery-item img{
+    width: 350px;
+		height: 350px;
+}
+
 }
