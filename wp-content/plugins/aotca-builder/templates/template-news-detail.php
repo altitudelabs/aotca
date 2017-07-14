@@ -1,14 +1,14 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /**
- * Template News Detail
+ * Template Events Detail
  *
  * Access original fields: $mod_settings
  */
 
-wp_enqueue_style('news-detail', plugin_dir_url( __FILE__ ) . '/assets/news-detail.css');
+wp_enqueue_style('events-detail', plugin_dir_url( __FILE__ ) . '/assets/events-detail.css');
 
-$news_itinerary_default = array(
+$events_itinerary_default = array(
   'start_date' => '',
   'end_date' => '',
   'timezone' => '',
@@ -16,7 +16,7 @@ $news_itinerary_default = array(
   'event_detail' => 'detail!',
 );
 
-$fields_args = wp_parse_args( $mod_settings, $news_itinerary_default );
+$fields_args = wp_parse_args( $mod_settings, $events_itinerary_default );
 
 extract( $fields_args );
 
@@ -26,6 +26,7 @@ $container_class = implode( ' ', apply_filters( 'themify_builder_module_classes'
 );
 
 function render_documents($name, $list_title = "", $render_divider = true) {
+  /*Repeater General Documents */
   $documents = get_fields(get_the_ID())[$name];
   ?>
     <div class="documents">
@@ -57,7 +58,7 @@ function render_documents($name, $list_title = "", $render_divider = true) {
           <span class="title">
             <?php echo $document['title'] ?>
           </span>
-          <form method="get" target="_blank" action="<?php echo $document[url] ?>">
+          <form method="get" target="_blank" action="<?php echo $document['file'] ?>">
              <button type="submit">
                Download Now
              </button>
@@ -76,8 +77,8 @@ function render_documents($name, $list_title = "", $render_divider = true) {
 ?>
 
 <div id="<?php echo $module_ID; ?>" class="<?php echo esc_attr( $container_class ); ?>">
-  <div class="news-detail-container aotca-viewport">
-    <section class="news-itinerary">
+  <div class="events-detail-container aotca-viewport">
+    <section class="events-itinerary">
       <div class="date-time">
         <h3 class="title">
           Date and Time
@@ -101,7 +102,7 @@ function render_documents($name, $list_title = "", $render_divider = true) {
         <h3 class="title">
           Program Itinerary
         </h3>
-        <form method="get" target="_blank" action="<?php echo get_fields(get_the_ID())[itinerary] ?>">
+        <form method="get" target="_blank" action="<?php echo get_fields(get_the_ID())['itinerary_document'] ?>">
            <button type="submit">
              Download Now
            </button>
