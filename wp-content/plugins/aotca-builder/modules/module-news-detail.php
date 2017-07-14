@@ -1,72 +1,58 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) exit;  // Exit if accessed directly
 
-class News_Detail_Module extends Themify_Builder_Module {
+class Events_Detail_Module extends Themify_Builder_Module {
 	function __construct() {
 		parent::__construct(array(
-			'name' => __( 'News Detail', 'news' ),
-			'slug' => 'news-detail'
+			'name' => __( 'Events Detail', 'events' ),
+			'slug' => 'events-detail'
 		));
 	}
 
 	public function get_options() {
 		return array(
-      // array(
-      //   'id' => 'date_time_title',
-      //   'type' => 'text',
-      //   'label' => __( 'Date and Time Section Title', 'news' ),
-      //   'class' => '',
-      // ),
+
       array(
         'id' => 'start_date',
         'type' => 'text',
-        'label' => __( 'Start Date', 'news' ),
+        'label' => __( 'Start Date', 'events' ),
         'class' => '',
       ),
+			
       array(
         'id' => 'end_date',
         'type' => 'text',
-        'label' => __( 'End Date', 'news' ),
+        'label' => __( 'End Date', 'events' ),
         'class' => '',
       ),
       array(
         'id' => 'timezone',
         'type' => 'text',
-        'label' => __( 'Timezone', 'news' ),
+        'label' => __( 'Timezone', 'events' ),
         'class' => '',
       ),
-      // array(
-      //   'id' => 'location_title',
-      //   'type' => 'text',
-      //   'label' => __( 'Location Section Title', 'news' ),
-      //   'class' => '',
-      // ),
+
       array(
         'id' => 'location',
         'type' => 'text',
-        'label' => __( 'Location', 'news' ),
+        'label' => __( 'Location', 'events' ),
         'class' => '',
       ),
-      // array(
-      //   'id' => 'program_itinerary_title',
-      //   'type' => 'text',
-      //   'label' => __( 'Program Itinerary Section Title', 'news' ),
-      //   'class' => '',
-      // ),
+
       array(
         'id' => 'event_detail',
         'type' => 'text',
-        'label' => __( 'Event Detail', 'news' ),
+        'label' => __( 'Event Detail', 'events' ),
         'class' => '',
       ),
 			array(
 				'id' => 'general_info_detail',
 				'type' => 'text',
-				'label' => __( 'General Info', 'news' ),
+				'label' => __( 'General Info', 'events' ),
 				'class' => '',
 			),
     );
   }
 }
 
-Themify_Builder_Model::register_module( 'News_Detail_Module' );
+Themify_Builder_Model::register_module( 'Events_Detail_Module' );

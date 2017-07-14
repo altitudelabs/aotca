@@ -1,8 +1,8 @@
-.news-detail-container {
+.events-detail-container {
   padding-top: 33px;
   color: #777777;
 }
-.news-itinerary {
+.events-itinerary {
   border-radius: 5px;
   background-color: #EFEFEF;
   padding: 35px 40px;
@@ -11,21 +11,21 @@
   color: #777777;
   justify-content: space-between;
 }
-.news-itinerary h3 {
+.events-itinerary h3 {
   color: #222222;
   font-size: 17px;
   font-weight: bold;
   padding-bottom: 5px;
 }
-.news-itinerary .date-time,
-.news-itinerary .location,
-.news-itinerary .itinerary {
+.events-itinerary .date-time,
+.events-itinerary .location,
+.events-itinerary .itinerary {
 }
 
-.news-itinerary .date-time .start-date::after {
+.events-itinerary .date-time .start-date::after {
   content: '–';
 }
-.news-itinerary .itinerary button {
+.events-itinerary .itinerary button {
   font-size: 14px;
   color: #FFFFFF;
   background-color: #F4803E;
@@ -113,7 +113,7 @@ section > h2 {
   font-size: 14px;
   text-align: center;
 }
-/*<div class="news-itinerary">
+/*<div class="events-itinerary">
   <div class="date-time">
     <h2 class="title">
       <?php echo $date_time_title ?>
