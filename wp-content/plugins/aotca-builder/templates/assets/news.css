@@ -30,32 +30,14 @@
   transition: box-shadow 0.3s ease-in-out;
   box-shadow: 0px 0.5px 5px rgba(121, 121, 121, 0.6);
   width: 100%;
+  border-radius: 5px;
+  border-left: 8px solid #26378B;
+  padding: 29px;
+  padding-left: 20px;
 }
 
 .news:hover {
   box-shadow: 0px 1px 16px rgba(119, 119, 119, 0.27);
-}
-
-.news .image-wrapper {
-  position: relative;
-  padding: 10px;
-  border-bottom: 1px solid #E6E6E6;
-}
-
-.news .image-wrapper::before {
-  display: table;
-  content: '';
-  padding-bottom: 50%;
-  width: 100%;
-}
-
-.news .image-wrapper img {
-  position: absolute;
-  max-width: calc(100% - 20px);
-  max-height: calc(100% - 20px);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .news .info {
