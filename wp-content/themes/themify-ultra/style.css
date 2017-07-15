@@ -4075,6 +4075,24 @@ html, body
    overflow-x: hidden;
 }
 
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#pagewrap {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+#body {
+	flex-grow: 1;
+}
 /*Jumbotron Title CSS for every page */
 #banner_title{
    color: white;
@@ -4515,6 +4533,19 @@ FRONT PAGE
 .fa.fa-cog.fa-spin{
    display: none;
 }
+/************************************************************************************
+ TERMS OF SERVICE PAGE
+*************************************************************************************/
+#text-5678-1-0-1{
+   width: 75%;
+   left: 12.5%;
+}
+#text-5678-1-0-1 p{
+   font-family: Roboto;
+   margin: 1.5em;
+   font-size: 17px;
+}
+
 
 /************************************************************************************
  TERMS OF SERVICE PAGE
