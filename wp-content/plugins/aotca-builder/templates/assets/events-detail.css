@@ -113,31 +113,76 @@ section > h2 {
   font-size: 14px;
   text-align: center;
 }
-/*<div class="events-itinerary">
-  <div class="date-time">
-    <h2 class="title">
-      <?php echo $date_time_title ?>
-    </h2>
-    <div class="start-date">
-    </div>
-    <div class="end-date">
-      <?php echo $end_date . " " . $timezone ?>
-    </div>
-  </div>
-  <div class="location">
-    <h2 class="title">
-      <?php echo $location_title ?>
-    </h2>
-    <div class="address">
-      <?php echo $location ?>
-    </div>
-  </div>
-  <div class="itinerary">
-    <h2 class="title">
-      <?php echo $program_itinerary_title ?>
-    </h2>
-    <button>
-      Download Now
-    </button>
-  </div>
-</div>*/
+
+.photo-slider {
+  padding-top: 20px;
+}
+
+.bx-wrapper {
+  position: relative;
+  margin-bottom: 0px;
+  box-shadow: none;
+  border: 0px;
+}
+.bx-wrapper::after {
+  content: '';
+  padding-bottom: 50%;
+  width: 100%;
+  display: block;
+}
+.bx-viewport {
+  position: absolute !important;
+  height: auto !important;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: #F2F2F2;
+}
+.bx-viewport ul {
+  height: 100%;
+}
+.bx-viewport li {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+#bx-pager {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  overflow-x: auto;
+}
+#bx-pager::-webkit-scrollbar {
+  display: none;
+}
+#bx-pager > a:not(:last-child) {
+  padding-right: 10px;
+}
+#bx-pager .thumbnail {
+  border: 1px solid transparent;
+  width: 100px;
+  height: 100px;
+  background-position: center center;
+  background-size: cover;
+}
+@media (max-width: 700px) {
+  #bx-pager .thumbnail {
+    width: 75px;
+    height: 75px;
+  }
+}
+@media (max-width: 500px) {
+  #bx-pager .thumbnail {
+    width: 50px;
+    height: 50px;
+  }
+}
+#bx-pager a.active .thumbnail {
+  border: 1px solid red;
+}

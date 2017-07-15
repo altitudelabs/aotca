@@ -18,7 +18,7 @@ class Events_Detail_Module extends Themify_Builder_Module {
         'label' => __( 'Start Date', 'events' ),
         'class' => '',
       ),
-			
+
       array(
         'id' => 'end_date',
         'type' => 'text',

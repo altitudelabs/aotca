@@ -6,6 +6,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * Access original fields: $mod_settings
  */
 
+include(get_template_directory_uri() . '/lib/bxslider.php');
+wp_enqueue_script('bxslider', get_template_directory_uri() . '/lib/jquery.bxslider/jquery.bxslider.min.js');
+wp_enqueue_style('bxslider', get_template_directory_uri() . '/lib/jquery.bxslider/jquery.bxslider.min.css');
+
 wp_enqueue_style('events-detail', plugin_dir_url( __FILE__ ) . '/assets/events-detail.css');
 
 $events_itinerary_default = array(
@@ -161,7 +165,39 @@ function render_documents($name, $list_title = "", $render_divider = true) {
       </section>
       <section class="event-images">
         <h2>Event Photographs</h2>
+        <div class="photo-slider">
+          <ul class="bxslider">
+            <?php
+              $images = get_fields(get_the_ID())['images'];
+              for ($i = 0; $i < count($images); $i++) {
+            ?>
+              <li><img src=<?php echo $images[$i]['url'] ?> /></li>
+            <?php } ?>
+          </ul>
+
+          <div id="bx-pager">
+            <?php
+              for ($i = 0; $i < count($images); $i++) {
+            ?>
+              <a data-slide-index="<?php echo $i ?>" href="" >
+                <div
+                  class="thumbnail"
+                  style="background-image: url(<?php echo $images[$i]['url'] ?>)"
+                ></div>
+              </a>
+            <?php } ?>
+          </div>
+        </div>
       </section>
+      <script>
+      var $ = window.jQuery;
+      $(document).ready(function() {
+        $('.bxslider').bxSlider({
+          pagerCustom: '#bx-pager',
+          controls: false
+        });
+      });
+      </script>
       <!-- <form method="post">
         <label>Enter Application ID:</label>
         <input type="text" name="application_id">
