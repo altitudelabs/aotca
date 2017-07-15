@@ -1,0 +1,21 @@
+.news-detail-container {
+  padding-top: 74px;
+  font-size: 17px;
+  color: #777777;
+}
+.news-detail-container .date {
+
+}
+.news-detail-container .title {
+  padding-top: 5px;
+  color: #26378B;
+  font-size: 30px;
+  font-weight: bold;
+}
+.news-detail-container .description {
+  padding-top: 20px;
+}
+
+.news-detail-container .description a {
+  color: #F4803E;
+}
