@@ -62,7 +62,7 @@ function render_documents($name, $list_title = "", $render_divider = true) {
           <span class="title">
             <?php echo $document['title'] ?>
           </span>
-          <form method="get" target="_blank" action="<?php echo $document['file'] ?>">
+          <form method="get" target="_blank" action="<?php echo $document['file'] ?>" class="download">
              <button type="submit">
                Download Now
              </button>
@@ -168,7 +168,7 @@ function render_documents($name, $list_title = "", $render_divider = true) {
         <div class="photo-slider">
           <ul class="bxslider">
             <?php
-              $images = get_fields(get_the_ID())['images'];
+              $images = get_fields(get_the_ID())['event_photographs'];
               for ($i = 0; $i < count($images); $i++) {
             ?>
               <li><img src=<?php echo $images[$i]['url'] ?> /></li>

@@ -1,6 +1,7 @@
 .events-detail-container {
   padding-top: 33px;
   color: #777777;
+  padding-bottom: 147px;
 }
 .events-itinerary {
   border-radius: 5px;
@@ -108,7 +109,12 @@ section > h2 {
   display: block;
 }
 
+.documents li form {
+  flex-shrink: 0;
+}
+
 .documents li button {
+  background-color: #F4803E;
   padding: 17px;
   font-size: 14px;
   text-align: center;
@@ -130,6 +136,12 @@ section > h2 {
   width: 100%;
   display: block;
 }
+
+.bx-wrapper img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .bx-viewport {
   position: absolute !important;
   height: auto !important;
@@ -151,16 +163,16 @@ section > h2 {
 }
 
 #bx-pager {
-  -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none;
+  /*-ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;*/
   display: flex;
   flex-direction: row;
   padding-top: 10px;
   overflow-x: auto;
 }
-#bx-pager::-webkit-scrollbar {
+/*#bx-pager::-webkit-scrollbar {
   display: none;
-}
+}*/
 #bx-pager > a:not(:last-child) {
   padding-right: 10px;
 }
