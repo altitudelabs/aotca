@@ -8,7 +8,7 @@ class Members_Module extends Themify_Builder_Module {
 			'slug' => 'members'
 		));
 	}
-	
+
 	public function get_options() {
 		return array(
 			array(

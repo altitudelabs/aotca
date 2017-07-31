@@ -1,0 +1,30 @@
+.event-jumbotron-container {
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+
+}
+.event-jumbotron-container >p {
+    margin: 20px 0px;
+}
+#location {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#date {
+    font-size: 0.85em;
+    background-color: #26378B;
+    padding: 8px 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#host {
+    font-size: 1.1em;
+}

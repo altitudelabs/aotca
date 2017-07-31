@@ -15,12 +15,12 @@ class News_Module extends Themify_Builder_Module {
 				'id' => 'news_list',
 				'type' => 'builder',
 				'options' => array(
-          array(
-            'id' => 'date',
-            'type' => 'text',
-            'label' => __( 'Date', 'news' ),
-            'class' => '',
-          ),
+		          array(
+		            'id' => 'date',
+		            'type' => 'text',
+		            'label' => __( 'Date', 'news' ),
+		            'class' => '',
+		          ),
 					array(
 						'id' => 'title',
 						'type' => 'text',
