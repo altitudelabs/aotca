@@ -8,13 +8,19 @@ class Members_Module extends Themify_Builder_Module {
 			'slug' => 'members'
 		));
 	}
-	
+
 	public function get_options() {
 		return array(
 			array(
 				'id' => 'members_section_title',
 				'type' => 'text',
 				'label' => __( 'Members Section Title', 'members' ),
+				'class' => '',
+			),
+			array(
+				'id' => 'members_section_desc',
+				'type' => 'textarea',
+				'label' => __( 'Members Section Description', 'members' ),
 				'class' => '',
 			),
 			array(

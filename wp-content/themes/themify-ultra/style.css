@@ -4560,40 +4560,10 @@ FRONT PAGE
    font-size: 17px;
 }
 
-
-/************************************************************************************
- ABOUT AOTCA PAGE
-*************************************************************************************/
-#text-196-1-0-1{
-   width: 785px;
-   margin: 0 auto;
-   padding-top: 79px;
-   padding-bottom: 93px;
-   padding-left: 50px;
-   padding-right: 50px;
-}
-
-#text-196-1-0-1 p{
-   padding-bottom: 25px;
-}
-
-.themify_builder .module_row_196-0.module_row {
-    height: 229px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /************************************************************************************
  PAST PRESIDENT PAGE
 *************************************************************************************/
 /*Changed the Header for Past Presidents Page */
-.themify_builder .module_row_5650-0.module_row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 229px;
-}
 
 #tablepress-1{
   width: 750px;
@@ -4628,14 +4598,6 @@ FRONT PAGE
 /************************************************************************************
  ORGANISATION PAGE
 *************************************************************************************/
-
-/*Fixed Banner Title */
-.themify_builder .module_row_5654-0.module_row {
-  height: 229px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 /*Organisation Image */
 #image-5654-1-0-2 {
    width: 700px;
@@ -4657,58 +4619,14 @@ FRONT PAGE
 /************************************************************************************
  AOTCA OFFICER PAGE
 *************************************************************************************/
-.themify_builder .module_row_5652-0.module_row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 229px;
-}
 
-.module_column_5652-1-0, .module_column_5652-2-0{
-  margin: 0 auto;
-}
 
-.module_column_5652-1-0 p{
-  padding-bottom: 21px;
-  padding-left: 297px;
-  padding-right: 50px;
-}
-
-.module_column_5652-1-0 p:first-child{
-  padding-bottom: 8px;
-}
-
-#text-5652-1-0-1 p:first-child{
-  padding-top: 56px;
-}
-
-#officer_council_header{
-   font-family: 'Roboto';
-   font-size: 21px;
-   font-weight: bold;
-   letter-spacing:0;
-   line-height: 27px;
-   padding-top: 49px;
-   padding-bottom: 25px;
-   padding-left: 297px;
-}
-
-#officer_council_paragraph{
-   padding-bottom: 75px;
-   padding-left: 297px;
-   line-height: 27px;
-}
 
 /************************************************************************************
  COMMITTEE PAGE
 *************************************************************************************/
 
-.themify_builder .module_row_5656-0.module_row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 229px;
-}
+
 
 #text-5656-1-0-1 p:first-child{
   padding-top: 56px;
@@ -4753,19 +4671,6 @@ FRONT PAGE
  STATUTES PAGE
 *************************************************************************************/
 
-/*Fixed title for banner page */
-.themify_builder .module_row_6061-0.module_row {
-  height: 229px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*82px padding top for first header */
-#text-6061-1-0-1 h1{
-  padding-top: 82px;
-}
-
 #statutes_black_header{
    font-family: 'Roboto';
    letter-spacing:0;
@@ -4786,13 +4691,6 @@ FRONT PAGE
    padding-bottom: 16px;
 }
 
-#statutes_title{
-   color: white;
-   font-family: roboto;
-   font-weight: bold;
-   font-size: 2em;
-   letter-spacing: 0px;
-}
 
 #statutes_paragraph{
   padding-bottom: 25px;

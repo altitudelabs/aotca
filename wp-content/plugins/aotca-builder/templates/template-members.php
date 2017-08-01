@@ -10,6 +10,7 @@ wp_enqueue_style('member-page', plugin_dir_url( __FILE__ ) . '/assets/members.cs
 
 $members_default = array(
   'members_section_title' => 'Members',
+  'members_section_desc' => '',
   'members_list' => array(
     array(
       'logo' => '',
@@ -42,6 +43,7 @@ $container_class = implode( ' ', apply_filters( 'themify_builder_module_classes'
 <div id="<?php echo $module_ID; ?>" class="<?php echo esc_attr( $container_class ); ?>">
   <div id="aotca-content-container">
     <div class="header-wrapper">
+        <p><?php echo $members_section_desc ?></p>
       <h1><?php echo $members_section_title ?></h1>
     </div>
     <section class="members-container">
