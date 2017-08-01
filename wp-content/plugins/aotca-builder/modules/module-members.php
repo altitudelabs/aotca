@@ -18,6 +18,12 @@ class Members_Module extends Themify_Builder_Module {
 				'class' => '',
 			),
 			array(
+				'id' => 'members_section_desc',
+				'type' => 'textarea',
+				'label' => __( 'Members Section Description', 'members' ),
+				'class' => '',
+			),
+			array(
 				'id' => 'members_list',
 				'type' => 'builder',
 				'options' => array(
