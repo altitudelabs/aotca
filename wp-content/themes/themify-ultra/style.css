@@ -95,7 +95,7 @@ body {
 a {
 	text-decoration: none;
 	outline: none;
-	color: #ed1e24;
+	color: #F4803E;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
@@ -160,44 +160,33 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.4em;
 	margin: 0 0 0em;
 	word-wrap: normal;
-	font-weight: normal;
+	font-weight: bold;
 }
 h1 {
-	font-size: 3.2em;
-	letter-spacing: .1em;
-	text-transform: uppercase;
-	font-weight: 300;
-	color: #000;
+	font-size: 1.6em;
+	color: #28367c;
 }
 h2 {
-	font-size: 2.9em;
-	letter-spacing: -.035em;
-	margin: 0 0 0em;
-	font-weight: 300;
-	color: #000;
+	font-size: 1.4em;;
+	color: #28367c;
 }
 h3 {
-	font-size: 1.6em;
-	margin: 0 0 .5em;
-	line-height: 1.6em;
-	letter-spacing: -.01em;
-	font-weight: 300;
+	font-size: 1.2em;
+	color: #28367c;
+	margin: 0.5em 0em;
 }
 h4 {
-	font-size: 1.3em;
-	letter-spacing: .1em;
-	line-height: 1.6em;
-	margin: .7em 0 .7em;
-	text-transform: uppercase;
-	font-weight: 600;
+	font-size: 1.2em;
 	color: #000;
+	margin: 1em 0em;
 }
 h5 {
-	font-size: 1.2em;
-	line-height: 1.7em;
+	font-size: 1em;
+	color: #28367c;
 }
 h6 {
-	font-size: 1.1em;
+	font-size: 1em;
+	color: #000;
 }
 
 /* FORM
@@ -1577,6 +1566,89 @@ HEADER BACKGROUND MODE
 	padding: 0;
 	font-size: 2.8em;
 	line-height: 110%;
+}
+
+.module_row:last-child {
+	padding-bottom: 25px;
+}
+.module_row_1 {
+	padding-top: 50px;
+}
+
+.module-text {
+	width: 785px;
+	margin: 0 auto;
+	padding-left: 50px;
+    padding-right: 50px;
+}
+
+.module-text p{
+	margin-bottom: 20px;
+}
+
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	text-align: center;
+}
+
+/* Modal Content/Box */
+.modal .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+	display: block;
+	color: #000;
+	font-weight: bold;
+	display: block;
+}
+.modal-content {
+	padding: 100px 10px;
+}
+
+.modal-content input {
+	display: block;
+	margin: 10px auto;
+}
+.modal-content button {
+	background-color: #28367C;
+	text-transform: none;
+}
+
+/* The Close Button */
+.modal #close {
+    color: #000;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal #close:hover,
+.modal #close:focus {
+    color: #888;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-msg {
+	color: #ff0000;
+	font-weight: normal;
+}
+
+.modal a {
+	color: #777;
+	font-weight: normal;
 }
 
 /*
@@ -4465,7 +4537,7 @@ FRONT PAGE
  LEGAL PAGE
 *************************************************************************************/
 
-#legal_title{
+/*#legal_title{
    color: black;
    font-family: roboto;
    font-weight: bold;
@@ -4486,7 +4558,7 @@ FRONT PAGE
    color: black;
    font-size: 21px;
    margin-top: 5%;
-}
+}*/
 
 /************************************************************************************
  CONTACT PAGE
@@ -4576,8 +4648,10 @@ FRONT PAGE
    color: #F4803E;
    font-size: 20px;
    font-weight: bold;
-   padding-top: 83px;
+   padding-top: 23px;
    padding-bottom: 20px;
+   padding-left: 8px;
+   font-weight: normal;
    width: 750px;
    margin: 0 auto;
 }
@@ -4591,30 +4665,30 @@ FRONT PAGE
     border-bottom: 1px solid #ddd;
 }
 
-.themify_builder_row{
+/*.themify_builder_row{
   padding-right: 0px;
-}
+}*/
 
 /************************************************************************************
  ORGANISATION PAGE
 *************************************************************************************/
 /*Organisation Image */
-#image-5654-1-0-2 {
+/*#image-5654-1-0-2 {
    width: 700px;
    margin: 0 auto;
    padding-top: 15px;
    padding-bottom: 50px;
-}
+}*/
 
 /*Organisation Text */
-#organisation_description{
+/*#organisation_description{
    color: #26378B;
    font-weight: bold;
    text-align: center;
    font-size: 17px;
    margin-bottom:0;
    padding-top: 53px;
-}
+}*/
 
 /************************************************************************************
  AOTCA OFFICER PAGE
@@ -4628,7 +4702,7 @@ FRONT PAGE
 
 
 
-#text-5656-1-0-1 p:first-child{
+/*#text-5656-1-0-1 p:first-child{
   padding-top: 56px;
 }
 
@@ -4641,27 +4715,27 @@ FRONT PAGE
 }
 
 /*Committee Header */
-#committee_title{
+/*#committee_title{
    color: black;
    font-weight: bold;
    font-size: 21px;
    padding-top: 30px;
    padding-bottom: 20px;
-}
+}*/
 
-#committee_header{
+/*#committee_header{
    font-size: 17px;
    font-weight: bold;
    color: black;
    padding-bottom: 0px;
-}
+}*/
 
 /* Used in both AOTCA officers and committee page */
-#officer_link{
+/*#officer_link{
    color: #F4803E;
    font-size: 17px;
    padding-bottom: 15px;
-}
+}*/
 
 .module_column_5656-1-0{
   padding-bottom: 125px;
@@ -4671,7 +4745,7 @@ FRONT PAGE
  STATUTES PAGE
 *************************************************************************************/
 
-#statutes_black_header{
+/*#statutes_black_header{
    font-family: 'Roboto';
    letter-spacing:0;
    text-transform: none;
@@ -4702,12 +4776,12 @@ FRONT PAGE
   position: relative;
   left: 20%;
   line-height: 27px;
-}
+}*/
 
 /*Default of 25px after every paragraph element */
-.module_column_6061-1-0 p {
+/*.module_column_6061-1-0 p {
   margin-bottom: 25px;
-}
+}*/
 
 
 /************************************************************************************

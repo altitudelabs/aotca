@@ -2723,7 +2723,7 @@ SLIDER MODULE
 .module-slider .carousel-pager a.selected:before {
 	content: '\f111';
 	font-size: 1.3em;
-	opacity: 1;	
+	opacity: 1;
 }
 
 /************************************************************************************
@@ -3993,11 +3993,11 @@ BACKGROUND IMAGE MODE
         height: 100%;
         width: 100%;
         position: absolute;
-        top: 0; 
+        top: 0;
         left: 0;
         opacity: 0;
         z-index: -100;
-        content: '';    
+        content: '';
         display: block;
         -moz-transition: opacity .5s ease-in-out;
         -webkit-transition: opacity .5s ease-in-out;
@@ -4007,7 +4007,7 @@ BACKGROUND IMAGE MODE
 .themify_builder_row:hover>.builder_row_cover:before,
 .module_column:hover>.builder_row_cover:before,
 .sub_column:hover>.builder_row_cover:before{
-        opacity: 1; 
+        opacity: 1;
 }
 .row_inner_wrapper {
 	position: relative; /* needed to make sure modules are displayed over the cover */
