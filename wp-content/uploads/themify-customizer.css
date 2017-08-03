@@ -1,24 +1,8 @@
 /* Themify Customize Styling */
-h5 {	
-	font-family:Roboto;	font-weight:bold;
-	font-size:17px;
-
-	color: #28367c; 
-}
 #site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo img {		width: 350px;
 	height: 40px; 
 }
 #site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {		width: 350px; 
-}
-#site-logo {		position:relative;
-
-	bottom: 4px;
-	left: 20%; 
-}
-#main-nav {		position:relative;
-
-	top: 10px;
-	right: 5%; 
 }
 #main-nav a {	
 	font-family:Roboto;	font-weight:500;
@@ -30,21 +14,12 @@ h5 {
 #main-nav a:hover, #main-nav > li > a:hover {	
 	color: #f4803e; 
 }
-#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {	
-	background-color: #26378b; 
-}
-#main-nav li:not(.themify-widget-menu):not(.has-mega-column):not(.has-mega-sub-menu) > ul {	
-	margin-right: -165%; 
-}
 #footerwrap {	
 	background-color: #28367c;
 	padding-top: 30px;
 	padding-bottom: 30px; 
 }
 @media screen and (max-width: 1024px) { /* Themify Customize Styling */
-h5 {	
-	color: #28367c; 
-}
 #site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo img {		width: 350px;
 	height: 40px; 
 }
@@ -55,17 +30,11 @@ h5 {
 }
 #main-nav a:hover, #main-nav > li > a:hover {	
 	color: #ed3434; 
-}
-#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {	
-	background-color: #ffffff; 
 }
 #footerwrap {	
 	background-color: #28367c; 
 }
  }@media screen and (max-width: 768px) { /* Themify Customize Styling */
-h5 {	
-	color: #28367c; 
-}
 #site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo img {		width: 350px;
 	height: 40px; 
 }
@@ -76,17 +45,11 @@ h5 {
 }
 #main-nav a:hover, #main-nav > li > a:hover {	
 	color: #ed3434; 
-}
-#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {	
-	background-color: #ffffff; 
 }
 #footerwrap {	
 	background-color: #28367c; 
 }
  }@media screen and (max-width: 480px) { /* Themify Customize Styling */
-h5 {	
-	color: #28367c; 
-}
 #site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo img {		width: 350px;
 	height: 40px; 
 }
@@ -97,9 +60,6 @@ h5 {
 }
 #main-nav a:hover, #main-nav > li > a:hover {	
 	color: #ed3434; 
-}
-#main-nav li:not(.themify-widget-menu) > ul, #main-nav .has-mega-sub-menu .mega-sub-menu, #main-nav .has-mega-column > .sub-menu {	
-	background-color: #ffffff; 
 }
 #footerwrap {	
 	background-color: #28367c; 
