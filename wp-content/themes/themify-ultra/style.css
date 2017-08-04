@@ -4717,8 +4717,22 @@ FRONT PAGE
    padding-bottom: 15px;
 }*/
 
-.module_column_5656-1-0{
-  padding-bottom: 125px;
+.themify_builder_content-5656 .module_row:nth-child(3) {
+	display: none;
+}
+
+.themify_builder_content-5656 .module_row:nth-child(3) h4{
+	font-weight: normal;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.themify_builder_content-5656 .module_row:nth-child(3) a{
+	color: black;
+}
+
+.themify_builder_content-5656 .module_row:nth-child(3) p{
+	padding-bottom: 125px;
 }
 
 /************************************************************************************
@@ -4962,7 +4976,7 @@ MOBILE FOOTER
     /*left: 5%;*/
 }
 
-.themify_builder_content-12 .module-text h1{
+.themify_builder_content-12 div.module-text h1{
   line-height: 27px;
   text-align: left;
 }
@@ -5073,6 +5087,7 @@ ORGANISATION PAGE MOBILE (POST ID: 5654)
   width: 90%;
 }
 
+
 .module_column_5652-2-0 h6{
   padding-left: 50px;
   padding-right: 50px;
@@ -5126,6 +5141,15 @@ COMMITTEES PAGE MOBILE (POST ID: 5654)
 }
 .themify_builder_content-5656 .module-text h4{
    padding-bottom: 20px;
+}
+
+.themify_builder_content-5656 .module_row:nth-child(2) {
+	display: none;
+}
+
+.themify_builder_content-5656 .module_row:nth-child(3) {
+	display: block;
+	padding-top: 50px;
 }
 
 /************************************************************************************
@@ -5287,7 +5311,6 @@ div.module-text {
     padding-left: 50px;
     padding-right: 50px;
   }
-  .themify_builder_content-5652 .module_row_2
 
   /*Past Presidents Page */
   #tablepress-1{
@@ -5326,9 +5349,6 @@ div.module-text {
 }
 
 }
-
-
-
 
 #jumbotron {
 	width: 100%;
