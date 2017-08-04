@@ -1586,6 +1586,22 @@ HEADER BACKGROUND MODE
 	margin-bottom: 20px;
 }
 
+/* Button to have curves and text to be bold */
+.module-buttons a{
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #F4803E;
+  	font-size: 14px;
+  	font-weight: bold;
+}
+
+/*Find out more button to not have underline */
+.module-buttons a:hover{
+   text-decoration: none;
+}
+
 /* Modal */
 .modal {
     display: none; /* Hidden by default */
@@ -4333,15 +4349,44 @@ FOOTER
 FRONT PAGE
 *************************************************************************************/
 
+.themify_builder_content-12 {
+	padding-top: 50px;
+}
+
+.themify_builder_content-12 h1 {
+	font-size: 1.4em;
+	text-align: center;
+}
+
+.themify_builder_content-12 .module-text {
+	width: 60%
+}
+.themify_builder_content-12 p {
+	text-align: center;
+	margin: 2em 0em;
+}
+
+.themify_builder_content-12 .module-buttons {
+	text-align: center;
+	padding-bottom: 50px
+}
+
+.themify_builder_content-12 .themify_builder_sub_row p {
+	text-align: left;
+}
+.themify_builder_content-12 .themify_builder_sub_row img {
+	text-align: center;
+}
+
 /*Fixed the horizontal reel full width problem */
 .page-id-12 .pagewidth{
    width: 100%;
 }
 
 /*Fixed content going to full width on front page */
-#themify_builder_content-12 {
+/*#themify_builder_content-12 {
   width: 100%;
-}
+}*/
 
 /* For horizontal reel effect to work nicely */
 #test2 img{
@@ -4356,63 +4401,7 @@ FRONT PAGE
   margin-top: 10px;
 }
 
-/*For "Our Story", equalized top and bottom spacing */
-#text-12-0-0-1{
-   padding-top: 50px;
-}
-
-#text-12-0-0-1 p{
-   margin-bottom: 1em;
-}
-
-/*Fixed story content spacing */
-#text-12-0-0-2{
-  width: 60%;
-  left: 20%;
-}
-
-/*Our Story Section */
-.themify_builder .text-12-0-0-2.module-text
-{
-    width: 74.5%;
-    left: 13%;
-}
-
-.themify_builder .text-12-0-0-2.module-text p
-{
-    padding-bottom: 33px;
-}
-
-/* Button to have curves and text to be bold */
-.button-12-0-0-5.module-button a
-{
-    border-radius: 5px;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    background-color: #F4803E;
-}
-
-#buttons-12-0-0-5
-{
-  text-align: center;
-}
-
-#buttons-12-0-0-5 a
-{
-  color: white;
-  background-color: #F4803E;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 86px;
-}
-
-/*Find out more button to not have underline */
-.themify_builder .button-12-0-0-5.module-button a:hover{
-   text-decoration: none;
-}
-
-.themify_builder .button-12-0-0-5.module-button a{
+.module-button a{
    padding-bottom: 50px;
 }
 
@@ -4430,34 +4419,23 @@ FRONT PAGE
    font-size: 14px;
    z-index: 2;
    position: absolute;
-   left: 10px;
-   top: 190px;
+   padding: 0px 10px;
+   top: 130px;
    color: white;
 }
 
-/*Message the President Header Styling */
-#message_from_the_president{
-   font-size: 30px;
-   font-weight: bold;
-   color: #26378B;
-   margin-bottom: 1em;
-}
-
-/*Fixed president text to not extend to full width */
-#feature-12-0-0-6 p {
-  width: 60%;
-  margin: 0 auto;
-  padding-bottom: 30px;
-
+.module-feature-content p {
+	width: 60%;
+	margin: 2em auto;
 }
 
 /*Equalized Padding at bottom of presidents section (81.23px total)*/
-#feature-12-0-0-6 .module-feature-content {
-  padding-bottom: 48px;
-
+.module-feature-content {
+	padding-top: 48px;
+	padding-bottom: 48px;
 }
 
-#feature-12-0-0-6 .module-feature-image {
+.module-feature-image {
   display: none;
 }
 
@@ -4527,7 +4505,6 @@ FRONT PAGE
   display: block;
   position: relative;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #000 100%);
-  margin-top: -150px;
   height: 150px;
   width: 100%;
   content: '';
@@ -4689,6 +4666,9 @@ FRONT PAGE
    margin-bottom:0;
    padding-top: 53px;
 }*/
+.themify_builder_content-5654 h5 {
+	text-align: center;
+}
 
 /************************************************************************************
  AOTCA OFFICER PAGE
@@ -4927,9 +4907,9 @@ MOBILE FOOTER
   }
 
   /*Fixed Vertical Align for Banner Title */
-  .themify_builder .fullcover{
+  /*.themify_builder .fullcover{
     height:140px;
-  }
+  }*/
 
   /* Fixed Banner Title */
   .themify_builder_row.fullwidth .row_inner, .module_row.fullwidth .row_inner {
@@ -4940,40 +4920,65 @@ MOBILE FOOTER
 
 
 /************************************************************************************
- ABOUT US PAGE MOBILE
+ MOBILE PAGE (GENERAL)
 *************************************************************************************/
 /*Our Story Header */
-div#text-196-1-0-1{
+/*div#text-196-1-0-1{
   width: auto;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 40px;
   padding-bottom: 50px;
+}*/
+
+ div.module-text {
+	width: auto;
+	padding-left: 24px;
+	padding-right: 24px;
+	/*padding-top: 40px;
+	padding-bottom: 50px;*/
+}
+.module_row_1 {
+	padding-top: 40px;
+}
+/************************************************************************************
+ ABOUT PAGE MOBILE (POST ID: 196)
+*************************************************************************************/
+
+.themify_builder_content-196 div.module-text {
+	/*padding-top: 40px;*/
+	padding-bottom: 50px;
 }
 
-#text-196-1-0-1 p{
-  line-height: 27px;
-}
-
+/************************************************************************************
+ FRONT PAGE MOBILE (POST ID: 12)
+*************************************************************************************/
 /*Aligns title and body text to left */
-#text-12-0-0-1 p{
+.themify_builder_content-12 div.module-text {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-align: left;
+	width: 90%;
+    /*left: 5%;*/
+}
+
+.themify_builder_content-12 .module-text h1{
+  line-height: 27px;
+  text-align: left;
+}
+
+/*.themify_builder_content-12 .module-text p{
   text-align: left;
   padding-left: 5%;
-}
+}*/
 
-/*Our Story Content */
-#text-12-0-0-2{
-  width: 90%;
-  left: 5%;
-}
-
-#text-12-0-0-2 p{
+.themify_builder_content-12 div.module-text p{
   text-align: left;
   width: 100%;
   line-height: 23px;
 }
 
-/*Hides it in mobile screen */
+/*Hides 2nd paragraph */
 #text-12-0-0-2 p:nth-child(2){
   display: none;
 }
@@ -4993,6 +4998,16 @@ div#text-196-1-0-1{
     display: none;
 }
 
+.module-feature-content p {
+	width: 100%;
+	margin: 2em auto;
+}
+
+/*Equalized Padding at bottom of presidents section (81.23px total)*/
+.module-feature-content {
+	padding: 0px;
+}
+
 /* Hides original row */
 .sub_row_0-0-7{
   display: none;
@@ -5001,6 +5016,10 @@ div#text-196-1-0-1{
 /*Displays new row for mobile */
 .sub_row_0-0-8{
   display: block;
+}
+
+.sub_row_0-0-8 p{
+	margin: 0em 0em;
 }
 
 .sub_row_0-0-8 #img_wrapper::before{
@@ -5020,42 +5039,27 @@ div#text-196-1-0-1{
 }
 
 /************************************************************************************
-ORGANISATION PAGE MOBILE
+ORGANISATION PAGE MOBILE (POST ID: 5654)
 *************************************************************************************/
 
-/*Organisation Chart of AOTCA */
-#image-5654-1-0-2{
+.themify_builder_content-5654 h5 {
+	text-align: left;
+	margin-bottom: 0;
+    line-height: 23px;
+    /*padding-top: 40px;*/
+}
+/*Fixed Gap between image and header */
+
+.themify_builder_content-5654 .module-image .image-wrap {
+  margin-bottom: 20px;
+  margin-top: 0px;
   width:auto;
   left:0;
 }
 
-/*Fixed Gap between image and header */
-#text-5654-1-0-1 p{
-  margin-bottom: 0;
-  line-height: 23px;
-  padding-top: 40px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-/*Aligns "Our Member Organisations are represented by the following bodies:" to left*/
-#organisation_description{
-  text-align: left;
-}
-
-.module-image .image-wrap {
-  margin-bottom: 20px;
-  margin-top: 0px;
-}
-
 /************************************************************************************
- AOTCA OFFICERS MOBILE PAGE
+ AOTCA OFFICERS PAGE MOBILE (POST ID: 5652)
 *************************************************************************************/
-
-/*Changes width of council paragraph to be 90% (Wrapper)*/
-.module_column_5652-2-0-2 .module-text{
-  width: 90%;
-}
 
 /*Ensures links have 24px padding left and right */
 .module_column_5652-1-0 .tb-column-inner p{
@@ -5064,25 +5068,35 @@ ORGANISATION PAGE MOBILE
   padding-right: 24px;
 }
 
-.module_column_5652-2-0 #officer_council_header{
-  padding-left: 24px;
-  padding-right: 24px;
+/*Changes width of council paragraph to be 90% (Wrapper)*/
+.module_column_5652-2-0-2 .module-text{
+  width: 90%;
 }
 
-.module_column_5652-2-0 #officer_council_paragraph{
-  padding-left: 24px;
-  padding-right: 24px;
+.module_column_5652-2-0 h6{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.module_column_5652-2-0 p{
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /*Initial padding top of 40px for consistency */
-#text-5652-1-0-1 p:first-of-type{
-  padding-top: 40px;
+.module_column_5652-1-0 h6:first-of-type{
+  /*padding-top: 40px;*/
 }
 
-/*Fixed Line Height */
-#officer_council_paragraph{
-  line-height: 23px;
+.text-5652-2-0-2  p{
+	padding-left: 0px;
+  	padding-right: 0px;
+	line-height: 23px;
 }
+
+/************************************************************************************
+ PAST PRESIDENT PAGE MOBILE (POST ID: 5650)
+*************************************************************************************/
 
 /*Past President Mobile Page */
 #tablepress-1{
@@ -5097,54 +5111,38 @@ ORGANISATION PAGE MOBILE
 
 /*Adds 20px gap between table and banner */
 .module_column_5650-1-0{
-  padding-top: 40px;
+  /*padding-top: 40px;*/
 }
 
 #text-5650-1-0-1 .tablepress-table-name.tablepress-table-name-id-1{
   padding-top: 0px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
-
-#text-5650-1-0-1 #tablepress-1{
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 75px;
-}
-
 /************************************************************************************
-COMMITTEES PAGE MOBILE
+COMMITTEES PAGE MOBILE (POST ID: 5654)
 *************************************************************************************/
 
-#committee_title{
+.themify_builder_content-5656 .module-text:first-child {
+	/*padding-top: 40px;*/
+}
+.themify_builder_content-5656 .module-text h4{
    padding-bottom: 20px;
 }
-
-#text-5656-1-0-1 p:first-child {
-    padding-top: 40px;
-}
-
-.row_inner .module_column_5656-1-0 p{
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
 
 /************************************************************************************
 STATUTES PAGE MOBILE
 *************************************************************************************/
 
 /*Extends text container to 90% */
-.module_column_6061-1-0 {
+/*.module_column_6061-1-0 {
   padding-left: 24px;
   padding-right: 24px;
   line-height: 27px;
   padding-top: 40px;
   width: auto;
   left: auto;
-}
+}*/
 
-#text-6061-1-0-2 p{
+/*#text-6061-1-0-2 p{
   padding-bottom: 20px;
 }
 
@@ -5154,7 +5152,7 @@ STATUTES PAGE MOBILE
 
 #text-6061-1-0-1 h1 {
   padding-top: 0px;
-}
+}*/
 
 /************************************************************************************
 GALLERY PAGE MOBILE
@@ -5231,12 +5229,71 @@ CONTACT US PAGE MOBILE
 
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 600px){
 
-/*Made sure logo shifted correcltly on different screen sizes */
-#site-logo a{
-   margin-left: 10%;
+/************************************************************************************
+ GALLERY DETAIL PAGE
+*************************************************************************************/
+.module.module-gallery{
+	width: 350px;
 }
+
+#body .gallery-columns-6 .gallery-item{
+	width: 350px;
+}
+
+#body .gallery-columns-6 .gallery-item img{
+    width: 350px;
+		height: 350px;
+}
+
+}
+
+@media screen and (max-width: 760px){
+	/*Removes Gap Between Slider and Nav */
+	body #content {
+	   padding-top: 0%;
+	}
+}
+
+@media screen and (max-width: 900px){
+
+div.module-text {
+	width: auto;
+	/*padding-left: 50px;
+	padding-right: 50px;*/
+}
+  /*About Us Page */
+  /*AOTCA Officer Page */
+  /*Changing the padding for AOTCA officers: position and name */
+  .module_column_5652-1-0 p {
+	width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  /*Changing the padding for AOTCA officers: Council header and council paragraph */
+  /*#officer_council_header{
+     padding-left: 50px;
+     padding-right: 50px;
+  }*/
+
+  /*#officer_council_paragraph{
+     padding-left: 550px;
+     padding-right: 0px;
+  }*/
+
+  /*AOTCA Commitee Page */
+  .module_column_5656-1-0 p{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .themify_builder_content-5652 .module_row_2
+
+  /*Past Presidents Page */
+  #tablepress-1{
+    border-collapse: separate;
+    margin:0 0;
+  }
 
 }
 
@@ -5260,60 +5317,18 @@ CONTACT US PAGE MOBILE
 
 }
 
-@media screen and (max-width: 900px){
-  /*About Us Page */
-  #text-196-1-0-1{
-    width: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  /*AOTCA Officer Page */
-  /*Changing the padding for AOTCA officers: position and name */
-  .module_column_5652-1-0 p {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  /*Changing the padding for AOTCA officers: Council header and council paragraph */
-  #officer_council_header{
-     padding-left: 50px;
-     padding-right: 50px;
-  }
 
-  #officer_council_paragraph{
-     padding-left: 50px;
-     padding-right: 50px;
-  }
+@media screen and (max-width: 1200px){
 
-  /*AOTCA Commitee Page */
-  .module_column_5656-1-0 p{
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  /*Past Presidents Page */
-  #tablepress-1{
-    width: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-collapse: separate;
-    margin:0 0;
-  }
-
-  /* Past Presidents & Officers Caption */
-  .tablepress-table-name.tablepress-table-name-id-1{
-     width: auto;
-     padding-left: 50px;
-     padding-right: 50px;
-  }
+/*Made sure logo shifted correcltly on different screen sizes */
+#site-logo a{
+   margin-left: 10%;
+}
 
 }
 
-@media screen and (max-width: 760px){
-	/*Removes Gap Between Slider and Nav */
-	body #content {
-	   padding-top: 0%;
-	}
-}
+
+
 
 #jumbotron {
 	width: 100%;
@@ -5333,24 +5348,4 @@ CONTACT US PAGE MOBILE
 	letter-spacing: 0;
 	text-align: center;
 	color: white;
-}
-
-@media screen and (max-width: 600px){
-
-/************************************************************************************
- GALLERY DETAIL PAGE
-*************************************************************************************/
-.module.module-gallery{
-	width: 350px;
-}
-
-#body .gallery-columns-6 .gallery-item{
-	width: 350px;
-}
-
-#body .gallery-columns-6 .gallery-item img{
-    width: 350px;
-		height: 350px;
-}
-
 }
