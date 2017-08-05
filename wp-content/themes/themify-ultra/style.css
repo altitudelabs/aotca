@@ -1569,9 +1569,14 @@ HEADER BACKGROUND MODE
 }
 
 .module_row:last-child {
-	padding-bottom: 25px;
+	padding-bottom: 50px;
 }
-.module_row_1 {
+
+.themify_builder_content-5656 .module_row:nth-of-type(2) {
+	padding-bottom: 50px
+}
+
+.module_row:nth-of-type(2) {
 	padding-top: 50px;
 }
 
@@ -4358,6 +4363,10 @@ FRONT PAGE
 	text-align: center;
 }
 
+.themify_builder_content-12 .module_row:last-child {
+	padding-bottom: 0px;
+}
+
 .themify_builder_content-12 .module-text {
 	width: 60%
 }
@@ -4936,47 +4945,47 @@ MOBILE FOOTER
 /************************************************************************************
  MOBILE PAGE (GENERAL)
 *************************************************************************************/
-/*Our Story Header */
-/*div#text-196-1-0-1{
-  width: auto;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 40px;
-  padding-bottom: 50px;
-}*/
 
- div.module-text {
+.module-text {
 	width: auto;
 	padding-left: 24px;
 	padding-right: 24px;
-	/*padding-top: 40px;
-	padding-bottom: 50px;*/
 }
-.module_row_1 {
+.module_row:nth-of-type(2) {
 	padding-top: 40px;
+}
+
+.module_row:last-child {
+    padding-bottom: 40px;
+}
+
+.module_row:nth-child(2) .module-text:first-child > *{
+	margin-top: 0em;
 }
 /************************************************************************************
  ABOUT PAGE MOBILE (POST ID: 196)
 *************************************************************************************/
 
-.themify_builder_content-196 div.module-text {
-	/*padding-top: 40px;*/
-	padding-bottom: 50px;
+.themify_builder_content-196 .module-text {
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 /************************************************************************************
  FRONT PAGE MOBILE (POST ID: 12)
 *************************************************************************************/
-/*Aligns title and body text to left */
-.themify_builder_content-12 div.module-text {
+.themify_builder_content-12 .module_row:first-child {
+	padding-top: 0px;
+}
+
+.themify_builder_content-12 .module-text {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	text-align: left;
 	width: 90%;
-    /*left: 5%;*/
 }
-
-.themify_builder_content-12 div.module-text h1{
+/*our story header*/
+.themify_builder_content-12 .module-text h1{
   line-height: 27px;
   text-align: left;
 }
@@ -4986,23 +4995,24 @@ MOBILE FOOTER
   padding-left: 5%;
 }*/
 
-.themify_builder_content-12 div.module-text p{
+/*our story paragraph*/
+.themify_builder_content-12 .module-text p{
   text-align: left;
   width: 100%;
   line-height: 23px;
 }
 
 /*Hides 2nd paragraph */
-#text-12-0-0-2 p:nth-child(2){
+.themify_builder_content-12 .module_row:first-child .module-text:nth-of-type(2) p:nth-child(2) {
   display: none;
 }
 
-#up_arrow{
+.themify_builder_content-12 #up_arrow{
   display: none;
   padding-bottom: 10%;
 }
 
-#down_arrow{
+.themify_builder_content-12 #down_arrow{
   display: block;
   padding-bottom: 10%;
 }
@@ -5012,43 +5022,44 @@ MOBILE FOOTER
     display: none;
 }
 
-.module-feature-content p {
+
+.themify_builder_content-12 .module-feature-content p {
 	width: 100%;
 	margin: 2em auto;
 }
 
 /*Equalized Padding at bottom of presidents section (81.23px total)*/
-.module-feature-content {
+.themify_builder_content-12 .module-feature-content {
 	padding: 0px;
 }
 
 /* Hides original row */
-.sub_row_0-0-7{
+.themify_builder_content-12 .sub_row_0-0-7{
   display: none;
 }
 
 /*Displays new row for mobile */
-.sub_row_0-0-8{
+.themify_builder_content-12 .sub_row_0-0-8{
   display: block;
 }
 
-.sub_row_0-0-8 p{
+.themify_builder_content-12 .sub_row_0-0-8 p{
 	margin: 0em 0em;
 }
 
-.sub_row_0-0-8 #img_wrapper::before{
+.themify_builder_content-12 .sub_row_0-0-8 #img_wrapper::before{
   content:'';
   padding-bottom: 60px;
   width: 100%;
 }
 
 /* Removed featured image gap in responsive mode */
-.module-feature.layout-icon-top .module-feature-image {
+.themify_builder_content-12 .module-feature.layout-icon-top .module-feature-image {
     display: none;
 }
 
 /* Showed our story header */
-.module-feature-content p:nth-child(1){
+.themify_builder_content-12 .module-feature-content p:nth-child(1){
     margin-bottom: 1em;
 }
 
@@ -5056,14 +5067,13 @@ MOBILE FOOTER
 ORGANISATION PAGE MOBILE (POST ID: 5654)
 *************************************************************************************/
 
+/*organisation header*/
 .themify_builder_content-5654 h5 {
 	text-align: left;
 	margin-bottom: 0;
     line-height: 23px;
-    /*padding-top: 40px;*/
 }
 /*Fixed Gap between image and header */
-
 .themify_builder_content-5654 .module-image .image-wrap {
   margin-bottom: 20px;
   margin-top: 0px;
@@ -5076,34 +5086,19 @@ ORGANISATION PAGE MOBILE (POST ID: 5654)
 *************************************************************************************/
 
 /*Ensures links have 24px padding left and right */
-.module_column_5652-1-0 .tb-column-inner p{
+.themify_builder_content-5652 .module_row:nth-of-type(2) .module_column .tb-column-inner p{
   padding-bottom: 21px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
 /*Changes width of council paragraph to be 90% (Wrapper)*/
-.module_column_5652-2-0-2 .module-text{
+.themify_builder_content-5652 .module_column_5652-2-0-2 .module-text{
   width: 90%;
 }
 
-
-.module_column_5652-2-0 h6{
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.module_column_5652-2-0 p{
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-/*Initial padding top of 40px for consistency */
-.module_column_5652-1-0 h6:first-of-type{
-  /*padding-top: 40px;*/
-}
-
-.text-5652-2-0-2  p{
+/*council paragrapg*/
+.themify_builder_content-5652 .module_row:nth-of-type(3) p{
 	padding-left: 0px;
   	padding-right: 0px;
 	line-height: 23px;
@@ -5124,11 +5119,6 @@ ORGANISATION PAGE MOBILE (POST ID: 5654)
   padding: 0px;
 }
 
-/*Adds 20px gap between table and banner */
-.module_column_5650-1-0{
-  /*padding-top: 40px;*/
-}
-
 #text-5650-1-0-1 .tablepress-table-name.tablepress-table-name-id-1{
   padding-top: 0px;
 }
@@ -5142,6 +5132,7 @@ COMMITTEES PAGE MOBILE (POST ID: 5654)
 .themify_builder_content-5656 .module-text h4{
    padding-bottom: 20px;
 }
+
 
 .themify_builder_content-5656 .module_row:nth-child(2) {
 	display: none;
@@ -5271,6 +5262,7 @@ CONTACT US PAGE MOBILE
 		height: 350px;
 }
 
+
 }
 
 @media screen and (max-width: 760px){
@@ -5278,11 +5270,16 @@ CONTACT US PAGE MOBILE
 	body #content {
 	   padding-top: 0%;
 	}
+
+	.themify_builder_content-12 .module-text {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }
 
 @media screen and (max-width: 900px){
 
-div.module-text {
+.module-text {
 	width: auto;
 	/*padding-left: 50px;
 	padding-right: 50px;*/
@@ -5290,7 +5287,7 @@ div.module-text {
   /*About Us Page */
   /*AOTCA Officer Page */
   /*Changing the padding for AOTCA officers: position and name */
-  .module_column_5652-1-0 p {
+  .themify_builder_content-5652 .module_row:nth-of-type(2) .module_column p {
 	width: auto;
     padding-left: 50px;
     padding-right: 50px;
@@ -5307,7 +5304,7 @@ div.module-text {
   }*/
 
   /*AOTCA Commitee Page */
-  .module_column_5656-1-0 p{
+  .themify_builder_content-5656 .module_row:nth-of-type(2) .module_column p{
     padding-left: 50px;
     padding-right: 50px;
   }
