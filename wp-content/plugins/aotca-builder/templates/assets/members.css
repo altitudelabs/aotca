@@ -14,9 +14,11 @@
 
 .header-wrapper p {
     text-align: center;
+    width: 80%;
     margin-top: 80px;
     margin-bottom: 30px;
-    padding: 0px 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .members-container {
