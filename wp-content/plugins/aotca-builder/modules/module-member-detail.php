@@ -55,7 +55,7 @@ class Member_Detail_Module extends Themify_Builder_Module {
       ),
       array(
         'id' => 'member_detail_overview',
-        'type' => 'textarea',
+        'type' => 'wp_editor',
         'rows' => 5,
         'label' => __( 'Overview', 'member-detail' ),
         'class' => '',
