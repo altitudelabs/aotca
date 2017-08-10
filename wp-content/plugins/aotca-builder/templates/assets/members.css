@@ -1,7 +1,3 @@
-#aotca-content-container {
-    padding-bottom: 130px;
-}
-
 .header-wrapper h1 {
     color: #26378B;
     font-size: 24px;
@@ -15,8 +11,8 @@
 .header-wrapper p {
     text-align: center;
     width: 80%;
-    margin-top: 80px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -42,6 +38,9 @@
 @media (max-width: 600px) {
     .member-container {
         flex-basis: 100%;
+    }
+    .header-wrapper p {
+        margin-top: 0px
     }
 }
 

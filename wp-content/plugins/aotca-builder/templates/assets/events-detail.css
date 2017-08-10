@@ -1,7 +1,6 @@
 .events-detail-container {
-  padding-top: 33px;
-  color: #777777;
-  padding-bottom: 147px;
+  /*padding-top: 33px;*/
+  /*padding-bottom: 147px;*/
 }
 .events-itinerary {
   border-radius: 5px;
@@ -9,30 +8,24 @@
   padding: 35px 40px;
   display: flex;
   flex-direction: row;
-  color: #777777;
+
   justify-content: space-between;
 }
-.events-itinerary h3 {
+.events-itinerary h6 {
   color: #222222;
-  font-size: 17px;
-  font-weight: bold;
-  padding-bottom: 5px;
 }
 .events-itinerary .date-time,
 .events-itinerary .location,
 .events-itinerary .itinerary {
+    margin: 0.3em 0em;
 }
 
 .events-itinerary .date-time .start-date::after {
   content: '–';
 }
-.events-itinerary .itinerary button {
-  font-size: 14px;
-  color: #FFFFFF;
-  background-color: #F4803E;
-  text-transform: capitalize;
-  font-weight: normal;
-  padding: 17px 20px;
+
+.events-info {
+    padding: 0px 60px;
 }
 
 section > h2 {
@@ -61,10 +54,6 @@ section > h2 {
 .divider {
   height: 1px;
   background-color: #E5E5E5;
-}
-
-.event-detail {
-  color: #777777;
 }
 
 .conference-documents {
@@ -107,17 +96,11 @@ section > h2 {
   font-weight: bold;
   color: #505050;
   display: block;
+  padding-right: 10px;
 }
 
 .documents li form {
   flex-shrink: 0;
-}
-
-.documents li button {
-  background-color: #F4803E;
-  padding: 17px;
-  font-size: 14px;
-  text-align: center;
 }
 
 .photo-slider {
@@ -188,11 +171,21 @@ section > h2 {
     width: 75px;
     height: 75px;
   }
+  .events-itinerary {
+    display: flex;
+    flex-direction: column;
+  }
+  .start-date, .end-date{
+      display: inline-block;
+  }
 }
 @media (max-width: 500px) {
   #bx-pager .thumbnail {
     width: 50px;
     height: 50px;
+  }
+  .events-info {
+      padding: 0px 0px;
   }
 }
 #bx-pager a.active .thumbnail {
