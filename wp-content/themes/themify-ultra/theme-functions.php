@@ -42,6 +42,10 @@ add_filter( 'body_class', 'themify_theme_body_class', 99 );
 remove_action( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10 );
 add_action( 'woocommerce_after_shop_loop', 'themify_theme_shop_pagination', 10 );
 
+// Ajax for checking password
+add_action( 'wp_ajax_nopriv_password', 'password' );
+add_action( 'wp_ajax_password', 'password' );
+
 /**
  * Enqueue Stylesheets and Scripts
  * @since 1.0.0
@@ -241,7 +245,7 @@ if (is_admin()) {
 	}
 }
 
-//Remove class has-post-thumbnail when hide_image is yes 
+//Remove class has-post-thumbnail when hide_image is yes
 
 add_filter('post_class','themify_hide_feature_image',10,1);
 
@@ -751,7 +755,7 @@ if ( ! function_exists( 'themify_theme_custom_post_css' ) ) {
 					);
 				}
 			}
-						
+
 			$custom_color =  themify_theme_get( 'color_scheme_mode', 'color-presets' ) == 'color-custom';
 			$custom_font =  themify_theme_get( 'typography_mode', 'typography-custom' ) == 'typography-custom';
 			if ( is_singular() && ($custom_color || $custom_font) ) {
@@ -1404,7 +1408,7 @@ if ( ! function_exists( 'themify_theme_body_class' ) ) {
 	 * @return array
 	 */
 	function themify_theme_body_class( $classes ) {
-		
+
 		$header = themify_theme_get_header_design();
 		$classes[] = $header;
 		$classes[] = themify_theme_fixed_header() ? 'fixed-header' : 'no-fixed-header';
@@ -1471,7 +1475,7 @@ if ( ! function_exists( 'themify_theme_body_class' ) ) {
 		if ( ! themify_theme_show_area( 'footer_menu_navigation' ) ) {
 			$classes[] = 'footer-menu-navigation-off';
 		}
-				
+
 		// Image Filters
 		$filter = '';
 		$filter_hover = '';
@@ -1516,7 +1520,7 @@ if ( ! function_exists( 'themify_theme_body_class' ) ) {
 					$apply_to = 'filter-' . $apply_here;
 				}
 			}
-			
+
 			$layout = $themify->post_layout_type;
 			if (!$layout) {
 				$layout = 'default';
@@ -2403,7 +2407,7 @@ endif;
 ////////////////////////////////////
 // Custom Skin
 ////////////////////////////////////
-add_filter( 'themify_show_skins_and_demos_admin', '__return_true' ); 
+add_filter( 'themify_show_skins_and_demos_admin', '__return_true' );
 
 /**
 * Customize the skins list in the admin screen
@@ -2420,7 +2424,7 @@ function themify_theme_skins_list( $skins ) {
 
 	return $skins;
 }
-add_filter( 'themify_theme_skins', 'themify_theme_skins_list' ); 
+add_filter( 'themify_theme_skins', 'themify_theme_skins_list' );
 
 /**
  * Allow updating bonus addons for Ultra
@@ -2686,3 +2690,22 @@ function themify_date_format(){
     }
     return $date_format;
 }
+
+function password() {
+	$fields_args = wp_parse_args( $mod_settings, $events_itinerary_default );
+
+	extract( $fields_args );
+
+	$container_class = implode( ' ', apply_filters( 'themify_builder_module_classes', array(
+		'module', 'module-' . $mod_name, $module_ID
+		), $mod_name, $module_ID, $fields_args )
+	);
+	$documents = get_fields($_POST['post_id'])[$_POST['type']];
+	echo var_dump($_POST);
+	foreach ($documents as $document) {
+		if ($document['file']['id'] == $_POST['file'] and strcmp($document['password'], $_POST['password'])==0) {
+			echo $document['file']['url'];
+		}
+	}
+	die();
+};
