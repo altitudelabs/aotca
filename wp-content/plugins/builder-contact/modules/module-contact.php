@@ -93,6 +93,7 @@ class TB_Contact_Module extends Themify_Builder_Module {
 		return array(
 			'field_name_label' => esc_html__( 'Your Name', 'builder-contact' ),
 			'field_email_label' => esc_html__( 'Your Email', 'builder-contact' ),
+			'field_phone_label' => esc_html__( 'Your Phone', 'builder-contact' ),
 			'field_subject_label' => esc_html__( 'Subject', 'builder-contact' ),
 			'field_subject_active' => 'yes',
 			'field_message_label' => esc_html__( 'Message', 'builder-contact' ),
@@ -2064,7 +2065,12 @@ class TB_Contact_Module extends Themify_Builder_Module {
 							<input type="text" name="contact-email" value="" class="form-control" required />
 						</div>
 					</div>
-
+					<div class="builder-contact-field builder-contact-field-phone">
+						<label class="control-label">{{{ data.field_phone_label }}} <span class="required">*</span></label>
+						<div class="control-input">
+							<input type="text" name="contact-name" value="" class="form-control" required />
+						</div>
+					</div>
 					<# if( data.field_subject_active == 'yes' ) { #>
 					<div class="builder-contact-field builder-contact-field-subject">
 						<label class="control-label">{{{ data.field_subject_label }}}</label>
@@ -2092,7 +2098,7 @@ class TB_Contact_Module extends Themify_Builder_Module {
 						</div>
 					</div>
 					<# } #>
-					
+
 					<# if( data.field_captcha_active == 'yes' ) { #>
 						<div class="builder-contact-field builder-contact-field-captcha">
 							<label class="control-label">{{{ data.field_captcha_label }}} <span class="required">*</span></label>
@@ -2138,6 +2144,11 @@ function themify_builder_field_contact_fields( $field, $mod_name ) {
 			<tr>
 				<td><?php _e( 'Email', 'builder-contact' ) ?></td>
 				<td><input type="text" id="field_email_label" name="field_email_label" value="" class="tfb_lb_option" placeholder="<?php _e( 'Email', 'builder-contact' ) ?>" data-control-binding="live" data-control-type="text" /></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><?php _e( 'Phone', 'builder-contact' ) ?></td>
+				<td><input type="text" id="field_phone_label" name="field_phone_label" value="" class="tfb_lb_option" placeholder="<?php _e( 'Phone', 'builder-contact' ) ?>" data-control-binding="live" data-control-type="text" /></td>
 				<td></td>
 			</tr>
 			<tr>

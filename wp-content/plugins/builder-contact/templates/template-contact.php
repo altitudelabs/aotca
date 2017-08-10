@@ -2,7 +2,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /**
  * Template Contact
- * 
+ *
  * Access original fields: $mod_settings
  */
 
@@ -16,6 +16,7 @@ $fields_default = array(
 	'mail_contact' => get_option( 'admin_email' ),
 	'field_name_label' => __( 'Name', 'builder-contact' ),
 	'field_email_label' => __( 'Email', 'builder-contact' ),
+	'field_phone_label' => __( 'Phone', 'builder-contact' ),
 	'field_subject_label' => __( 'Subject', 'builder-contact' ),
 	'field_subject_active' => 'yes',
 	'default_subject' => '',
@@ -24,7 +25,7 @@ $fields_default = array(
 	'field_message_label' => __( 'Message', 'builder-contact' ),
 	'field_sendcopy_active' => 'no',
 	'field_sendcopy_label' => __( 'Send Copy', 'builder-contact' ),
-	'field_send_label' => __( 'Send', 'builder-contact' ),
+	'field_send_label' => __( 'Send message', 'builder-contact' ),
 	'animation_effect' => '',
 	'css_class_contact' => ''
 );
@@ -34,7 +35,7 @@ extract( $fields_args, EXTR_SKIP );
 $animation_effect = $this->parse_animation_effect( $animation_effect, $fields_args );
 
 
-$container_class = implode(' ', 
+$container_class = implode(' ',
 	apply_filters( 'themify_builder_module_classes', array(
 		'module', 'module-' . $mod_name, $module_ID, 'contact-' . $layout_contact, $animation_effect, $css_class_contact
 	), $mod_name, $module_ID, $fields_args )
@@ -67,14 +68,14 @@ $container_props = apply_filters( 'themify_builder_module_container_props', arra
 		<div class="builder-contact-field builder-contact-field-name">
 			<label class="control-label" for="<?php echo $module_ID; ?>-contact-name"><?php echo $field_name_label; ?> <span class="required">*</span></label>
 			<div class="control-input">
-				<input type="text" name="contact-name" id="<?php echo $module_ID; ?>-contact-name" value="" class="form-control" required />
+				<input type="text" name="contact-name" id="<?php echo $module_ID; ?>-contact-name" value="" class="form-control" required placeholder="Your name"/>
 			</div>
 		</div>
 
 		<div class="builder-contact-field builder-contact-field-email">
 			<label class="control-label" for="<?php echo $module_ID; ?>-contact-email"><?php echo $field_email_label; ?> <span class="required">*</span></label>
 			<div class="control-input">
-				<input type="text" name="contact-email" id="<?php echo $module_ID; ?>-contact-email" value="" class="form-control" required />
+				<input type="text" name="contact-email" id="<?php echo $module_ID; ?>-contact-email" value="" class="form-control" required placeholder="Your email" />
 			</div>
 		</div>
 
@@ -82,7 +83,7 @@ $container_props = apply_filters( 'themify_builder_module_container_props', arra
 		<div class="builder-contact-field builder-contact-field-subject">
 			<label class="control-label" for="<?php echo $module_ID; ?>-contact-subject"><?php echo $field_subject_label; ?></label>
 			<div class="control-input">
-				<input type="text" name="contact-subject" id="<?php echo $module_ID; ?>-contact-subject" value="" class="form-control" />
+				<input type="text" name="contact-subject" id="<?php echo $module_ID; ?>-contact-subject" value="" class="form-control" placeholder="Your subject"/>
 			</div>
 		</div>
 		<?php endif; ?>
@@ -90,7 +91,7 @@ $container_props = apply_filters( 'themify_builder_module_container_props', arra
 		<div class="builder-contact-field builder-contact-field-message">
 			<label class="control-label" for="<?php echo $module_ID; ?>-contact-message"><?php echo $field_message_label; ?> <span class="required">*</span></label>
 			<div class="control-input">
-				<textarea name="contact-message" id="<?php echo $module_ID; ?>-contact-message" rows="8" cols="45" class="form-control" required></textarea>
+				<textarea name="contact-message" id="<?php echo $module_ID; ?>-contact-message" rows="8" cols="45" class="form-control" required placeholder="Write your message"></textarea>
 			</div>
 		</div>
 
@@ -117,7 +118,7 @@ $container_props = apply_filters( 'themify_builder_module_container_props', arra
 
 		<div class="builder-contact-field builder-contact-field-send">
 			<div class="control-input">
-				<button type="submit" class="btn btn-primary"> <i class="fa fa-cog fa-spin"></i> <?php echo $field_send_label; ?> </button>
+				<button type="submit" class="btn-primary bold upper"> <i class="fa fa-cog fa-spin"></i> <?php echo $field_send_label; ?> </button>
 			</div>
 		</div>
 		</div>
