@@ -529,7 +529,7 @@ function themify_is_query_page(){
             global $themify;
             $is_query_page = isset( $themify->query_category ) && '' != $themify->query_category;
         }
-	
+
 	return $is_query_page;
 }
 endif;

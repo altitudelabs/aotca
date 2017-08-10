@@ -29,7 +29,7 @@
 
 					<?php themify_footer_before(); // hook ?>
 
-					<footer id="footer" class="pagewidth clearfix" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+					<footer id="footer my-footer" class="pagewidth clearfix" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
 
 						<?php themify_footer_start(); // hook ?>
 
