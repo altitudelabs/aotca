@@ -1,0 +1,256 @@
+h1 {
+    padding-top:30px;
+}
+#event_update {
+  width: 80%;
+  position: relative;
+  margin: 50px auto;
+  /*margin-top: 2%;
+  margin-bottom: 4%;*/
+  /*background-size: 100% 100%;*/
+}
+
+#bg_image {
+    background: linear-gradient(rgba(38, 55, 139, 0.9), rgba(19, 28, 70, 0.9));
+    border-radius: 10px;
+}
+
+#main_text {
+    padding-top:40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    width: 65%;
+    position: relative;
+}
+
+#main_text h6{
+    color: #8393E3;
+    text-transform: uppercase;
+}
+#main_text h1{
+    color: #fff;
+    font-size: 1.75em;
+}
+
+#main_text p {
+    width: 80%;
+    font-size: 0.9em;
+    color: #fff;
+    line-height: 1.5em;
+}
+
+.pagewidth{
+	width: 100%;
+}
+
+#past_meetings{
+  width:60%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+#past_meetings #past_meetings_descriptions p#secondary{
+  padding-top: 20px;
+}
+
+#past_meetings ul{
+  margin: 0 auto;
+  padding:50px 0px;
+}
+
+#past_meetings li {
+    border-top: 1px solid #D6D6D6;
+    padding: 10px 0px;
+    display: flex;
+}
+
+#past_meetings #date{
+    color: #222;
+    font-weight: bold;
+    flex: 1 0 0;
+}
+
+#past_meetings #month{
+    color: #222;
+    font-weight: bold;
+    flex: 2 0 0;
+}
+
+#past_meetings #location{
+    flex: 7 0 0;
+    text-align: left;
+}
+
+#past_meetings li:last-child {
+  border-bottom: 1px solid #D6D6D6;
+}
+
+
+#border_top{
+  border-top: 1px solid #D6D6D6;
+}
+
+td{
+  text-align: left;
+  border-top: 1px solid #D6D6D6;
+}
+
+
+#table_date, #table_month{
+  font-weight: bold;
+  width: 10%;
+}
+
+#table_location{
+  margin-left: 20%;
+  width: 60%;
+}
+
+/*Member Events Section */
+#form_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: flex;
+}
+
+#form_container > * {
+    margin: 0px 5px;
+    /*height: 2em;*/
+}
+
+#form_container select {
+    border: 1px solid #C9C9C9;
+}
+
+#post_container{
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 29%;
+  padding-left: 3%;
+  padding-bottom: 2%;
+  line-height: 1.5em;
+}
+
+article p, article a{
+  text-align: left;
+  font-weight: bold;
+}
+
+p{
+  margin: 0;
+}
+
+#post_container .img_wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location_text{
+  font-size: 1em;
+  color: #777777;
+  margin-top: 1%;
+  text-transform: uppercase;
+}
+
+.title_text{
+  font-size: 1em;
+  color: #222;
+  display: block;
+}
+
+.title_text:hover{
+  text-decoration: none;
+}
+
+.date_upcoming_wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+
+.date_text{
+  font-size: 1em;
+}
+
+.upcoming_text{
+  font-size: 0.8em;
+  color: #F4803E;
+  text-transform: uppercase;
+}
+.upcoming_text.past{
+  color: #C9C9C9;
+}
+
+
+
+#pagination_wrapper{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+
+}
+
+#pagination_wrapper a{
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+  color: #26378B;
+  border: 1px solid #D9D9D9;
+  margin: 0px 8px;
+}
+
+#pagination_wrapper a.active{
+  color: white;
+  background-color: #26378B;
+}
+
+#pagination_wrapper a:hover{
+  color: white;
+  background-color: #26378B;
+}
+
+
+
+@media screen and (max-width: 700px){
+  article{
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  #post_container{
+    justify-content: space-around;
+  }
+
+  #upcoming_text{
+    /*margin-left: 2%;*/
+  }
+  #event_update, #past_meetings{
+      width: 100%;
+  }
+  .aotca-viewport{
+      padding: 0px 50px;
+  }
+  #main_text {
+      padding:20px;
+      width: 100%;
+      position: relative;
+  }
+
+}
+
+@media screen and (max-width: 480px){
+    .aotca-viewport{
+        padding: 0px 24px;
+    }
+}
