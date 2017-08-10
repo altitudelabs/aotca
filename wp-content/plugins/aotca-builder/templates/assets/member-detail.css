@@ -1,9 +1,5 @@
-#aotca-content-container {
-  padding-bottom: 155px;
-}
-
 section {
-  padding-top: 57px;
+  padding-top: 40px;
   color: #505050;
 }
 
@@ -15,49 +11,83 @@ section {
   border-bottom: 1px solid #C9C9C9;
 }
 
+.info .logo-wrapper {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #95989A;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.info .logo-wrapper > img {
+    /*position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+    max-width: 180px;
+    max-height: 180px;
+}
+
 .info .logo-container {
-  background-color: #F2F2F2;
   min-width: 200px;
-  width: 200px;
-  height: 200px;
   padding: 10px;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.info .text-info {
+.info .text-info{
   padding-left: 37px;
 }
 
-.info h1.title {
-  padding-top: 28px;
-  color: #26378B;
-  font-size: 24px;
-  font-weight: bold;
-}
 .info .field {
   font-size: 17px;
 }
 .info .field > span {
   display: block;
 }
+.info .title {
+    padding-top: 33px;
+}
 .info .field .key {
-  padding-top: 33px;
+  padding-top: 15px;
+  color: #505050;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .info .field .value {
   color: #777777;
 }
 
-section h2 {
+section h3 {
   font-size: 21px;
   font-weight: bold;
+  text-transform: uppercase;
+  color: #505050;
+  margin-bottom: 10px;
 }
 
 section.overview > span {
   display: block;
   color: #777777;
   font-size: 17px;
+}
+section.overview p {
+    line-height: 35px;
+}
+
+@media screen and (max-width: 600px){
+    .info {
+      padding-top: 0px;
+      display: block;
+    }
+    .info .text-info {
+        padding-left:0px;
+    }
+
 }

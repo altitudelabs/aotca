@@ -63,7 +63,7 @@ function render_documents($name, $list_title = "", $render_divider = true) {
             <?php echo $document['title'] ?>
           </span>
           <form method="get" target="_blank" action="<?php echo $document['file'] ?>" class="download">
-             <button type="submit">
+             <button class="btn-outline-primary cap"type="submit">
                Download Now
              </button>
           </form>
@@ -84,9 +84,9 @@ function render_documents($name, $list_title = "", $render_divider = true) {
   <div class="events-detail-container aotca-viewport">
     <section class="events-itinerary">
       <div class="date-time">
-        <h3 class="title">
+        <h6 class="title">
           Date and Time
-        </h3>
+      </h6>
         <div class="start-date">
           <?php echo $start_date ?>
         </div>
@@ -95,25 +95,25 @@ function render_documents($name, $list_title = "", $render_divider = true) {
         </div>
       </div>
       <div class="location">
-        <h3 class="title">
+        <h6 class="title">
           Location
-        </h3>
+      </h6>
         <div class="address">
           <?php echo $location ?>
         </div>
       </div>
       <div class="itinerary">
-        <h3 class="title">
+        <h6 class="title">
           Program Itinerary
-        </h3>
+      </h6>
         <form method="get" target="_blank" action="<?php echo get_fields(get_the_ID())['itinerary_document'] ?>">
-           <button type="submit">
+           <button class="btn-primary cap"type="submit">
              Download Now
            </button>
         </form>
       </div>
     </section>
-    <div style="padding: 0px 60px;">
+    <div class="events-info">
       <section class="sections">
         <h2>Sections</h2>
         <ul>
