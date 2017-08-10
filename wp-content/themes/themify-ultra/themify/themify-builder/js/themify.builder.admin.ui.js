@@ -226,7 +226,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 						if ($fields.first().next('.themify_builder_field').find('.style_apply_all').is(':checked')) {
 							var $val = $(this).val(),
 								$select = $(this).is('select');
-							
+
 							$fields.not(':last').each(function(){
 								if ($select) {
 									$(this).find('select option').prop('selected', false);
@@ -400,7 +400,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 				// "Apply all" // verify is "apply all" is enabled to propagate the border color
 				//self.applyAll_verifyBorderColor($field, $field.val(), $input.val(), tempColor);
 			})
-			
+
 			.on('blur keyup', '.color_opacity', function () {
 				var $input = $(this),
 						tempOpacity = '',
@@ -412,7 +412,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 				}
 				$input.val(tempOpacity);
 				$minicolors.minicolors('opacity', tempOpacity);
-				
+
 				// "Apply all" // verify is "apply all" is enabled to propagate the border color
 				//self.applyAll_verifyBorderColor($field, $field.val(), $input.val(), tempOpacity);
 			});
@@ -481,7 +481,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 					}
 				});
 			});
-			
+
 			var startValue = self.builderContainer.innerHTML;
 			$("#themify_builder_row_wrapper").sortable({
 				items: '.themify_builder_row',
@@ -568,13 +568,13 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 			$(this).parents('.themify_builder_row').toggleClass('collapsed').find('.themify_builder_row_content').slideToggle();
 		},
 		deleteRow: function ($row, model) {
-			
+
 			if (!confirm(themifyBuilder.rowDeleteConfirm)) {
 				return;
 			}
 
 			var startValue = ThemifyPageBuilder.builderContainer.innerHTML;
-				
+
 			model.destroy();
 
 			var newValue = ThemifyPageBuilder.builderContainer.innerHTML;
@@ -591,7 +591,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 				startValue = self.builderContainer.innerHTML;
 
 			rowView.view.render().$el.insertAfter( $row );
-			
+
 			var newValue = self.builderContainer.innerHTML;
 			if ( startValue !== newValue ) {
 				ThemifyBuilderCommon.undoManager.events.trigger('change', [startValue, newValue]);
@@ -751,10 +751,10 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 				instance.update();
 				$input.add( $field.find( '.themify-gradient-css' ) ).val( '' ).trigger( 'change' );
 			} );
-			
+
 			// angle input
 			var $angleInput = $field.find( '.themify-gradient-angle' );
-			
+
 			// Linear or Radial select field
 			$field.find( '.themify-gradient-type' ).on( 'change', function(){
 				instance.setType( $( this ).val() );
@@ -772,11 +772,11 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 				}
 			} )
 			.trigger( 'change' ); // required: the option's value is set before the event handler is registered, trigger change manually to patch this
-			
+
 			$field.find('.themify-radial-circle input').on('change',function(){
 				instance.setRadialCircle( $( this ).is(':checked'));
 			}).trigger( 'change' );
-						
+
 			$angleInput.on( 'change', function(){
                             var $val = parseInt($( this ).val());
                                 if(!$val){
@@ -918,7 +918,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 									}
 									else if ($this_option_child.hasClass('themify-checkbox')) {
 										for(var $i in $found_element_child){
-										   
+
 											 $this_option_child.find("input[value='" + $found_element_child[$i] + "']").prop('checked', true);
 										}
 									}
@@ -1129,7 +1129,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 				self.switchPlaceholdModule($el);
 
 				model.destroy();
-				
+
 				self.newRowAvailable();
 				self.equalHeight();
 				self.moduleEvents();
@@ -1355,7 +1355,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 								if(!this_option_id_child){
 									this_option_id_child = $(this).attr('id');
 								}
-								
+
 							if ($(this).hasClass('tf-radio-choice')) {
 								option_value_child = ($(this).find(':checked').length > 0) ? $(this).find(':checked').val() : '';
 							} else if ($(this).hasClass('themify-layout-icon')) {
@@ -1658,7 +1658,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 					if ($('#hide_attachment_display_settings').length == 0) {
 						$('body').append('<style id="hide_attachment_display_settings">.media-modal .attachment-display-settings { display:none }</style>');
 					}
-	 
+
 					file_frame.on('close', function (selection) {
 						$('#hide_attachment_display_settings').remove();
 					});
@@ -1756,7 +1756,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 						var response_url = json.large_url ? json.large_url : json.url,
 							 response_id = json.id,
 							thumb_url = json.thumb;
-							 
+
 						$this.closest('.themify_builder_input').find('.themify-builder-uploader-input').val(response_url).trigger('change')
 								.parent().find('.img-placeholder').empty()
 								.html($('<img/>', {src: thumb_url, width: 50, height: 50}))
@@ -2096,7 +2096,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 					$url = attachment.sizes.thumbnail? attachment.sizes.thumbnail.url: attachment.url;
 				$html+='<img src="'+$url+'" width="50" height="50" />';
 			}
-			$preview.html($html);  
+			$preview.html($html);
 		},
 		getShortcodePreview:function($input,$value){
 
@@ -2342,7 +2342,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 						}
 					});
 				}
-				
+
 				// image field
 				$('#tfb_row_settings').find('.themify-builder-uploader-input').each(function () {
 					var img_field = $(this).val(),
@@ -2355,7 +2355,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 						$(this).parent().find('.thumb_preview').hide();
 					}
 				});
-				
+
 				$( '.themify-gradient ' ).each(function(){
 					var $key = $(this).prop('name');
 						$options = $.extend( {
@@ -2495,7 +2495,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 						$(this).parent().find('.thumb_preview').hide();
 					}
 				});
-				
+
 				$( '.themify-gradient ' ).each(function(){
 					var $key = $(this).prop('name');
 						$options = $.extend( {
@@ -2555,17 +2555,17 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 			$('#tfb_row_settings').find('.themify_builder_row_js_wrapper').each(function () {
 				var this_option_id = $(this).attr('id'),
 					row_items = [];
-				
+
 				$(this).find('.themify_builder_row').each(function () {
 					var temp_rows = {};
-					
+
 					$(this).find('.tfb_lb_option_child').each(function () {
 						var option_value_child,
 							this_option_id_child = $(this).data('input-id');
 							if(!this_option_id_child){
 								this_option_id_child = $(this).attr('id');
 							}
-							
+
 						option_value_child = $(this).val();
 
 						if (option_value_child) {
@@ -2669,7 +2669,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 				} else {
 					// Add column
 					ThemifyPageBuilder._addNewColumn({
-						newclass: 'col' + v, 
+						newclass: 'col' + v,
 						component: is_sub_row ? 'sub-column' : 'column'
 					}, $base);
 				}
@@ -2727,7 +2727,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 				alignment = $(this).data('alignment'),
 				$row = null,
 				startValue = ThemifyPageBuilder.builderContainer.innerHTML;
-			
+
 			if (handle == 'module')
 				return;
 
@@ -2874,7 +2874,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 				startValue = self.builderContainer.innerHTML;
 
 			subRowView.view.render().$el.insertAfter( $subrow );
-			
+
 			ThemifyPageBuilder.equalHeight();
 			ThemifyPageBuilder.moduleEvents();
 			ThemifyPageBuilder.editing = true;
@@ -3189,7 +3189,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 					subRowView.view.render().$el.insertAfter( $selectedSubRow );
 					$selectedSubRow.remove();
 					self.moduleEvents();
-					
+
 					break;
 
 				case 'module':
@@ -3209,7 +3209,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 					moduleView.view.render().$el.insertAfter($('.current_selected_module'));
 					$('.current_selected_module').remove();
 					self.moduleEvents();
-					
+
 					break;
 
 				case 'column':
@@ -3296,9 +3296,9 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 				});
 			};
 		}
-		
+
 		// fixed builder module panel while scrolling
-		$(window).load(function () {
+		$(window).on('load',function () {
 
 			var $panel = $('#page-builder .themify_builder_module_panel'),
 					$top = 0,
@@ -3351,7 +3351,7 @@ var ThemifyPageBuilder, ThemifyBuilderCommon;
 				}
 			}
 		});
-	   
+
 	});
 }(jQuery, window, document));
 }

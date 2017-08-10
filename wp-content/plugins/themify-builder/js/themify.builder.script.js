@@ -206,22 +206,22 @@
 				lastScrollTop: 0,
 
 				init: function () {
-					
+
 					this.parallaxElemns = Array.prototype.slice.call(document.querySelectorAll(this.settings.selectors));//convert to array to add/remove an element;
 					for (var i = 0; i < this.parallaxElemns.length; i++) {
 						this.reset(i);
 					}
-					this.start();					
+					this.start();
 				},
 				scrollHandler: function(){
 					this.requestId = requestAnimationFrame(this.scrollHandler.bind(this));
-	 
+
 					this.now = Date.now();
 					this.delta = this.now - this.then;
-					 
+
 					if (this.delta > this.interval) {
 						// update time stuffs
-						 
+
 						// Just `then = now` is not enough.
 						// Lets say we set fps at 10 which means
 						// each frame must take 100ms
@@ -233,9 +233,9 @@
 						// So we have to get rid of that extra 12ms
 						// by subtracting delta (112) % interval (100).
 						// Hope that makes sense.
-						 
+
 						this.then = this.now - (this.delta % this.interval);
-						 
+
 						this.parallaxit();
 					}
 				},
@@ -336,7 +336,7 @@ var ThemifyBuilderModuleJs;
 			if (window.loaded) {
 				this.window_load();
 			} else {
-				$(window).load(this.window_load);
+				$(window).on('load',this.window_load);
 			}
 			$(window).bind('hashchange', this.tabsDeepLink);
 
@@ -409,7 +409,7 @@ var ThemifyBuilderModuleJs;
 		},
 		wowInit: function ( callback ) {
 			callback = callback || ThemifyBuilderModuleJs.wowCallback;
-	        if ( typeof tbLocalScript !== 'undefined' 
+	        if ( typeof tbLocalScript !== 'undefined'
 	        		&& typeof tbLocalScript.animationInviewSelectors!=='undefined'
 	        		&& $( tbLocalScript.animationInviewSelectors.toString() ).length ) {
 				if (!ThemifyBuilderModuleJs.wow) {
@@ -645,7 +645,7 @@ var ThemifyBuilderModuleJs;
                             $('.big-video-wrap').remove();
                             return;
 			}
-                        
+
                         deep = deep && $videoElmt;
                         var p = '';
                         if(deep){
@@ -712,7 +712,7 @@ var ThemifyBuilderModuleJs;
 						}
 					);
 				}
-                               
+
 				if ($is_youtube.length > 0 && !this._isTouch()) {
                                     if(!$.fn.ThemifyYTBPlayer){
                                         Themify.LoadAsync(
@@ -730,7 +730,7 @@ var ThemifyBuilderModuleJs;
                                     else{
                                         self.fullwidthYoutobeCallBack($is_youtube);
                                     }
-					
+
 				}
 			}
 
@@ -745,7 +745,7 @@ var ThemifyBuilderModuleJs;
 		videoParams: function ($el) {
 			var  mute = 'mute' === $el.data('mutevideo'),
                             loop = 'undefined' !== typeof $el.data('unloopvideo')?'loop' === $el.data('unloopvideo'):'yes' === tbLocalScript.backgroundVideoLoop;
-                        
+
 			return {'mute': mute, 'loop': loop};
 		},
 		// Row: Fullwidth video background
@@ -789,8 +789,8 @@ var ThemifyBuilderModuleJs;
                                     function () {
                                         window.onYouTubePlayerAPIReady = _each;
                                     },
-                                    null, 
-                                    null, 
+                                    null,
+                                    null,
                                     function () {
                                         return typeof YT !== 'undefined' && typeof YT.Player !== 'undefined';
                             });
@@ -1105,7 +1105,7 @@ var ThemifyBuilderModuleJs;
 			});
 		},
 		loadOnAjax: function (el) {
-                  
+
 			var $self = ThemifyBuilderModuleJs;
 			if (tbLocalScript.fullwidth_support == '') {
 				$self.setupFullwidthRows();
@@ -1124,10 +1124,10 @@ var ThemifyBuilderModuleJs;
 					// for split theme
 					cover = $(this).children('.tb-column-inner, .ms-tableCell').first().children('.builder_row_cover');
 					if (cover.length === 0) {
-										   
+
 						return;
 					}
-								   
+
 				}
 				if(cover.data('hover-type')==='gradient' || cover.data('type')==='gradient' || cover.data('updated')){
 					return;
@@ -1507,7 +1507,7 @@ var ThemifyBuilderModuleJs;
 							this.show( this.source );
 							this.isPlaying = true;
 						}
-					} );	
+					} );
 				};
 			$( window ).on( 'scroll mouseenter keydown assignVideo', playOnFocus );
 		},

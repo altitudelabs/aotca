@@ -44,7 +44,7 @@ var Themify, ThemifyGallery;
 				$self.loadTFIcons();
 			}
 			else {
-				$(window).load(function () {
+				$(window).on('load',function () {
 					$('.shortcode.slider, .shortcode.post-slider, .slideshow-wrap').css({'height': 'auto', 'visibility': 'visible'});
 					$self.InitGallery();
 				});
@@ -435,7 +435,7 @@ var Themify, ThemifyGallery;
 				}, null, null, function () {
 					return ('undefined' !== typeof $.fn.magnificPopup);
 				});
-				
+
 				if( $( '.gallery-masonry' ).length ) {
 					this.LoadAsync(themify_vars.includesURL + 'js/imagesloaded.min.js', function () {
 						self.LoadAsync(themify_vars.includesURL + 'js/masonry.min.js', function () {
@@ -444,7 +444,7 @@ var Themify, ThemifyGallery;
 									itemSelector: '.gallery-item',
 									columnWidth: 1,
 									originLeft : ! $( 'body' ).hasClass( 'rtl' )
-								}); 
+								});
 							});
 						}, null, null, function () {
 							return ('undefined' !== typeof $.fn.masonry);
