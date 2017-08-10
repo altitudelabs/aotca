@@ -40,7 +40,7 @@
       ?>
       <a class="naked gallery-item" href="<?php echo $gallery_array[$i]->link_url?>">
         <div class="logo-wrapper">
-          <img src="<?php echo $gallery_array[$i]->image?>" />
+            <img src="<?php echo $gallery_array[$i]->image?>" />
         </div>
         <div class="description">
           <span class="description-date"><?php echo $gallery_array[$i]->link_date?></span>
