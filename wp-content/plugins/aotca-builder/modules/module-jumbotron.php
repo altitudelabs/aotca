@@ -11,6 +11,12 @@ class Jumbotron_Module extends Themify_Builder_Module {
 	public function get_options() {
 		return array(
 			array(
+				'id' => 'jumbotron_date',
+				'type' => 'text',
+				'label' => __('Date', 'jumbotron'),
+				'class' => ''
+			),
+			array(
 				'id' => 'jumbotron_title',
 				'type' => 'text',
 				'label' => __('Title', 'jumbotron'),

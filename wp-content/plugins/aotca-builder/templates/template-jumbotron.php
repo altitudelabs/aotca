@@ -9,6 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 wp_enqueue_style('jumbotron', plugin_dir_url( __FILE__ ) . '/assets/jumbotron.css');
 
 $jumbotron_default = array(
+  'jumbotron_date' => '',
   'jumbotron_title' => '',
   'jumbotron_image' => '',
 );
@@ -26,6 +27,9 @@ $container_class = implode( ' ', apply_filters( 'themify_builder_module_classes'
 <div id="<?php echo $module_ID; ?>" class="<?php echo esc_attr( $container_class ); ?>">
     <div class="jumbotron-container" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(<?php echo $jumbotron_image; ?>); background-size: cover;
     background-position: center;">
+    <?php if (!empty($jumbotron_date)):?>
+        <p id="date"><?php echo $jumbotron_date ?></p>
+    <?php endif ;?>
         <p id="title"><?php echo $jumbotron_title ?></p>
     </div>
 </div>
