@@ -3,7 +3,7 @@ if (!defined('ABSPATH'))
 	exit; // Exit if accessed directly
 /**
  * Template Gallery Grid
- * 
+ *
  * Access original fields: $mod_settings
  * @author Themify
  */

@@ -3,7 +3,7 @@ if (!defined('ABSPATH'))
     exit; // Exit if accessed directly
 /**
  * Template Post
- * 
+ *
  * Access original fields: $mod_settings
  * @author Themify
  */
@@ -196,7 +196,7 @@ add_filter( 'themify_after_post_title_parse_args', 'themify_builder_post_title_a
                                 themify_after_post_image(); // Hook
                             } elseif ($post_image = themify_get_image($param_image)) {
 
-                                themify_before_post_image(); // Hook 
+                                themify_before_post_image(); // Hook
                                 ?>
 
                                 <figure class="post-image">
@@ -226,11 +226,11 @@ add_filter( 'themify_after_post_title_parse_args', 'themify_builder_post_title_a
                                 <?php else: ?>
                                     <h2 class="post-title"><a href="<?php echo themify_get_featured_image_link(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
                                 <?php endif; //unlink post title    ?>
-                                <?php themify_after_post_title(); // Hook ?> 
-                            <?php endif; //post title  ?>    
+                                <?php themify_after_post_title(); // Hook ?>
+                            <?php endif; //post title  ?>
 
                             <?php if ($hide_post_meta_post != 'yes'): ?>
-                                <p class="post-meta"> 
+                                <p class="post-meta">
                                     <span class="post-author"><?php the_author_posts_link() ?></span>
                                     <span class="post-category"><?php the_category(', ') ?></span>
                                     <?php the_tags(' <span class="post-tag">', ', ', '</span>'); ?>
@@ -238,7 +238,7 @@ add_filter( 'themify_after_post_title_parse_args', 'themify_builder_post_title_a
                                         <span class="post-comment"><?php comments_popup_link(__('0 Comments', 'themify'), __('1 Comment', 'themify'), __('% Comments', 'themify')); ?></span>
                                     <?php endif; //post comment    ?>
                                 </p>
-                            <?php endif; //post meta   ?>    
+                            <?php endif; //post meta   ?>
 
                             <?php
                             // fix the issue more link doesn't output
