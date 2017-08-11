@@ -34,7 +34,7 @@ $custom_query_args = array(
 $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 if($m_month!="Month" && $m_year!="Year"){
     $m_month = date("n", strtotime($m_month));
-
+}
   $custom_query = new WP_Query( $custom_query_args );
 
   $events = array();
