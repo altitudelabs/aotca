@@ -4566,7 +4566,7 @@ nobr a img {
 
 .module-feature-content p {
 	width: 75%;
-	margin: 2em auto;
+	margin: 0px auto;
 }
 
 /*Equalized Padding at bottom of presidents section (81.23px total)*/
