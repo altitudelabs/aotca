@@ -2701,11 +2701,18 @@ function password() {
 		), $mod_name, $module_ID, $fields_args )
 	);
 	$documents = get_fields($_POST['post_id'])[$_POST['type']];
-	echo var_dump($_POST);
 	foreach ($documents as $document) {
-		if ($document['file']['id'] == $_POST['file'] and strcmp($document['password'], $_POST['password'])==0) {
-			echo $document['file']['url'];
+		if ($_POST['type'] == 'documents'){
+			if ($document['file']['id'] == $_POST['file'] and strcmp($document['password'], $_POST['password'])==0) {
+				echo $document['file']['url'];
+			}
 		}
+		else {
+			if (strcmp(basename($document['file']),$_POST['file'])==0 and strcmp($document['password'], $_POST['password'])==0) {
+				echo $document['file']['url'];
+			}
+		}
+
 	}
 	die();
 };

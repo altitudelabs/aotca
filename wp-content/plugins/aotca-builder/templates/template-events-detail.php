@@ -59,14 +59,19 @@ function render_documents($name, $list_title = "", $render_divider = true) {
       $document = $documents[$i];
       ?>
         <li>
+
           <span class="title">
             <?php echo $document['title'] ?>
           </span>
-          <form method="get" target="_blank" action="<?php echo $document['file'] ?>" class="download">
-             <button class="btn-outline-primary cap"type="submit">
-               Download Now
-             </button>
-          </form>
+          <?php if (isset($document['password']) && (!empty($document['password']))): ?>
+              <button class="btn-outline-secondary cap member" data-type="<?php echo $name?>" data-id="<?php echo basename($document['file']) ?>"><i class="fa fa-lock fa-fw" aria-hidden="true"></i>Members</button>
+         <?php else:?>
+             <form method="get" target="_blank" action="<?php echo $document['file'] ?>" class="download">
+                 <button class="btn-outline-primary cap" type="submit">
+                     Download Now
+                 </button>
+             </form>
+         <?php endif;?>
         </li>
       <?php
     }
@@ -79,6 +84,25 @@ function render_documents($name, $list_title = "", $render_divider = true) {
   <?php
 }
 ?>
+<div id="login-modal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+      <p id="close">&times;</p>
+      <div class="modal-inner">
+    <p>Enter your member's password</p>
+    <form method="post">
+        <input name="id" type="hidden"/>
+        <input name="type" type="hidden"/>
+        <input type="password" name="password"/>
+        <button type="submit" class="login btn-secondary bold cap">login</button>
+    </form>
+  </div>
+  <div id="modal-feedback">
+      <p id="download-link"><a download>Click here to download</a></p>
+      <p id="modal-msg"></p>
+  </div>
+</div>
+</div>
 
 <div id="<?php echo $module_ID; ?>" class="<?php echo esc_attr( $container_class ); ?>">
   <div class="events-detail-container aotca-viewport">
@@ -195,6 +219,58 @@ function render_documents($name, $list_title = "", $render_divider = true) {
         $('.bxslider').bxSlider({
           pagerCustom: '#bx-pager',
           controls: false
+        });
+        $('#modal-feedback').children().hide();
+        $('#login-modal form').on('submit', function(){
+            var _password = $(this).find('input[name="password"]').val();
+            if (_password){
+                $.ajax({
+                    url: <?php echo wp_json_encode(admin_url('admin-ajax.php', 'relative'))?>,
+                    type: 'post',
+                    data: {
+                        action: 'password',
+                      file: $(this).find('input[name="id"]').val(),
+                      type: $(this).find('input[name="type"]').val(),
+                      password: _password,
+                      post_id: <?php echo get_the_ID() ?>,
+                    },
+                    success: function(response) {
+                      if (response) {
+                          $('#download-link').find('a').attr('href', response);
+                          $('#download-link').show()
+                          $('#modal-msg').hide();
+                      }
+                      else {
+                          $('#download-link').find('a').removeAttr('href');
+                          $('#download-link').hide();
+                          $('#modal-msg').html('Incorrect password');
+                          $('#modal-msg').show();
+                      }
+                    }
+                });
+            }
+            else {
+                $('#download-link').find('a').removeAttr('href');
+                $('#download-link').hide();
+                $('#modal-msg').html('Please enter your password');
+                $('#modal-msg').show();
+            }
+          return false;
+          });
+        $('button.member').on('click', function(){
+            // reset
+            $('#download-link').find('a').removeAttr('href');
+            $('#modal-feedback').children().hide();
+            $('#login-modal').find('input[name="password"]').val('');
+
+            // set input value
+            $('#login-modal').find('input[name="id"]').val($(this).data('id'));
+            $('#login-modal').find('input[name="type"]').val($(this).data('type'));
+
+             $('#login-modal').show();
+        });
+        $('#close').on('click', function(){
+            $('#login-modal').hide();
         });
       });
       </script>
