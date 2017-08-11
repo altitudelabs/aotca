@@ -22,7 +22,8 @@ h5 {
 }
 #main-nav a {	
 	font-family:Roboto;	font-weight:500;
- 
+
+	padding-bottom: 10px; 
 }
 #main-nav a, #main-nav > li > a {	
 	color: #26378b; 
@@ -110,6 +111,10 @@ h5 {
 	background-color: #ffffff; 
 }
 #footerwrap {	
+	background-color: #28367c; 
+}
+.footer-widgets .widget {	
+	color: #ffffff;
 	background-color: #28367c; 
 }
  }
