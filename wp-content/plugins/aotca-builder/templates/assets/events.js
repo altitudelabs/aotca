@@ -82,10 +82,11 @@ function handleSelectChange(){ //Initial function that gets called to automatica
                 var title = (final_data[i].event_title)? final_data[i].event_title: 'Title';
 
                 var $article = $("<article>",{"class":"page"});
+                var $a_link = $("<a>", {href: link});
+                var $p_title_text = $("<p>", {class: "title_text", text: title});
                 var $img = $("<img>", {src: image });
                 var $img_wrapper = $("<div>", {"class":"img_wrapper"});
                 var $p_location = $("<p>",{class: "location_text", text: location});
-                var $a_link = $("<a>", {class: "title_text", href: link, text: title});
                 var $div_wrapper = $("<div>",{class: "date_upcoming_wrapper"});
                 var $p_date_text = $("<p>", {class: "date_text", text: date});
                 var $p_upcoming_text = (upcoming)? $("<p>", {class: "upcoming_text upcoming", text: "upcoming"}): $("<p>", {class: "upcoming_text past", text: "past"});
@@ -93,10 +94,11 @@ function handleSelectChange(){ //Initial function that gets called to automatica
                 $div_wrapper.append($p_date_text);
                 $div_wrapper.append($p_upcoming_text);
                 $img_wrapper.append($img);
-                $article.append($img_wrapper);
-                $article.append($p_location);
-                $article.append($a_link);
-                $article.append($div_wrapper);
+                $article.append($a_link)
+                $a_link.append($img_wrapper);
+                $a_link.append($p_location);
+                $a_link.append($p_title_text);
+                $a_link.append($div_wrapper);
 
                 $("#post_container").append($article);
 
