@@ -31,9 +31,15 @@ $custom_query_args = array(
 //     'compare' => '='
 // ),
 );
+<<<<<<< HEAD
 $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 if($m_month!="Month" && $m_year!="Year"){
     $m_month = date("n", strtotime($m_month));
+=======
+if($m_month!="Month" && $m_year!="Year"){
+    $m_month = date("n", strtotime($m_month));
+    $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+>>>>>>> eb5ab2c9695ba72ba0a965bd5b4bbfc5ea086256
 }
 
   $custom_query = new WP_Query( $custom_query_args );

@@ -145,10 +145,6 @@ article p, article a{
   font-weight: bold;
 }
 
-article a:hover{
-    text-decoration: none;
-}
-
 p{
   margin: 0;
 }
