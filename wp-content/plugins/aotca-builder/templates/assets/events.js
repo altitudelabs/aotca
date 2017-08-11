@@ -199,19 +199,20 @@ function handlePaginationChange(parameter){ //Same as the above, except we pass 
           var title = final_data[i].event_title;
 
           var $article = $("<article>",{"class":"page"});
+          var $a_link = $("<a>", {href: link});
           var $img = $("<img>", {src: image });
+          var $p_title_text = $("<p>", {id: "title_text", text: title});
           var $p_location = $("<p>",{id: "location_text", text: location});
-          var $a_link = $("<a>", {id: "title_text", href: link, text: title});
           var $div_wrapper = $("<div>",{id: "date_upcoming_wrapper"});
           var $p_date_text = $("<p>", {id: "date_text", text: date});
           var $p_upcoming_text = $("<p>", {id: "upcoming_text", text: upcoming});
 
           $div_wrapper.append($p_date_text);
           $div_wrapper.append($p_upcoming_text);
-
+          $article.append($a_link);
           $article.append($img);
           $article.append($p_location);
-          $article.append($a_link);
+          $article.append($p_title_text);
           $article.append($div_wrapper);
 
           $("#post_container").append($article);
