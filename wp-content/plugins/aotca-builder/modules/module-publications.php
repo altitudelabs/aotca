@@ -5,7 +5,7 @@ class Publications_Module extends Themify_Builder_Module {
 	function __construct() {
 		parent::__construct(array(
 			'name' => __( 'Publications', 'publications' ),
-			'slug' => 'Publications'
+			'slug' => 'publications'
 		));
 	}
 
