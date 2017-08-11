@@ -91,11 +91,7 @@ $table_information = $settings['past_meetings_table'];
 
 	        <div id="form_container">
 	          <select id="select_month" onchange="handleSelectChange()" name="s_month">
-<<<<<<< HEAD
 	            <option value="months">Months</option>
-=======
-	            <option> All months</option>
->>>>>>> eb5ab2c9695ba72ba0a965bd5b4bbfc5ea086256
 				<?php for ($month=1; $month <=12; $month++):?>
 					<?php if ($month == date("n")):?>
 						<option value="<?php echo date("M", mktime(0, 0, 0, $month))?>" selected><?php echo date("F", mktime(0, 0, 0, $month))?></option>
@@ -106,33 +102,12 @@ $table_information = $settings['past_meetings_table'];
 				<?php endfor;?>
 	          </select>
 	          <select id="select_year" onchange="handleSelectChange()" name="s_year">
-<<<<<<< HEAD
 	            <option value="years">Years</option>
 	            <?php for ($year = 2020; $year >= 1990; $year--):?>
 					<?php if ($year == date("Y")):?>
 						 <option value="<?php echo $year?>"selected><?php echo $year?></option>
 					<?php else:?>
 						 <option value="<?php echo $year?>"><?php echo $year?></option>
-=======
-	            <option>All years</option>
-	            <?php for ($year = date("Y")+3; $year >= date("Y")-27; $year--):
-					$diff = date("Y") - $year;
-					if ($diff > 0) {
-						$str_year = $diff." year(s) ago";
-					}
-					elseif ($diff < 0) {
-						$str_year = abs($diff)." year(s) later";
-					}
-					else{
-						$str_year = "current year";
-					}
-				?>
-
-					<?php if ($year == date("Y")):?>
-						 <option value="<?php echo $year?>"selected><?php echo $str_year?></option>
-					<?php else:?>
-						 <option value="<?php echo $year?>"><?php echo $str_year?></option>
->>>>>>> eb5ab2c9695ba72ba0a965bd5b4bbfc5ea086256
 					<?php endif;?>
 	            <?php endfor;?>
 	          </select>

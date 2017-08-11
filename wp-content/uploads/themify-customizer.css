@@ -41,40 +41,18 @@ h5 {
 	padding-left: 0px;
 	margin-right: 0%;
 }
-<<<<<<< HEAD
 #footerwrap {
 	background-color: #28367c;
 	padding-top: 15px;
 	padding-bottom: 30px;
-=======
-#main-nav li:not(.themify-widget-menu):not(.has-mega-column):not(.has-mega-sub-menu) > ul {	
-	padding-top: 15px;
-	padding-right: 0px;
-	padding-bottom: 15px;
-	padding-left: 0px;
-	margin-right: -165%; 
->>>>>>> eb5ab2c9695ba72ba0a965bd5b4bbfc5ea086256
 }
 .footer-widgets .widget {
 	color: #ffffff;
 	background-color: #28367c;
-<<<<<<< HEAD
 }
 @media screen and (max-width: 976px) { /* Themify Customize Styling */
 h5 {
 	color: #28367c;
-=======
-	padding-top: 15px;
-	padding-bottom: 30px; 
-}
-.footer-widgets .widget {	
-	color: #ffffff;
-	background-color: #28367c; 
-}
-@media screen and (max-width: 976px) { /* Themify Customize Styling */
-h5 {	
-	color: #28367c; 
->>>>>>> eb5ab2c9695ba72ba0a965bd5b4bbfc5ea086256
 }
 #site-logo, #site-logo a, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .header-slide-out #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo img {		width: 350px;
 	height: 40px;

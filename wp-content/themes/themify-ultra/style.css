@@ -4525,7 +4525,6 @@ FRONT PAGE
 }*/
 
 /* For horizontal reel effect to work nicely */
-<<<<<<< HEAD
 nobr {
 	display: -webkit-flex;
    display: flex;
@@ -4540,18 +4539,8 @@ nobr a img {
 	max-width: 65px;
     max-height: 50px;
 	margin-top:10px;
-=======
-#test2 img{
-  width: 65px;
-  height: 50px;
-  margin-top: 10px;
-}
 
-#test3 img{
-  width: 65px;
-  height: 50px;
-  margin-top: 10px;
->>>>>>> eb5ab2c9695ba72ba0a965bd5b4bbfc5ea086256
+
 }
 
 .module-button a{
@@ -4578,13 +4567,8 @@ nobr a img {
 }
 
 .module-feature-content p {
-<<<<<<< HEAD
 	width: 75%;
 	margin: 0px auto;
-=======
-	width: 60%;
-	margin: 2em auto;
->>>>>>> eb5ab2c9695ba72ba0a965bd5b4bbfc5ea086256
 }
 
 /*Equalized Padding at bottom of presidents section (81.23px total)*/
@@ -4735,8 +4719,7 @@ nobr a img {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-<<<<<<< HEAD
-=======
+
 }
 
 .fa.fa-cog.fa-spin{
@@ -4745,7 +4728,7 @@ nobr a img {
 
 .module-text div[role=form] {
 	margin-bottom: 100px;
->>>>>>> eb5ab2c9695ba72ba0a965bd5b4bbfc5ea086256
+
 }
 
 .module-text div[role=form] input[type=submit] {
@@ -4962,7 +4945,7 @@ nobr a img {
 
 .themify_builder_content-5656 .module_row:nth-child(3) {
 	display: none;
-<<<<<<< HEAD
+
 }
 
 .themify_builder_content-5656 .module_row:nth-child(3) h4{
@@ -4971,16 +4954,6 @@ nobr a img {
 	margin-bottom: 0px;
 }
 
-=======
-}
-
-.themify_builder_content-5656 .module_row:nth-child(3) h4{
-	font-weight: normal;
-	padding-bottom: 0px;
-	margin-bottom: 0px;
-}
-
->>>>>>> eb5ab2c9695ba72ba0a965bd5b4bbfc5ea086256
 .themify_builder_content-5656 .module_row:nth-child(3) a{
 	color: black;
 }
@@ -5502,7 +5475,8 @@ CONTACT US PAGE MOBILE
 #body .gallery-columns-6 .gallery-item img{
     width: 350px;
 		height: 350px;
-<<<<<<< HEAD
+
+
 }
 
 .modal .modal-content {
@@ -5514,21 +5488,6 @@ CONTACT US PAGE MOBILE
 	margin-top: 230px;
 }*/
 }
-
-=======
-}
-
-.modal .modal-content {
-    width: 80%; /* Could be more or less, depending on screen size */
-	/*height:40%;
-}
-
-.modal #modal-feedback {
-	margin-top: 230px;
-}*/
-}
-
->>>>>>> eb5ab2c9695ba72ba0a965bd5b4bbfc5ea086256
 @media screen and (max-width: 760px){
 	/*Removes Gap Between Slider and Nav */
 	body #content {
@@ -5583,15 +5542,9 @@ CONTACT US PAGE MOBILE
   }
 
 }
-<<<<<<< HEAD
 
 @media screen and (max-width: 1050px){
 
-=======
-
-@media screen and (max-width: 1050px){
-
->>>>>>> eb5ab2c9695ba72ba0a965bd5b4bbfc5ea086256
 /************************************************************************************
  GALLERY DETAIL PAGE
 *************************************************************************************/
