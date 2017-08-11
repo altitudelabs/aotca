@@ -674,11 +674,16 @@ body.fixed-header.page-loaded.admin-bar #headerwrap {
 	width: 210px;
 }
 #main-nav li {
-	margin: 0;
 	padding: 0;
 	list-style: none;
 	position: relative;
 	display: inline-block;
+}
+
+#main-nav li i.fa {
+	float:right;
+	margin-left: 8px;
+	margin-top: 5px;
 }
 
 #main-nav li.themify-widget-menu {
@@ -4520,16 +4525,20 @@ FRONT PAGE
 }*/
 
 /* For horizontal reel effect to work nicely */
-#test2 img{
-  width: 65px;
-  height: 50px;
-  margin-top: 10px;
+nobr {
+	display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row; /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: space-around;
 }
-
-#test3 img{
-  width: 65px;
-  height: 50px;
-  margin-top: 10px;
+nobr a img {
+	max-width: 65px;
+    max-height: 50px;
+	margin-top:10px;
 }
 
 .module-button a{
@@ -4556,7 +4565,7 @@ FRONT PAGE
 }
 
 .module-feature-content p {
-	width: 60%;
+	width: 75%;
 	margin: 2em auto;
 }
 
