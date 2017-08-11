@@ -4900,7 +4900,9 @@ nobr a img {
  AOTCA OFFICER PAGE
 *************************************************************************************/
 
-
+ .themify_builder_content-5652 .module_row:nth-of-type(2) .module_column p{
+	 color: #F4803E;
+ }
 
 /************************************************************************************
  COMMITTEE PAGE
@@ -5542,6 +5544,7 @@ CONTACT US PAGE MOBILE
   }
 
 }
+
 
 @media screen and (max-width: 1050px){
 
