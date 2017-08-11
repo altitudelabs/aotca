@@ -117,26 +117,26 @@ function render_documents($name, $list_title = "", $render_divider = true) {
       <section class="sections">
         <h2>Sections</h2>
         <ul>
-          <li><a class="naked" href="#">Event Detail</a></li>
-          <li><a class="naked" href="#">General Information Documents</a></li>
-          <li><a class="naked" href="#">International Tax Conference Documents</a></li>
-          <li><a class="naked" href="#">General Council Meeting</a></li>
-          <li><a class="naked" href="#">General Meeting</a></li>
-          <li><a class="naked" href="#">SGATAR</a></li>
-          <li><a class="naked" href="#">Event Photographs</a></li>
+          <li><a class="naked" href="#event-detail">Event Detail</a></li>
+          <li><a class="naked" href="#general-documents">General Information Documents</a></li>
+          <li><a class="naked" href="#conference-documents">International Tax Conference Documents</a></li>
+          <li><a class="naked" href="#general-council-documents">General Council Meeting</a></li>
+          <li><a class="naked" href="#general-meeting-documents">General Meeting</a></li>
+          <li><a class="naked" href="#sgatar-documents">SGATAR</a></li>
+          <li><a class="naked" href="#event-images">Event Photographs</a></li>
         </ul>
       </section>
       <div class="divider" style="margin: 46px 0px;"></div>
 
-      <section class="event-detail">
-        <h2>Evevnt Detail</h2>
+      <section class="event-detail" id="event-detail">
+        <h2>Event Detail</h2>
         <p>
           <?php echo $event_detail ?>
         </p>
       </section>
       <div class="divider" style="margin: 40px 0px;"></div>
 
-      <section class="general-documents">
+      <section class="general-documents" id="general-documents">
         <h2>General Information Documents</h2>
         <p>
           <?php echo $general_info_detail ?>
@@ -144,26 +144,26 @@ function render_documents($name, $list_title = "", $render_divider = true) {
         <?php echo render_documents("general_information_documents") ?>
       </section>
 
-      <section class="conference-documents">
+      <section class="conference-documents" id="conference-documents">
         <h2>International Tax Conference Documents</h2>
         <?php echo render_documents("conference_documents") ?>
       </section>
 
-      <section class="general-council-documents">
+      <section class="general-council-documents" id="general-council-documents">
         <h2>General Council Meeting</h2>
         <?php echo render_documents("council_agenda_documents", "Agenda", false) ?>
         <?php echo render_documents("council_minutes_documents", "Minutes") ?>
       </section>
-      <section class="general-meeting-documents">
+      <section class="general-meeting-documents" id="general-meeting-documents">
         <h2>General Meeting</h2>
         <?php echo render_documents("meeting_agenda_documents", "Agenda", false) ?>
         <?php echo render_documents("meeting_minutes_documents", "Minutes") ?>
       </section>
-      <section class="sgatar-documents">
-        <h2>SGATAR</h2>
+      <section class="sgatar-documents" id="sgatar-documents">
+        <h2>SGATAR Documents</h2>
         <?php echo render_documents("sgatar_documents") ?>
       </section>
-      <section class="event-images">
+      <section class="event-images" id="event-images">
         <h2>Event Photographs</h2>
         <div class="photo-slider">
           <ul class="bxslider">
