@@ -2709,7 +2709,7 @@ function password() {
 		}
 		else {
 			if (strcmp(basename($document['file']),$_POST['file'])==0 and strcmp($document['password'], $_POST['password'])==0) {
-				echo $document['file']['url'];
+				echo $document['file'];
 			}
 		}
 
