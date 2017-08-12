@@ -4953,7 +4953,8 @@ nobr a img {
 .themify_builder_content-5656 .module_row:nth-child(3) h4{
 	font-weight: normal;
 	padding-bottom: 0px;
-	margin-bottom: 0px;
+	margin-top: 26px;
+	margin-bottom: 9px;
 }
 
 .themify_builder_content-5656 .module_row:nth-child(3) a{
@@ -4961,7 +4962,7 @@ nobr a img {
 }
 
 .themify_builder_content-5656 .module_row:nth-child(3) p{
-	padding-bottom: 125px;
+	margin-bottom: 40px;
 }
 
 /************************************************************************************
@@ -5006,10 +5007,10 @@ nobr a img {
   margin-bottom: 25px;
 }*/
 
-.themify_builder_content-6061 h3 {
+.themify_builder_content-7365 h3 {
 	margin: 0px;
 }
-.themify_builder_content-6061 h4 {
+.themify_builder_content-7365 h4 {
 	padding-top: 10px;
 }
 
