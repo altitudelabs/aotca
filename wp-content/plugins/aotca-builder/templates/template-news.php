@@ -35,13 +35,34 @@ $container_class = implode( ' ', apply_filters( 'themify_builder_module_classes'
         for($i = 0; $i < count($news_list); $i++) {
       ?>
         <div class="news-container">
-          <a class="naked news" href="<?php echo $news_list[$i][link]?>">
+          <a class="naked news js" href="<?php echo $news_list[$i][link]?>">
             <span class="date"><?php echo $news_list[$i][date]?></span>
             <h2 class="title"><?php echo $news_list[$i][title]?></h2>
-            <span class="description"><?php echo $news_list[$i][description]?></span>
+            <span class="description clamp"><?php echo $news_list[$i][description]?></span>
           </a>
         </div>
       <?php }?>
     </section>
   </div>
 </div>
+
+<script>
+    // https://github.com/josephschmitt/Clamp.js
+    //var module = document.getElementById("clampjs");
+    var $ = window.jQuery;
+    $(document).ready(function() {
+        // $('.clamp').each(function(){
+        //     $clamp($(this), {clamp: 3});
+        // });
+        $('.clamp').each(function(){
+             var lines=Math.floor(90/$(this).css('line-height'));
+             $(this).css('-webkit-line-clamp', lines);
+        })
+        // var p=document.getElementsByClassName('clamp'),pl=p.length;
+        // while(pl--){
+        //  lineheight=parseInt(window.getComputedStyle(p[pl]).getPropertyValue("line-height"));
+        //  var lines=Math.floor(90/lineheight);
+        //  p[pl].style['-webkit-line-clamp']=lines;
+        // }
+    });
+</script>
