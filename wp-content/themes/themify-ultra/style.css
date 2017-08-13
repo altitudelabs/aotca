@@ -4708,6 +4708,8 @@ nobr a img {
   height: 150px;
   width: 100%;
   content: '';
+  top:-150px;
+  margin-bottom: -150px;
 }
 
 /************************************************************************************
@@ -5326,6 +5328,7 @@ MOBILE FOOTER
 
 .themify_builder_content-12 .sub_row_0-0-8 p{
 	margin: 0em 0em;
+	top: 180px;
 }
 
 .themify_builder_content-12 .sub_row_0-0-8 #img_wrapper::before{
@@ -5343,6 +5346,10 @@ MOBILE FOOTER
 .themify_builder_content-12 .module-feature-content p:nth-child(1){
     margin-bottom: 1em;
 }
+.p17 {
+	line-height: 40px;
+}
+
 
 /************************************************************************************
 ORGANISATION PAGE MOBILE (POST ID: 5654)
