@@ -10,7 +10,7 @@ wp_enqueue_style('event-page', plugin_dir_url( __FILE__ ) . '/assets/events.css'
 wp_enqueue_script('event-page', plugin_dir_url( __FILE__ ) . '/assets/events.js');
 
 $events_default = array(
-	'page' => 12,
+	'page' => 9,
 );
 
 $fields_args = wp_parse_args( $mod_settings, $events_default );
@@ -43,7 +43,7 @@ $table_information = $settings['past_meetings_table'];
 </script>
 <script>
   $(document).ready(function(){
-    handleSelectChange();
+    handleSelectChange(<?php echo $page?>);
   });
 </script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/event.js"></script>

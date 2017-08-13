@@ -59,7 +59,8 @@ if($m_month!="Month" && $m_year!="Year"){
         $temp_event->event_title = $title;
         $temp_event->event_link = $link;
 
-    $events[] = $temp_event;
+
+        $events[] = $temp_event;
 
     }
     endwhile;

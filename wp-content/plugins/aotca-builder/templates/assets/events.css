@@ -143,7 +143,7 @@ td{
   flex-wrap: wrap;
 }
 article {
-  width: 29%;
+  width: 28%;
   padding-left: 40px;
   padding-bottom: 2%;
   line-height: 1.5em;
@@ -208,35 +208,6 @@ p{
 .upcoming_text.past{
   color: #C9C9C9;
 }
-
-
-
-#pagination_wrapper{
-  display: flex;
-  justify-content: center;
-  padding-bottom: 5%;
-
-}
-
-#pagination_wrapper a{
-  text-align: center;
-  padding: 5px 16px;
-  text-decoration: none;
-  color: #26378B;
-  border: 1px solid #D9D9D9;
-  margin: 0px 8px;
-}
-
-#pagination_wrapper a.active{
-  color: white;
-  background-color: #26378B;
-}
-
-#pagination_wrapper a:hover{
-  color: white;
-  background-color: #26378B;
-}
-
 
 
 @media screen and (max-width: 700px){
