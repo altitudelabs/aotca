@@ -47,22 +47,11 @@ $container_class = implode( ' ', apply_filters( 'themify_builder_module_classes'
 </div>
 
 <script>
-    // https://github.com/josephschmitt/Clamp.js
-    //var module = document.getElementById("clampjs");
     var $ = window.jQuery;
     $(document).ready(function() {
-        // $('.clamp').each(function(){
-        //     $clamp($(this), {clamp: 3});
-        // });
-        $('.clamp').each(function(){
+        $('.clamp').each(function(){ // fixed card height in mobile page
              var lines=Math.floor(90/$(this).css('line-height'));
              $(this).css('-webkit-line-clamp', lines);
         })
-        // var p=document.getElementsByClassName('clamp'),pl=p.length;
-        // while(pl--){
-        //  lineheight=parseInt(window.getComputedStyle(p[pl]).getPropertyValue("line-height"));
-        //  var lines=Math.floor(90/lineheight);
-        //  p[pl].style['-webkit-line-clamp']=lines;
-        // }
     });
 </script>
