@@ -37,10 +37,16 @@
 }
 
 .publication {
-    border: 1px solid #C9C9C9;
     border-radius: 10px;
     width: 100%;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 0.5px 5px rgba(121, 121, 121, 0.6);
 }
+
+.publication:hover {
+    box-shadow: 0px 1px 16px rgba(119, 119, 119, 0.27);
+}
+
 
 .publication .logo-wrapper {
     position: relative;
