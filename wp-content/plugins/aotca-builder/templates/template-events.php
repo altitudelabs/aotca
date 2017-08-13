@@ -1,7 +1,7 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /**
- * Template Members
+ * Template Events
  *
  * Access original fields: $mod_settings
  */
@@ -13,7 +13,7 @@ $events_default = array(
 	'page' => 12,
 );
 
-$fields_args = wp_parse_args( $mod_settings, $members_default );
+$fields_args = wp_parse_args( $mod_settings, $events_default );
 
 extract( $fields_args );
 
@@ -82,49 +82,47 @@ $table_information = $settings['past_meetings_table'];
 	            <?php endfor ;?>
 	        </ul>
 	      </div>
-
-
-
-	    <!-- Start of Member Events Section -->
-
-	      <h1> Member's Events </h1>
-
-	        <div id="form_container">
-	          <select id="select_month" onchange="handleSelectChange()" name="s_month">
-	            <option value="months">Months</option>
-				<?php for ($month=1; $month <=12; $month++):?>
-					<?php if ($month == date("n")):?>
-						<option value="<?php echo date("M", mktime(0, 0, 0, $month))?>" selected><?php echo date("F", mktime(0, 0, 0, $month))?></option>
-					<?php else:?>
-						<option value="<?php echo date("M", mktime(0, 0, 0, $month))?>"><?php echo date("F", mktime(0, 0, 0, $month))?></option>
-					<?php endif;?>
-
-				<?php endfor;?>
-	          </select>
-	          <select id="select_year" onchange="handleSelectChange()" name="s_year">
-	            <option value="years">Years</option>
-	            <?php for ($year = 2020; $year >= 1990; $year--):?>
-					<?php if ($year == date("Y")):?>
-						 <option value="<?php echo $year?>"selected><?php echo $year?></option>
-					<?php else:?>
-						 <option value="<?php echo $year?>"><?php echo $year?></option>
-					<?php endif;?>
-	            <?php endfor;?>
-	          </select>
-	        </div>
-
-
-	      <div id="post_container">
-	      </div> <!--post_container ending div here -->
-
-
-	      <!-- Pagination Starts Here (Defualt 10 per page) -->
-	      <?php
-	      $pages = count($document_objects)/$num_elements_per_page;?>
-
-	      <div id = "pagination_wrapper">
-	      </div>
-
 	    </div>
+		<div id="members_events">
+			<!-- Start of Member Events Section -->
+
+		      <h1> Members' Events </h1>
+
+		        <div id="form_container">
+		          <select id="select_month" onchange="handleSelectChange(<?php echo $page?>)" name="s_month">
+		            <option value="months">Months</option>
+					<?php for ($month=1; $month <=12; $month++):?>
+						<?php if ($month == date("n")):?>
+							<option value="<?php echo date("M", mktime(0, 0, 0, $month))?>" selected><?php echo date("F", mktime(0, 0, 0, $month))?></option>
+						<?php else:?>
+							<option value="<?php echo date("M", mktime(0, 0, 0, $month))?>"><?php echo date("F", mktime(0, 0, 0, $month))?></option>
+						<?php endif;?>
+
+					<?php endfor;?>
+		          </select>
+		          <select id="select_year" onchange="handleSelectChange(<?php echo $page?>)" name="s_year">
+		            <option value="years">Years</option>
+		            <?php for ($year = 2020; $year >= 1990; $year--):?>
+						<?php if ($year == date("Y")):?>
+							 <option value="<?php echo $year?>"selected><?php echo $year?></option>
+						<?php else:?>
+							 <option value="<?php echo $year?>"><?php echo $year?></option>
+						<?php endif;?>
+		            <?php endfor;?>
+		          </select>
+		        </div>
+
+
+		      <div id="post_container">
+		      </div> <!--post_container ending div here -->
+
+
+		      <!-- Pagination Starts Here (Defualt 10 per page) -->
+		      <?php
+		      $pages = count($document_objects)/$page;?>
+
+		      <div id = "pagination_wrapper">
+		      </div>
+		</div>
 	</div>
 </div>
