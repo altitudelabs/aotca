@@ -28,7 +28,7 @@ $container_class = implode( ' ', apply_filters( 'themify_builder_module_classes'
 
 <div id="<?php echo $module_ID; ?>" class="<?php echo esc_attr( $container_class ); ?>">
     <div class="event-jumbotron-container" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(<?php echo $image; ?>); background-size: cover;
-    background-position: center;">
+    background-position: center; margin-bottom:20px">
         <p id="location"><?php echo $location ?></p>
         <p id="title"><?php echo $title ?></p>
         <p><span id="date"><?php echo $date ?></span></p>
