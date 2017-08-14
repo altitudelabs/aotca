@@ -128,6 +128,7 @@ function render_documents($name, $list_title = "", $render_divider = true) {
         </div>
       </div>
       <div class="itinerary">
+          <?php if (!empty(get_fields(get_the_ID())['itinerary_document'])):?>
         <h6 class="title">
           Program Itinerary
       </h6>
@@ -136,6 +137,7 @@ function render_documents($name, $list_title = "", $render_divider = true) {
              Download Now
            </button>
         </form>
+        <?php endif ;?>
       </div>
     </section>
     <div class="events-info">
