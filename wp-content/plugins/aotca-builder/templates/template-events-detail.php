@@ -17,7 +17,8 @@ $events_itinerary_default = array(
   'end_date' => '',
   'timezone' => '',
   'location' => '',
-  'event_detail' => 'detail!',
+  'event_detail' => '',
+  'general_info_detail' => 'Includes program, registration form and other documents',
 );
 
 $fields_args = wp_parse_args( $mod_settings, $events_itinerary_default );
