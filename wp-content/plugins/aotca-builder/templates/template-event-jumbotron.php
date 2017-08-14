@@ -32,6 +32,8 @@ $container_class = implode( ' ', apply_filters( 'themify_builder_module_classes'
         <p id="location"><?php echo $location ?></p>
         <p id="title"><?php echo $title ?></p>
         <p><span id="date"><?php echo $date ?></span></p>
-        <p id="host">Hosted by:<br><?php echo $host ?></p>
+        <?php if(!empty($host)):?>
+            <p id="host">Hosted by:<br><?php echo $host ?></p>
+        <?php endif ;?>
     </div>
 </div>
