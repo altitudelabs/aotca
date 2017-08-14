@@ -189,29 +189,29 @@ function render_documents($name, $list_title = "", $render_divider = true) {
       </section>
       <section class="event-images" id="event-images">
         <h2>Event Photographs</h2>
+        <?php
+          $images = get_fields(get_the_ID())['event_photographs'];
+          if (!empty($images)):?>
         <div class="photo-slider">
           <ul class="bxslider">
-            <?php
-              $images = get_fields(get_the_ID())['event_photographs'];
-              for ($i = 0; $i < count($images); $i++) {
-            ?>
-              <li><img src=<?php echo $images[$i]['url'] ?> /></li>
-            <?php } ?>
+                <?php for ($i = 0; $i < count($images); $i++):?>
+                    <li><img src=<?php echo $images[$i]['url'] ?> /></li>
+                <?php endfor;?>
           </ul>
-
           <div id="bx-pager">
-            <?php
-              for ($i = 0; $i < count($images); $i++) {
-            ?>
+            <?php for ($i = 0; $i < count($images); $i++) :?>
               <a data-slide-index="<?php echo $i ?>" href="" >
                 <div
                   class="thumbnail"
                   style="background-image: url(<?php echo $images[$i]['url'] ?>)"
                 ></div>
               </a>
-            <?php } ?>
+          <?php endfor;?>
           </div>
         </div>
+    <?php else:?>
+        <div>There are no photographs available.</div>
+    <?php endif;?>
       </section>
       <script>
       var $ = window.jQuery;
