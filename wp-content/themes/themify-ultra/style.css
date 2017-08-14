@@ -4713,7 +4713,7 @@ nobr a img {
 }
 
 /************************************************************************************
- LEGAL PAGE (POST ID: 5533)
+ LEGAL PAGE
 *************************************************************************************/
 
 /*#legal_title{
@@ -4738,11 +4738,6 @@ nobr a img {
    font-size: 21px;
    margin-top: 5%;
 }*/
-
-.themify_builder_content-5533 h4 {
-	margin-bottom: 0px;
-	padding-top: 15px;
-}
 
 /************************************************************************************
  CONTACT PAGE
@@ -4871,12 +4866,32 @@ nobr a img {
 	width: 100%;
 }
 /************************************************************************************
- TERMS OF SERVICE PAGE (POST ID: 5678)
+ TERMS OF SERVICE PAGE
 *************************************************************************************/
-.themify_builder_content-5678 h4 {
-	margin-bottom: 0px;
-	padding-top: 15px;
+#text-5678-1-0-1{
+   width: 75%;
+   left: 12.5%;
 }
+#text-5678-1-0-1 p{
+   font-family: Roboto;
+   margin: 1.5em;
+   font-size: 17px;
+}
+
+
+/************************************************************************************
+ TERMS OF SERVICE PAGE
+*************************************************************************************/
+#text-5678-1-0-1{
+   width: 75%;
+   left: 12.5%;
+}
+#text-5678-1-0-1 p{
+   font-family: Roboto;
+   margin: 1.5em;
+   font-size: 17px;
+}
+
 /************************************************************************************
  PAST PRESIDENT PAGE
 *************************************************************************************/
@@ -5119,7 +5134,7 @@ MOBILE NAV
 
   /*Shifted logo to the left */
   .header-bar #site-logo a {
-      margin-left: 0px;
+      margin-left: 10%;
   }
 
   /* Made site logo only 80% */
@@ -5134,10 +5149,6 @@ MOBILE NAV
 
   #menu-item-17 i {
     display: none;
-  }
-  .mobile_menu_active #header{
-	margin-bottom: 10px;
-    margin-left: 5px;
   }
 
   /* Mobile Menu Prevent Horizontal Scroll */

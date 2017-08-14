@@ -1,5 +1,4 @@
 .news-detail-container {
-    width: 60%;
   padding-top: 74px;
   font-size: 17px;
   color: #777777;
@@ -8,23 +7,15 @@
 
 }
 .news-detail-container .title {
-
+  padding-top: 5px;
+  color: #26378B;
+  font-size: 30px;
+  font-weight: bold;
 }
 .news-detail-container .description {
   padding-top: 20px;
 }
 
-@media screen and (max-width: 700px){
-    .news-detail-container {
-        width: 100%;
-    }
-    .aotca-viewport{
-        padding: 0px 50px;
-    }
-}
-
-@media screen and (max-width: 480px){
-    .aotca-viewport{
-        padding: 0px 24px;
-    }
+.news-detail-container .description a {
+  color: #F4803E;
 }
