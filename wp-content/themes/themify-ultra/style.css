@@ -268,7 +268,7 @@ input[type=reset].btn-outline-secondary, input[type=submit].btn-outline-secondar
 
 input[type=reset].btn-outline-default, input[type=submit].btn-outline-default, button.btn-outline-default {
 	background-color: #fff;
-	color: #505050
+	color: #505050;
 	border: 1px solid #505050;
 }
 

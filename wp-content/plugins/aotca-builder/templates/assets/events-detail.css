@@ -188,7 +188,7 @@ section > h2 {
       display: inline-block;
   }
   .documents li button {
-      width: 135px
+      min-width: 122px
   }
 }
 @media (max-width: 500px) {

@@ -65,7 +65,7 @@ function render_documents($name, $list_title = "", $render_divider = true) {
             <?php echo $document['title'] ?>
           </span>
           <?php if (isset($document['password']) && (!empty($document['password']))): ?>
-              <button class="btn-outline-default cap member" data-type="<?php echo $name?>" data-id="<?php echo basename($document['file']) ?>"><i class="fa fa-lock fa-fw" aria-hidden="true"></i>Members</button>
+              <button class="btn-outline-default cap" data-type="<?php echo $name?>" data-id="<?php echo basename($document['file']) ?>">Members Only</button>
          <?php else:?>
              <form method="get" target="_blank" action="<?php echo $document['file'] ?>" class="download">
                  <button class="btn-outline-primary cap" type="submit">
