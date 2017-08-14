@@ -40,14 +40,16 @@ class Events_Detail_Module extends Themify_Builder_Module {
       ),
 
       array(
-        'id' => 'event_detail',
-        'type' => 'text',
+	    'id' => 'event_detail',
+        'type' => 'wp_editor',
+        'rows' => 5,
         'label' => __( 'Event Detail', 'events' ),
         'class' => '',
       ),
 			array(
 				'id' => 'general_info_detail',
-				'type' => 'text',
+				'type' => 'wp_editor',
+		        'rows' => 5,
 				'label' => __( 'General Info', 'events' ),
 				'class' => '',
 			),
