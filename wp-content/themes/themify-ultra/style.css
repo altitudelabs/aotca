@@ -258,6 +258,7 @@ input[type=reset].btn-outline-primary, input[type=submit].btn-outline-primary, b
 input[type=reset].btn-secondary, input[type=submit].btn-secondary, button.btn-secondary {
 	background-color: #26378B;
 	color: #fff;
+	border: 1px solid #26378B;
 }
 
 input[type=reset].btn-outline-secondary, input[type=submit].btn-outline-secondary, button.btn-outline-secondary {
@@ -309,10 +310,7 @@ button.btn-outline-default:hover{
 
 input[type=reset].btn-primary:hover,
 input[type=submit].btn-primary:hover,
-button.btn-primary:hover,
-input[type=reset].btn-secondary:hover,
-input[type=submit].btn-secondary:hover,
-button.btn-secondary:hover{
+button.btn-primary:hover{
 	transform: translateY(-3px);
 	color: #000;
 	box-shadow: 0px 3px #f6dac8;
@@ -321,7 +319,9 @@ button.btn-secondary:hover{
 input[type=reset].btn-secondary:hover,
 input[type=submit].btn-secondary:hover,
 button.btn-secondary:hover{
-	background-color: #000;
+	background-color: #fff;
+	color: #26378B;
+	border: 1px solid #26378B;
 }
 
 
