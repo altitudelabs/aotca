@@ -5006,52 +5006,24 @@ nobr a img {
 }
 
 /************************************************************************************
- STATUTES PAGE
+ STATUTES PAGE (POST ID: 7306)
 *************************************************************************************/
-
-/*#statutes_black_header{
-   font-family: 'Roboto';
-   letter-spacing:0;
-   text-transform: none;
-   font-size: 21px;
-   font-weight: bold;
-   padding-top: 25px;
-   padding-bottom: 23px;
+.themify_builder_content-7306 h4 {
+	padding-top: 40px;
+    margin-bottom: 5px;
 }
 
-#statutes_blue_header{
-   font-family: 'Roboto';
-   letter-spacing:0;
-   text-transform: none;
-   font-size: 21px;
-   font-weight: bold;
-   color: #26378B;
-   padding-bottom: 16px;
+.themify_builder_content-7306 .list {
+	margin-bottom: -1.8em;
+	color: #000;
+	font-weight: bold;
 }
-
-
-#statutes_paragraph{
-  padding-bottom: 25px;
-  margin-bottom: 0px;
+/*indened text*/
+.themify_builder_content-7306 .sub {
+	padding-left: 30px;
 }
-
-.module_column_6061-1-0 {
-  width: 60%;
-  position: relative;
-  left: 20%;
-  line-height: 27px;
-}*/
-
-/*Default of 25px after every paragraph element */
-/*.module_column_6061-1-0 p {
-  margin-bottom: 25px;
-}*/
-
-.themify_builder_content-7365 h3 {
-	margin: 0px;
-}
-.themify_builder_content-7365 h4 {
-	padding-top: 10px;
+.themify_builder_content-7306 .sub-2 {
+	padding-left: 60px;
 }
 
 /************************************************************************************
