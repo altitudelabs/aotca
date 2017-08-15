@@ -13,6 +13,7 @@
 }
 .events-itinerary h6 {
   color: #222222;
+  white-space: nowrap;
 }
 .events-itinerary .date-time,
 .events-itinerary .location,
