@@ -63,6 +63,11 @@ function render_documents($name, $list_title = "", $render_divider = true) {
 
           <span class="title">
             <?php echo $document['title'] ?>
+            <?php if (!empty($document['description'])):?>
+                <br><span class="description">
+                  <?php echo $document['description'] ?>
+                </span>
+            <?php endif ;?>
           </span>
           <?php if (isset($document['password']) && (!empty($document['password']))): ?>
               <button class="btn-outline-default cap member" data-type="<?php echo $name?>" data-id="<?php echo basename($document['file']) ?>">Members Only</button>

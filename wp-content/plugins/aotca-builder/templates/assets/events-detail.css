@@ -103,6 +103,10 @@ section > h2 {
   max-width: 510px;
 }
 
+.documents li .description {
+  font-weight: normal;
+}
+
 .documents li button {
     width: 125px
 }
