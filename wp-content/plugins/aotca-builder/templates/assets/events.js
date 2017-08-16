@@ -49,7 +49,7 @@ function handleSelectChange(page, page_no=1){ //Initial function that gets calle
               var link = (event.event_link) ? event.event_link: '#';
               var title = (event.event_title)? event.event_title: 'Event';
 
-              var $article = $("<article>",{"class":"page"});
+              var $article = $("<article>",{class:"page"});
               var $a_link = $("<a>", {href: link});
               var $p_title_text = $("<p>", {class: "title_text", text: title});
               var $img = $("<img>", {src: image });

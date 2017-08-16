@@ -414,21 +414,26 @@ img, textarea, input, #pagewrap, .pagewidth, #headerwrap, #header, #main-nav, #m
 
 }
 
-#pagination_wrapper a{
+#pagination_wrapper a, #pagination_wrapper button{
   text-align: center;
-  padding: 3px 12px;
+  padding: 7px 10px;
+  font-size: 14px;
   text-decoration: none;
   color: #26378B;
   border: 1px solid #D9D9D9;
   margin: 0px 8px;
+  border-radius: 0px;
+  background-color: transparent;
+  font-weight: normal;
+  line-height: normal;
 }
 
-#pagination_wrapper a.active{
+#pagination_wrapper a.active, #pagination_wrapper button.active{
   color: white;
   background-color: #26378B;
 }
 
-#pagination_wrapper a:hover{
+#pagination_wrapper a:hover, #pagination_wrapper button:hover{
   color: white;
   background-color: #26378B;
 }
@@ -1749,7 +1754,7 @@ HEADER BACKGROUND MODE
 /* Modal Content/Box */
 .modal .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 10% auto; /* 10% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 60%; /* Could be more or less, depending on screen size */
@@ -5501,15 +5506,6 @@ CONTACT US PAGE MOBILE
 		height: 350px;
 
 
-}
-
-.modal .modal-content {
-    width: 80%; /* Could be more or less, depending on screen size */
-	/*height:40%;
-}
-
-.modal #modal-feedback {
-	margin-top: 230px;
 }*/
 }
 @media screen and (max-width: 760px){
@@ -5524,6 +5520,14 @@ CONTACT US PAGE MOBILE
 	}
 	#footer-wrap > * {
 		margin: 10px 0px;
+	}
+	.modal .modal-content {
+	    width: 80%; /* Could be more or less, depending on screen size */
+		height:40%;
+	}
+
+	.modal #modal-feedback {
+		margin-top: 230px;
 	}
 }
 
