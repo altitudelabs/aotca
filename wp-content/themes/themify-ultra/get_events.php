@@ -48,14 +48,14 @@ if($m_month!="Month" && $m_year!="Year"){
         $location = get_post_meta(get_the_ID(), 'ptb_event_location', true);
         $title = get_the_title(get_the_ID());
         $day = end(explode("_", get_post_meta(get_the_ID(), 'ptb_event_day', true)[0]));
-        $today = date("Y-n-j");
-        $date = $year."-".$month."-".$day;
-        $upcoming = ($date <= $today)? 0:1;
+        $today = strtotime("now");
+        $date = strtotime($year."-".$month."-".$day);
+        $upcoming = ($date <= $today)? false: true;
         $link = get_permalink(get_the_ID());
         $temp_event->event_upcoming = $upcoming;
         $temp_event->event_location = $location;
         $temp_event->event_image = $image;
-        $temp_event->event_date = date('M j, Y', strtotime($date));
+        $temp_event->event_date = date('M j, Y', $date);
         $temp_event->event_title = $title;
         $temp_event->event_link = $link;
 
