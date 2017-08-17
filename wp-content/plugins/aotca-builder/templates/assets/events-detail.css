@@ -13,6 +13,7 @@
 }
 .events-itinerary h6 {
   color: #222222;
+  white-space: nowrap;
 }
 .events-itinerary .date-time,
 .events-itinerary .location,
@@ -27,7 +28,10 @@
 .events-info {
     padding: 0px 60px;
 }
-
+section {
+    padding-top: 40px;
+    margin-top: -40px
+}
 section > h2 {
   color: #26378B;
   font-size: 21px;
@@ -97,6 +101,15 @@ section > h2 {
   color: #505050;
   display: block;
   padding-right: 10px;
+  max-width: 510px;
+}
+
+.documents li .description {
+  font-weight: normal;
+}
+
+.documents li button {
+    width: 125px
 }
 
 .documents li form {
@@ -166,6 +179,11 @@ section > h2 {
   background-position: center center;
   background-size: cover;
 }
+
+button.login {
+    padding-left: 35px;
+    padding-right: 35px;
+}
 @media (max-width: 700px) {
   #bx-pager .thumbnail {
     width: 75px;
@@ -178,6 +196,9 @@ section > h2 {
   .start-date, .end-date{
       display: inline-block;
   }
+  .documents li button {
+      min-width: 122px
+  }
 }
 @media (max-width: 500px) {
   #bx-pager .thumbnail {
@@ -187,6 +208,8 @@ section > h2 {
   .events-info {
       padding: 0px 0px;
   }
+  .documents li .title {
+    max-width: 300px;
 }
 #bx-pager a.active .thumbnail {
   border: 1px solid red;
