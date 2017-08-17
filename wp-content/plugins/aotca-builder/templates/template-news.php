@@ -35,13 +35,23 @@ $container_class = implode( ' ', apply_filters( 'themify_builder_module_classes'
         for($i = 0; $i < count($news_list); $i++) {
       ?>
         <div class="news-container">
-          <a class="naked news" href="<?php echo $news_list[$i][link]?>">
+          <a class="naked news js" href="<?php echo $news_list[$i][link]?>">
             <span class="date"><?php echo $news_list[$i][date]?></span>
             <h2 class="title"><?php echo $news_list[$i][title]?></h2>
-            <span class="description"><?php echo $news_list[$i][description]?></span>
+            <span class="description clamp"><?php echo $news_list[$i][description]?></span>
           </a>
         </div>
       <?php }?>
     </section>
   </div>
 </div>
+
+<script>
+    var $ = window.jQuery;
+    $(document).ready(function() {
+        $('.clamp').each(function(){ // fixed card height in mobile page
+             var lines=Math.floor(90/$(this).css('line-height'));
+             $(this).css('-webkit-line-clamp', lines);
+        })
+    });
+</script>

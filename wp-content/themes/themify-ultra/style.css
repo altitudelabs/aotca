@@ -234,9 +234,9 @@ input[type=reset], input[type=submit], button {
 	font-size: 14px;
 	padding: .7em 1em;
 	cursor: pointer;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 	-webkit-appearance: none;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
@@ -258,6 +258,7 @@ input[type=reset].btn-outline-primary, input[type=submit].btn-outline-primary, b
 input[type=reset].btn-secondary, input[type=submit].btn-secondary, button.btn-secondary {
 	background-color: #26378B;
 	color: #fff;
+	border: 1px solid #26378B;
 }
 
 input[type=reset].btn-outline-secondary, input[type=submit].btn-outline-secondary, button.btn-outline-secondary {
@@ -268,7 +269,7 @@ input[type=reset].btn-outline-secondary, input[type=submit].btn-outline-secondar
 
 input[type=reset].btn-outline-default, input[type=submit].btn-outline-default, button.btn-outline-default {
 	background-color: #fff;
-	color: #505050
+	color: #505050;
 	border: 1px solid #505050;
 }
 
@@ -285,26 +286,42 @@ input[type=reset].cap, input[type=submit].cap, button.cap{
 /* form input:hover */
 input[type=reset].btn-outline-primary:hover,
 input[type=submit].btn-outline-primary:hover,
-button.btn-outline-primary:hover,
+button.btn-outline-primary:hover{
+	background-color: #F4803E;
+	color:#fff;
+	border: 1px solid #F4803E;
+}
+
 input[type=reset].btn-outline-secondary:hover,
 input[type=submit].btn-outline-secondary:hover,
-button.btn-outline-secondary:hover,
+button.btn-outline-secondary:hover{
+	background-color: #26378B;
+	color:#fff;
+	border: 1px solid #26378B;
+}
+
 input[type=reset].btn-outline-default:hover,
 input[type=submit].btn-outline-default:hover,
 button.btn-outline-default:hover{
-	background-color: #000;
-	color: #fff;
-	border: 1px solid #000;
+	background-color: #505050;
+	color:#fff;
+	border: 1px solid #505050;
 }
+
 input[type=reset].btn-primary:hover,
 input[type=submit].btn-primary:hover,
-button.btn-primary:hover,
+button.btn-primary:hover{
+	transform: translateY(-3px);
+	color: #000;
+	box-shadow: 0px 3px #f6dac8;
+}
+
 input[type=reset].btn-secondary:hover,
 input[type=submit].btn-secondary:hover,
 button.btn-secondary:hover{
-	background-color: #000;
-	color: #fff;
-	border: 0px;
+	background-color: #fff;
+	color: #26378B;
+	border: 1px solid #26378B;
 }
 
 
@@ -388,6 +405,37 @@ img, textarea, input, #pagewrap, .pagewidth, #headerwrap, #header, #main-nav, #m
 }
 .post-date-wrap, h1.post-title.entry-title, p.post-meta.entry-meta {
 	display:none;
+}
+
+#pagination_wrapper{
+  display: flex;
+  justify-content: center;
+  margin: 60px 0px;
+
+}
+
+#pagination_wrapper a, #pagination_wrapper button{
+  text-align: center;
+  padding: 7px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #26378B;
+  border: 1px solid #D9D9D9;
+  margin: 0px 8px;
+  border-radius: 0px;
+  background-color: transparent;
+  font-weight: normal;
+  line-height: normal;
+}
+
+#pagination_wrapper a.active, #pagination_wrapper button.active{
+  color: white;
+  background-color: #26378B;
+}
+
+#pagination_wrapper a:hover, #pagination_wrapper button:hover{
+  color: white;
+  background-color: #26378B;
 }
 
 /************************************************************************************
@@ -674,11 +722,16 @@ body.fixed-header.page-loaded.admin-bar #headerwrap {
 	width: 210px;
 }
 #main-nav li {
-	margin: 0;
 	padding: 0;
 	list-style: none;
 	position: relative;
 	display: inline-block;
+}
+
+#main-nav li i.fa {
+	float:right;
+	margin-left: 8px;
+	margin-top: 5px;
 }
 
 #main-nav li.themify-widget-menu {
@@ -1659,18 +1712,28 @@ HEADER BACKGROUND MODE
 
 /* Button to have curves and text to be bold */
 .module-buttons a{
-    border-radius: 5px;
-    font-weight: bold;
+	border: none;
+	font-size: 14px;
+	padding: .7em 1em;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-appearance: none;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	font-weight: 600;
     text-align: center;
-    color: white;
-    background-color: #F4803E;
-  	font-size: 14px;
-  	font-weight: bold;
+	background-color: #F4803E;
+	color: #fff;
 }
 
 /*Find out more button to not have underline */
 .module-buttons a:hover{
    text-decoration: none;
+   transform: translateY(-3px);
+   color: #000;
+   box-shadow: 0px 3px #f6dac8;
 }
 
 /* Modal */
@@ -1691,7 +1754,7 @@ HEADER BACKGROUND MODE
 /* Modal Content/Box */
 .modal .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 10% auto; /* 10% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 60%; /* Could be more or less, depending on screen size */
@@ -4497,9 +4560,9 @@ FRONT PAGE
 	margin: 27px 0px;
 }
 
-.themify_builder_content-12 .module-buttons {
+.themify_builder_content-12 .module-plain-text {
 	text-align: center;
-	padding-bottom: 50px
+	padding-bottom: 50px;
 }
 
 .themify_builder_content-12 .themify_builder_sub_row p {
@@ -4520,16 +4583,22 @@ FRONT PAGE
 }*/
 
 /* For horizontal reel effect to work nicely */
-#test2 img{
-  width: 65px;
-  height: 50px;
-  margin-top: 10px;
+nobr {
+	display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row; /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: space-around;
 }
+nobr a img {
+	max-width: 65px;
+    max-height: 50px;
+	margin-top:10px;
 
-#test3 img{
-  width: 65px;
-  height: 50px;
-  margin-top: 10px;
+
 }
 
 .module-button a{
@@ -4556,8 +4625,8 @@ FRONT PAGE
 }
 
 .module-feature-content p {
-	width: 60%;
-	margin: 2em auto;
+	width: 75%;
+	margin: 0px auto;
 }
 
 /*Equalized Padding at bottom of presidents section (81.23px total)*/
@@ -4644,10 +4713,12 @@ FRONT PAGE
   height: 150px;
   width: 100%;
   content: '';
+  top:-150px;
+  margin-bottom: -150px;
 }
 
 /************************************************************************************
- LEGAL PAGE
+ LEGAL PAGE (POST ID: 5533)
 *************************************************************************************/
 
 /*#legal_title{
@@ -4672,6 +4743,11 @@ FRONT PAGE
    font-size: 21px;
    margin-top: 5%;
 }*/
+
+.themify_builder_content-5533 h4 {
+	margin-bottom: 0px;
+	padding-top: 15px;
+}
 
 /************************************************************************************
  CONTACT PAGE
@@ -4708,10 +4784,54 @@ FRONT PAGE
 	width: 100%;
 	display: flex;
 	justify-content: center;
+
 }
 
 .fa.fa-cog.fa-spin{
    display: none;
+}
+
+.module-text div[role=form] {
+	margin-bottom: 100px;
+
+}
+
+.module-text div[role=form] input[type=submit] {
+	background-color: #F4803E;
+	color: #FFF;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .065em;
+}
+
+.module-text div[role=form] input[type=submit]:hover {
+	background-color: #000;
+}
+.module-text div[role=form] .contact-form-row-1 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.module-text div[role=form] label {
+	font-weight: bold;
+}
+
+.module-text div[role=form] .contact-form-row-1 > p{
+	width: 30%;
+}
+
+.module-text div[role=form] form > p:last-of-type{
+	text-align: center;
+}
+
+
+.themify_builder_content-187 .module_row:last-child {
+	padding-bottom: 0px;
+}
+
+.themify_builder_content-187 .module-map {
+	padding: 0px;
+	width: 100%;
 }
 
 .module-text div[role=form] {
@@ -4756,32 +4876,12 @@ FRONT PAGE
 	width: 100%;
 }
 /************************************************************************************
- TERMS OF SERVICE PAGE
+ TERMS OF SERVICE PAGE (POST ID: 5678)
 *************************************************************************************/
-#text-5678-1-0-1{
-   width: 75%;
-   left: 12.5%;
+.themify_builder_content-5678 h4 {
+	margin-bottom: 0px;
+	padding-top: 15px;
 }
-#text-5678-1-0-1 p{
-   font-family: Roboto;
-   margin: 1.5em;
-   font-size: 17px;
-}
-
-
-/************************************************************************************
- TERMS OF SERVICE PAGE
-*************************************************************************************/
-#text-5678-1-0-1{
-   width: 75%;
-   left: 12.5%;
-}
-#text-5678-1-0-1 p{
-   font-family: Roboto;
-   margin: 1.5em;
-   font-size: 17px;
-}
-
 /************************************************************************************
  PAST PRESIDENT PAGE
 *************************************************************************************/
@@ -4842,10 +4942,12 @@ FRONT PAGE
 }
 
 /************************************************************************************
- AOTCA OFFICER PAGE
+ AOTCA OFFICER PAGE (POST ID: 7265)
 *************************************************************************************/
 
-
+ .themify_builder_content-7265 .module_row:nth-of-type(2) .module_column p{
+	 color: #F4803E;
+ }
 
 /************************************************************************************
  COMMITTEE PAGE
@@ -4890,12 +4992,14 @@ FRONT PAGE
 
 .themify_builder_content-5656 .module_row:nth-child(3) {
 	display: none;
+
 }
 
 .themify_builder_content-5656 .module_row:nth-child(3) h4{
 	font-weight: normal;
 	padding-bottom: 0px;
-	margin-bottom: 0px;
+	margin-top: 26px;
+	margin-bottom: 9px;
 }
 
 .themify_builder_content-5656 .module_row:nth-child(3) a{
@@ -4903,56 +5007,28 @@ FRONT PAGE
 }
 
 .themify_builder_content-5656 .module_row:nth-child(3) p{
-	padding-bottom: 125px;
+	margin-bottom: 40px;
 }
 
 /************************************************************************************
- STATUTES PAGE
+ STATUTES PAGE (POST ID: 7306)
 *************************************************************************************/
-
-/*#statutes_black_header{
-   font-family: 'Roboto';
-   letter-spacing:0;
-   text-transform: none;
-   font-size: 21px;
-   font-weight: bold;
-   padding-top: 25px;
-   padding-bottom: 23px;
+.themify_builder_content-7306 h4 {
+	padding-top: 40px;
+    margin-bottom: 5px;
 }
 
-#statutes_blue_header{
-   font-family: 'Roboto';
-   letter-spacing:0;
-   text-transform: none;
-   font-size: 21px;
-   font-weight: bold;
-   color: #26378B;
-   padding-bottom: 16px;
+.themify_builder_content-7306 .list {
+	margin-bottom: -1.8em;
+	color: #000;
+	font-weight: bold;
 }
-
-
-#statutes_paragraph{
-  padding-bottom: 25px;
-  margin-bottom: 0px;
+/*indened text*/
+.themify_builder_content-7306 .sub {
+	padding-left: 30px;
 }
-
-.module_column_6061-1-0 {
-  width: 60%;
-  position: relative;
-  left: 20%;
-  line-height: 27px;
-}*/
-
-/*Default of 25px after every paragraph element */
-/*.module_column_6061-1-0 p {
-  margin-bottom: 25px;
-}*/
-
-.themify_builder_content-6061 h3 {
-	margin: 0px;
-}
-.themify_builder_content-6061 h4 {
-	padding-top: 10px;
+.themify_builder_content-7306 .sub-2 {
+	padding-left: 60px;
 }
 
 /************************************************************************************
@@ -5020,7 +5096,7 @@ MOBILE NAV
 
   /*Shifted logo to the left */
   .header-bar #site-logo a {
-      margin-left: 10%;
+      margin-left: 0px;
   }
 
   /* Made site logo only 80% */
@@ -5035,6 +5111,10 @@ MOBILE NAV
 
   #menu-item-17 i {
     display: none;
+  }
+  .mobile_menu_active #header{
+	margin-bottom: 10px;
+    margin-left: 5px;
   }
 
   /* Mobile Menu Prevent Horizontal Scroll */
@@ -5214,6 +5294,7 @@ MOBILE FOOTER
 
 .themify_builder_content-12 .sub_row_0-0-8 p{
 	margin: 0em 0em;
+	top: 180px;
 }
 
 .themify_builder_content-12 .sub_row_0-0-8 #img_wrapper::before{
@@ -5231,6 +5312,10 @@ MOBILE FOOTER
 .themify_builder_content-12 .module-feature-content p:nth-child(1){
     margin-bottom: 1em;
 }
+.p17 {
+	line-height: 40px;
+}
+
 
 /************************************************************************************
 ORGANISATION PAGE MOBILE (POST ID: 5654)
@@ -5419,18 +5504,10 @@ CONTACT US PAGE MOBILE
 #body .gallery-columns-6 .gallery-item img{
     width: 350px;
 		height: 350px;
-}
 
-.modal .modal-content {
-    width: 80%; /* Could be more or less, depending on screen size */
-	/*height:40%;
-}
 
-.modal #modal-feedback {
-	margin-top: 230px;
 }*/
 }
-
 @media screen and (max-width: 760px){
 	/*Removes Gap Between Slider and Nav */
 	body #content {
@@ -5443,6 +5520,14 @@ CONTACT US PAGE MOBILE
 	}
 	#footer-wrap > * {
 		margin: 10px 0px;
+	}
+	.modal .modal-content {
+	    width: 80%; /* Could be more or less, depending on screen size */
+		height:40%;
+	}
+
+	.modal #modal-feedback {
+		margin-top: 230px;
 	}
 }
 
@@ -5485,6 +5570,7 @@ CONTACT US PAGE MOBILE
   }
 
 }
+
 
 @media screen and (max-width: 1050px){
 
