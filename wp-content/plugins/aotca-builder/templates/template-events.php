@@ -56,7 +56,7 @@ $table_information = $settings['past_meetings_table'];
 	              <h6 id="upper_left_text"> <?php echo $upper_left_text?> </h6>
 	              <h1> <?php echo $conference_title?> </h1>
 	              <p> <?php echo $conference_description?></p>
-	              <button class="btn-primary bold upper"onclick = "window.location.href= <?php echo $button_link;?>"> <?php echo $button_text?> </button>
+	              <button class="btn-primary bold upper"onclick = "window.open('<?php echo $button_link;?>')"> <?php echo $button_text?> </button>
 	            </div>
 	        </div>
 	    </div>
