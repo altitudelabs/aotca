@@ -5,6 +5,7 @@
   color: #777777;
 }
 .news-detail-container .date {
+    font-weight: bold;
 
 }
 .news-detail-container .title {
