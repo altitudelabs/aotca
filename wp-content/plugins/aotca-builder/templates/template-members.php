@@ -52,7 +52,7 @@ $container_class = implode( ' ', apply_filters( 'themify_builder_module_classes'
       ?>
         <?php print_r( $members_list[$i]->logo ); ?>
         <div class="member-container">
-          <a class="naked member" href="<?php echo $members_list[$i][link]?>" target="_blank">
+          <a class="naked member" href="<?php echo $members_list[$i][link]?>" target="_self">
             <div class="logo-wrapper">
               <img src="<?php echo $members_list[$i][logo]?>" />
             </div>

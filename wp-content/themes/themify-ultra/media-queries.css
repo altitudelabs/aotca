@@ -648,7 +648,7 @@ body.slide-cart-visible .header-icons {
 /* menu hover */
 .mobile_menu_active #main-nav a:hover,
 .mobile_menu_active #main-nav ul a:hover {
-	color: #ed1e24;
+	color: #F4803E;
 }
 
 /* sub-menu icon */
@@ -660,7 +660,7 @@ body.slide-cart-visible .header-icons {
 /* current link */
 .mobile_menu_active #main-nav .current_page_item > a,
 .mobile_menu_active #main-nav .current-menu-item > a {
-	color: #ed1e24;
+	color: #F4803E;
 }
 
 /* mega menu */

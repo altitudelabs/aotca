@@ -102,13 +102,12 @@ function render_documents($name, $list_title = "", $render_divider = true) {
         <input type="password" name="password"/>
         <button type="submit" class="login btn-secondary bold cap">login</button>
     </form>
-  </div>
-  <div id="modal-feedback">
-      <p id="download-link"><a download>Click here to download</a></p>
-      <p id="modal-msg"></p>
+    <p id="modal-msg">&emsp;</p>
+
   </div>
 </div>
 </div>
+
 
 <div id="<?php echo $module_ID; ?>" class="<?php echo esc_attr( $container_class ); ?>">
   <div class="events-detail-container aotca-viewport">
@@ -228,7 +227,6 @@ function render_documents($name, $list_title = "", $render_divider = true) {
           pagerCustom: '#bx-pager',
           controls: false
         });
-        $('#modal-feedback').children().hide();
         $('#login-modal form').on('submit', function(){
             var _password = $(this).find('input[name="password"]').val();
             if (_password){
@@ -244,31 +242,22 @@ function render_documents($name, $list_title = "", $render_divider = true) {
                     },
                     success: function(response) {
                       if (response) {
-                          $('#download-link').find('a').attr('href', response);
-                          $('#download-link').show()
-                          $('#modal-msg').hide();
+                        $('#modal-msg').html($('<a>',{href: response, text: 'Click here to download', download: true}));
                       }
                       else {
-                          $('#download-link').find('a').removeAttr('href');
-                          $('#download-link').hide();
                           $('#modal-msg').html('Incorrect password');
-                          $('#modal-msg').show();
                       }
                     }
                 });
             }
             else {
-                $('#download-link').find('a').removeAttr('href');
-                $('#download-link').hide();
                 $('#modal-msg').html('Please enter your password');
-                $('#modal-msg').show();
             }
           return false;
           });
         $('button.member').on('click', function(){
             // reset
-            $('#download-link').find('a').removeAttr('href');
-            $('#modal-feedback').children().hide();
+            $('#modal-msg').html('&emsp;');
             $('#login-modal').find('input[name="password"]').val('');
 
             // set input value

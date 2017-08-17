@@ -71,25 +71,25 @@ function handleSelectChange(page, page_no=1){ //Initial function that gets calle
               $("#post_container").append($article);
         });
 
-        if (total_pages > 1) {
-            // pagination wrapper
-            var previous_counter = page_no-1;
-            var next_counter = page_no+1;
 
-            if (previous_counter > 0){
-                var $a_previous_link = $("<a>", {onclick: ("handleSelectChange("+page+","+previous_counter+")"),text: "« Previous"});
-                $("#pagination_wrapper").append($a_previous_link);
-            }
-            for (var i = 1; i <= total_pages; i++) {
-                previous_counter++;
-                var $a_link = (page_no==i)?$("<a>", {class: "pagination active",onclick: ("handleSelectChange("+page+","+i+")"),text: i}): $("<a>", {class: "pagination", onclick: ("handleSelectChange("+page+","+i+")"), text: i});
-                $("#pagination_wrapper").append($a_link);
-            }
-            if (next_counter <= total_pages){
-                var $a_next_link = $("<a>", {onclick: ("handleSelectChange("+page+","+(next_counter)+")"),text: "Next »"});
-                $("#pagination_wrapper").append($a_next_link);
-            }
+        // pagination wrapper
+        var previous_counter = page_no-1;
+        var next_counter = page_no+1;
+
+        if (previous_counter > 0){
+            var $a_previous_link = $("<a>", {onclick: ("handleSelectChange("+page+","+previous_counter+")"),text: "« Previous"});
+            $("#pagination_wrapper").append($a_previous_link);
         }
+        for (var i = 1; i <= total_pages; i++) {
+            previous_counter++;
+            var $a_link = (page_no==i)?$("<a>", {class: "pagination active",onclick: ("handleSelectChange("+page+","+i+")"),text: i}): $("<a>", {class: "pagination", onclick: ("handleSelectChange("+page+","+i+")"), text: i});
+            $("#pagination_wrapper").append($a_link);
+        }
+        if (next_counter <= total_pages){
+            var $a_next_link = $("<a>", {onclick: ("handleSelectChange("+page+","+(next_counter)+")"),text: "Next »"});
+            $("#pagination_wrapper").append($a_next_link);
+        }
+
       }
     }).fail(function(jqXHR, textStatus, error){
       console.log(jqXHR);

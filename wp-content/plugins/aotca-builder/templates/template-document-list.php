@@ -61,10 +61,8 @@ $start = ($page_no-1)*$page;
         <input type="password" name="password"/>
         <button type="submit" class="login btn-secondary bold cap">login</button>
     </form>
-  </div>
-  <div id="modal-feedback">
-      <p id="download-link"><a download>Click here to download</a></p>
-      <p id="modal-msg"></p>
+    <p id="modal-msg">&emsp;</p>
+
   </div>
 </div>
 </div>
@@ -159,3 +157,50 @@ $start = ($page_no-1)*$page;
    <?php endif;?>
         </div>
  </div>
+ <script>
+ var $ = window.jQuery;
+ $(document).ready(function() {
+     $('#login-modal form').on('submit', function(){
+         var _password = $(this).find('input[name="password"]').val();
+         if (_password){
+             $.ajax({
+                 url: <?php echo wp_json_encode(admin_url('admin-ajax.php', 'relative'))?>,
+                 type: 'post',
+                 data: {
+                     action: 'password',
+                   file: $(this).find('input[name="id"]').val(),
+                   type: $(this).find('input[name="type"]').val(),
+                   password: _password,
+                   post_id: <?php echo get_the_ID() ?>,
+                 },
+                 success: function(response) {
+                   if (response) {
+                       $('#modal-msg').html($('<a>',{href: response, text: 'Click here to download', download: true}));
+                   }
+                   else {
+                       $('#modal-msg').html('Incorrect password');
+                   }
+                 }
+             });
+         }
+         else {
+             $('#modal-msg').html('Please enter your password');
+         }
+       return false;
+       });
+     $('button.member').on('click', function(){
+         // reset
+        $('#modal-msg').html('&emsp;');
+         $('#login-modal').find('input[name="password"]').val('');
+
+         // set input value
+         $('#login-modal').find('input[name="id"]').val($(this).data('id'));
+         $('#login-modal').find('input[name="type"]').val($(this).data('type'));
+
+          $('#login-modal').show();
+     });
+     $('#close').on('click', function(){
+         $('#login-modal').hide();
+     });
+ });
+ </script>

@@ -242,6 +242,7 @@ input[type=reset], input[type=submit], button {
 	-moz-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 	font-weight: 600;
+	white-space: nowrap;
 }
 
 input[type=reset].btn-primary, input[type=submit].btn-primary, button.btn-primary {
@@ -751,13 +752,13 @@ body.fixed-header.page-loaded.admin-bar #headerwrap {
 }
 /* main level link :hover */
 #main-nav a:hover {
-	color: #ed1e24;
+	color: #;
 }
 
 /* current link */
 #main-nav .current_page_item > a,
 #main-nav .current-menu-item > a {
-	color: #ed1e24;
+	color: #F4803E;
 }
 
 /* sub-levels link */
@@ -793,7 +794,7 @@ body.fixed-header.page-loaded.admin-bar #headerwrap {
 }
 #main-nav ul a:hover,
 #main-nav .mega-menu-posts a:hover {
-	color: #ed1e24;
+	color: #F4803E;
 }
 
 /* dropdown ul */
@@ -1681,7 +1682,7 @@ HEADER BACKGROUND MODE
 }
 
 .module_row:last-child {
-	padding-bottom: 50px;
+	padding-bottom: 80px;
 }
 
 .themify_builder_content-5656 .module_row:nth-of-type(2) {
@@ -1757,8 +1758,8 @@ HEADER BACKGROUND MODE
     margin: 10% auto; /* 10% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 60%; /* Could be more or less, depending on screen size */
-	height: 50%;
+    width: 55%; /* Could be more or less, depending on screen size */
+	height: 55%;
 	display: block;
 	color: #000;
 	font-weight: bold;
@@ -1783,9 +1784,6 @@ HEADER BACKGROUND MODE
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-}
-.modal #modal-feedback {
-	margin-top: 280px;
 }
 
 /* The Close Button */
@@ -1815,6 +1813,10 @@ HEADER BACKGROUND MODE
 	font-weight: normal;
 }
 
+button.login {
+    padding-left: 35px;
+    padding-right: 35px;
+}
 /*
 AUTHOR PAGE
 ================================================ */
@@ -3794,7 +3796,6 @@ iframe[src*="facebook"] {
 
 .footer-horizontal-left .footer-left-wrap,
 .footer-horizontal-left .footer-right-wrap {
-	margin-left: 3.2%;
 	float: left;
 }
 .footer-horizontal-left .footer-left-wrap.first,
@@ -3808,7 +3809,7 @@ iframe[src*="facebook"] {
 }
 .footer-horizontal-left .footer-right-wrap,
 .footer-horizontal-right .footer-right-wrap {
-	width: 74.2%;
+	width: 100%;
 }
 
 .footer-horizontal-left #footer .footer-nav,
@@ -3841,7 +3842,6 @@ iframe[src*="facebook"] {
 }
 .footer-left-col .main-col,
 .footer-left-col .section-col {
-	margin-left: 3.2%;
 	float: left;
 }
 .footer-left-col .main-col.first {
@@ -3941,6 +3941,7 @@ NICESCROLL
 /* map module */
 .module-map {
 	margin-bottom: 0;
+	margin-top: 10px;
 }
 
 /* themify-icon shortcode */
@@ -4502,6 +4503,11 @@ FOOTER
 	font-weight: bold;
 }
 
+#footer-code #al a {
+	text-transform: inherit;
+	margin: inherit;
+	font-weight: normal;
+}
 
 #footer-wrap {
     display: flex;
@@ -4526,13 +4532,13 @@ FOOTER
 #footerwrap
 {
   background-color: #28367c;
-  padding: 30px 50px;
+  padding: 30px 20px;
 }
 
 /*footer fix */
 .footer-horizontal-left .footer-right-wrap {
-    margin-left: 15%;
-    float: left;
+    /*margin-left: 15%;
+    float: left;*/
 }
 
 /************************************************************************************
@@ -4625,8 +4631,8 @@ nobr a img {
 }
 
 .module-feature-content p {
-	width: 75%;
-	margin: 0px auto;
+	width: 60%;
+	margin: 2em auto;
 }
 
 /*Equalized Padding at bottom of presidents section (81.23px total)*/
@@ -4683,7 +4689,13 @@ nobr a img {
     width: 90%;
     margin: 0 auto;
     padding-bottom: 5%;
-    padding-top: 57px;
+    padding-top: 40px;
+}
+
+.sub_row_0-0-7 p
+{
+	width: 90%;
+    margin: 0em auto;
 }
 
  /*Hides the second row in desktop because it is only supposed to show in mobile */
@@ -4791,78 +4803,44 @@ nobr a img {
    display: none;
 }
 
-.module-text div[role=form] {
-	margin-bottom: 100px;
-
-}
-
-.module-text div[role=form] input[type=submit] {
-	background-color: #F4803E;
-	color: #FFF;
-	text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: .065em;
-}
-
-.module-text div[role=form] input[type=submit]:hover {
-	background-color: #000;
-}
-.module-text div[role=form] .contact-form-row-1 {
-	display: flex;
-	justify-content: space-between;
-}
-
-.module-text div[role=form] label {
-	font-weight: bold;
-}
-
-.module-text div[role=form] .contact-form-row-1 > p{
-	width: 30%;
-}
-
-.module-text div[role=form] form > p:last-of-type{
-	text-align: center;
-}
-
-
-.themify_builder_content-187 .module_row:last-child {
-	padding-bottom: 0px;
-}
-
 .themify_builder_content-187 .module-map {
 	padding: 0px;
 	width: 100%;
+	margin-top: -30px;
 }
 
-.module-text div[role=form] {
+.themify_builder_content-187 .module-text div[role=form] {
 	margin-bottom: 100px;
 }
 
-.module-text div[role=form] input[type=submit] {
+.themify_builder_content-187 .module-text div[role=form] input[type=submit] {
 	background-color: #F4803E;
 	color: #FFF;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: .065em;
+	margin-top: 0px;
 }
 
-.module-text div[role=form] input[type=submit]:hover {
-	background-color: #000;
+.themify_builder_content-187 .module-text div[role=form] input[type=submit]:hover {
+	transform: translateY(-3px);
+	color: #000;
+	box-shadow: 0px 3px #f6dac8;
 }
-.module-text div[role=form] .contact-form-row-1 {
+.themify_builder_content-187 .module-text div[role=form] .contact-form-row-1 {
 	display: flex;
 	justify-content: space-between;
 }
 
-.module-text div[role=form] label {
+.themify_builder_content-187 .module-text div[role=form] label {
 	font-weight: bold;
 }
 
-.module-text div[role=form] .contact-form-row-1 > p{
+.themify_builder_content-187 .module-text div[role=form] .contact-form-row-1 > p{
 	width: 30%;
 }
 
-.module-text div[role=form] form > p:last-of-type{
+.themify_builder_content-187 .module-text div[role=form] form > p:last-of-type{
 	text-align: center;
 }
 
@@ -4887,7 +4865,7 @@ nobr a img {
 *************************************************************************************/
 /*Changed the Header for Past Presidents Page */
 
-#tablepress-1{
+.tablepress{
   width: 750px;
   margin: 0 auto;
 }
@@ -5010,12 +4988,20 @@ nobr a img {
 	margin-bottom: 40px;
 }
 
+.themify_builder_content-5656 .module-text p{
+	color: #F4803E;
+}
+
 /************************************************************************************
  STATUTES PAGE (POST ID: 7306)
 *************************************************************************************/
 .themify_builder_content-7306 h4 {
 	padding-top: 40px;
     margin-bottom: 5px;
+}
+
+.themify_builder_content-7306 h4:first-of-type {
+	padding-top: 0px;
 }
 
 .themify_builder_content-7306 .list {
@@ -5336,23 +5322,23 @@ ORGANISATION PAGE MOBILE (POST ID: 5654)
 }
 
 /************************************************************************************
- AOTCA OFFICERS PAGE MOBILE (POST ID: 5652)
+ AOTCA OFFICERS PAGE MOBILE (POST ID: 7265)
 *************************************************************************************/
 
 /*Ensures links have 24px padding left and right */
-.themify_builder_content-5652 .module_row:nth-of-type(2) .module_column .tb-column-inner p{
+.themify_builder_content-7265 .module_row:nth-of-type(2) .module_column .tb-column-inner p{
   padding-bottom: 21px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
 /*Changes width of council paragraph to be 90% (Wrapper)*/
-.themify_builder_content-5652 .module_column_5652-2-0-2 .module-text{
+.themify_builder_content-7265 .module_column_7265-2-0-2 .module-text{
   width: 90%;
 }
 
 /*council paragrapg*/
-.themify_builder_content-5652 .module_row:nth-of-type(3) p{
+.themify_builder_content-7265 .module_row:nth-of-type(3) p{
 	padding-left: 0px;
   	padding-right: 0px;
 	line-height: 23px;
@@ -5363,9 +5349,9 @@ ORGANISATION PAGE MOBILE (POST ID: 5654)
 *************************************************************************************/
 
 /*Past President Mobile Page */
-#tablepress-1{
-  font-size: 12px;
-  line-height: 27px;
+.tablepress{
+  font-size: 11px;
+  line-height: 25px;
 }
 
 /*Tightens the gap between table elements */
@@ -5377,7 +5363,7 @@ ORGANISATION PAGE MOBILE (POST ID: 5654)
   padding-top: 0px;
 }
 /************************************************************************************
-COMMITTEES PAGE MOBILE (POST ID: 5654)
+COMMITTEES PAGE MOBILE (POST ID: 5656)
 *************************************************************************************/
 
 .themify_builder_content-5656 .module-text:first-child {
@@ -5396,7 +5382,9 @@ COMMITTEES PAGE MOBILE (POST ID: 5654)
 	display: block;
 	padding-top: 50px;
 }
-
+.themify_builder_content-5656 .module-text p{
+	color: inherit;
+}
 /************************************************************************************
 STATUTES PAGE MOBILE
 *************************************************************************************/
@@ -5518,17 +5506,13 @@ CONTACT US PAGE MOBILE
 		padding-left: 0px;
 		padding-right: 0px;
 	}
-	#footer-wrap > * {
-		margin: 10px 0px;
-	}
+
 	.modal .modal-content {
 	    width: 80%; /* Could be more or less, depending on screen size */
 		height:40%;
+		margin: 30% auto;
 	}
 
-	.modal #modal-feedback {
-		margin-top: 230px;
-	}
 }
 
 @media screen and (max-width: 900px){
@@ -5541,7 +5525,7 @@ CONTACT US PAGE MOBILE
   /*About Us Page */
   /*AOTCA Officer Page */
   /*Changing the padding for AOTCA officers: position and name */
-  .themify_builder_content-5652 .module_row:nth-of-type(2) .module_column p {
+  .themify_builder_content-7265 .module_row:nth-of-type(2) .module_column p {
 	width: auto;
     padding-left: 50px;
     padding-right: 50px;
@@ -5564,12 +5548,22 @@ CONTACT US PAGE MOBILE
   }
 
   /*Past Presidents Page */
-  #tablepress-1{
+  .tablepress{
     border-collapse: separate;
-    margin:0 0;
+	width: 100%;
+    margin:0 auto;
   }
 
+  #footer-wrap{
+	  flex-direction: column-reverse;
+
+  }
+  #footer-wrap > * {
+    margin: 10px 0px;
 }
+
+}
+
 
 
 @media screen and (max-width: 1050px){

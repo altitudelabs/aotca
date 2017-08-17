@@ -47,7 +47,8 @@ button.return:hover {
 }
 
 .document-container button {
-	width: 125px;
+	width: 100%;
+	max-width: 123px;
 }
 
 @media screen and (max-width: 480px){
@@ -57,11 +58,6 @@ button.return:hover {
     	padding-right: 24px;
     }
 
-}
-@media screen and (max-width: 750px){
-	.document-container button {
-		width: 135px;
-	}
 }
 
 @media screen and (max-width: 900px){

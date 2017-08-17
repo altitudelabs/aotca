@@ -34,7 +34,7 @@ function render_member_info ($key, $value, $url=false) { ?>
 		<?php if ($url == false):?>
 		<span class="value"><?php echo $value?></span>
 	<?php else:?>
-		<a class="value" href="<?php echo $value?>"><?php echo $value?></a>
+		<a class="value" target="_blank" href="<?php echo $value?>"><?php echo $value?></a>
 	<?php endif;?>
 	  </div>
   <?php endif;?>

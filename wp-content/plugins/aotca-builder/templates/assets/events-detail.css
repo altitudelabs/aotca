@@ -180,10 +180,6 @@ section > h2 {
   background-size: cover;
 }
 
-button.login {
-    padding-left: 35px;
-    padding-right: 35px;
-}
 @media (max-width: 700px) {
   #bx-pager .thumbnail {
     width: 75px;
