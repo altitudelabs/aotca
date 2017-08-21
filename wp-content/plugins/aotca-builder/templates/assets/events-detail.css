@@ -204,9 +204,25 @@ section > h2 {
   .events-info {
       padding: 0px 0px;
   }
+  .events-itinerary {
+      padding: 15px 20px;
+  }
+  .documents li {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .documents li button {
+      margin-left: auto;
+  }
+
+  .documents li form {
+      margin-left: auto;
+  }
   .documents li .title {
     max-width: 300px;
 }
 #bx-pager a.active .thumbnail {
   border: 1px solid red;
+}
 }

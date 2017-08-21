@@ -4809,11 +4809,11 @@ nobr a img {
 	margin-top: -30px;
 }
 
-.themify_builder_content-187 .module-text div[role=form] {
+.module-text div[role=form] {
 	margin-bottom: 100px;
 }
 
-.themify_builder_content-187 .module-text div[role=form] input[type=submit] {
+ .module-text div[role=form] input[type=submit] {
 	background-color: #F4803E;
 	color: #FFF;
 	text-transform: uppercase;
@@ -5129,34 +5129,16 @@ MOBILE NAV
 /************************************************************************************
 MOBILE FOOTER
 *************************************************************************************/
-  /*Footer looks nice */
-  #footer_wrap{
-    padding-top: 10px;
-    padding-bottom: 10px;
+  #footer-wrap #links{
+	  width: 100%;
+	  display: flex;
+	  flex-direction: column;
   }
 
-  /*Footer Address and Copy Right */
-  #footer_code p{
-      margin-bottom: 0em;
-      color: white;
-      text-align: center;
-      font-size: 12px;
+  #footer-wrap #links a{
+	margin: 0em;
   }
 
-  /*Legal Link */
-  #ft_1 a{
-     color: white;
-     text-align: center;
-     font-family: 'Roboto';
-     font-size: 12px;
-  }
-
-  #ft_1{
-     display: flex;
-     justify-content: center;
-     width: 100%;
-     color: white;
-  }
 
   /*Fixed uneven footer distribution */
   .footer-horizontal-left .footer-right-wrap {
@@ -5280,7 +5262,7 @@ MOBILE FOOTER
 
 .themify_builder_content-12 .sub_row_0-0-8 p{
 	margin: 0em 0em;
-	top: 180px;
+	top: 55%;
 }
 
 .themify_builder_content-12 .sub_row_0-0-8 #img_wrapper::before{
@@ -5440,37 +5422,38 @@ CONTACT US PAGE MOBILE
   left: 0;
 }*/
 
-.builder-contact-field.builder-contact-field-name {
+..themify_builder_content-187 .builder-contact-field.builder-contact-field-name {
     width: 100%;
 }
 
-.builder-contact-field.builder-contact-field-email{
+..themify_builder_content-187 .builder-contact-field.builder-contact-field-email{
     width: 100%;
 }
 
-.builder-contact-field.builder-contact-field-subject{
+.themify_builder_content-187 .builder-contact-field.builder-contact-field-subject{
     width: 100%;
 }
 /* Shifts button back to the left */
-.builder-contact-field.builder-contact-field-send {
+.themify_builder_content-187 .builder-contact-field.builder-contact-field-send {
     justify-content: flex-start;
 }
 
-.control-input button{
+.themify_builder_content-187 .control-input button{
     margin: 20px 0px;
 }
 
-.builder-contact-fields{
+.themify_builder_content-187 .builder-contact-fields{
    margin-bottom: 30px;
 }
-.module-text div[role=form] .contact-form-row-1 {
-	display: block;
+.themify_builder_content-187 .module-text div[role=form] .contact-form-row-1 {
+	flex-direction: column;
+
 }
-.module-text div[role=form] .contact-form-row-1 > p{
+.themify_builder_content-187 .module-text div[role=form] .contact-form-row-1 > p{
 	width: 100%;
 }
 
-.module-text div[role=form] p:last-of-type{
+.themify_builder_content-187 .module-text div[role=form] p:last-of-type{
 	text-align: left;
 }
 
@@ -5509,7 +5492,6 @@ CONTACT US PAGE MOBILE
 
 	.modal .modal-content {
 	    width: 80%; /* Could be more or less, depending on screen size */
-		height:40%;
 		margin: 30% auto;
 	}
 

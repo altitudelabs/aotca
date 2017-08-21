@@ -57,6 +57,17 @@ button.return:hover {
     	padding-left: 24px;
     	padding-right: 24px;
     }
+	.document-container li {
+		flex-direction: column;
+	}
+
+	.document-container li button {
+		margin-left: auto;
+	}
+
+	.document-container li form {
+		margin-left: auto;
+	}
 
 }
 

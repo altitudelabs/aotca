@@ -73,9 +73,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 0px 5px 30px 5px;
+    padding: 30px 5px 30px 5px;
   }
-  
+
   /*for fixed card height*/
   .news .description{
     overflow: hidden;

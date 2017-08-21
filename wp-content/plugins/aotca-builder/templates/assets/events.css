@@ -134,6 +134,7 @@ td{
 
 #form_container select {
     border: 1px solid #C9C9C9;
+    color: #28367c
 }
 
 #post_container{
@@ -214,6 +215,7 @@ p{
   article{
     width: 100%;
     padding-bottom: 5%;
+    padding-left: 0px;
   }
   #post_container{
     justify-content: space-around;
@@ -242,5 +244,17 @@ p{
 @media screen and (max-width: 480px){
     .aotca-viewport{
         padding: 0px 24px;
+    }
+
+    #past_meetings #date{
+        color: #222;
+        font-weight: bold;
+        flex: 2 0 0;
+    }
+
+    #past_meetings #month{
+        color: #222;
+        font-weight: bold;
+        flex: 4 0 0;
     }
 }
