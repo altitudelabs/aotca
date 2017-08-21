@@ -17,6 +17,7 @@ $m_year = $_GET['select_year'];
 
 $custom_query_args = array(
     'post_type'=>'event',
+    'nopaging' => true,
 // 'orderby'   => 'ptb_year ptb_month ptb_day',
 // 'order'     => 'DESC',
 // 'relation' => 'AND', // Optional, defaults to "AND"
@@ -31,7 +32,6 @@ $custom_query_args = array(
 //     'compare' => '='
 // ),
 );
-$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 if($m_month!="Month" && $m_year!="Year"){
     $m_month = date("n", strtotime($m_month));
 }

@@ -24,70 +24,10 @@ class Members_Module extends Themify_Builder_Module {
 				'class' => '',
 			),
 			array(
-				'id' => 'members_list',
-				'type' => 'builder',
-				'options' => array(
-					array(
-						'id' => 'logo',
-						'type' => 'image',
-						'label' => __( 'Member Logo', 'members' ),
-						'class' => '',
-					),
-					array(
-						'id' => 'title',
-						'type' => 'text',
-						'label' => __( 'Member Title', 'members' ),
-						'class' => '',
-					),
-					array(
-						'id' => 'address',
-						'type' => 'text',
-						'label' => __( 'Member Address', 'members' ),
-						'class' => '',
-					),
-					array(
-						'id' => 'link',
-						'type' => 'text',
-						'label' => __( 'Member Link', 'members' ),
-						'class' => '',
-					),
-				),
-			),
-			array(
 				'id' => 'associate_members_section_title',
 				'type' => 'text',
 				'label' => __( 'Associate Members Section Title', 'members' ),
 				'class' => '',
-			),
-			array(
-				'id' => 'associate_members_list',
-				'type' => 'builder',
-				'options' => array(
-					array(
-						'id' => 'logo',
-						'type' => 'image',
-						'label' => __( 'Associate Member Logo', 'members' ),
-						'class' => '',
-					),
-					array(
-						'id' => 'title',
-						'type' => 'text',
-						'label' => __( 'Associate Member Title', 'members' ),
-						'class' => '',
-					),
-					array(
-						'id' => 'address',
-						'type' => 'text',
-						'label' => __( 'Associate Member Address', 'members' ),
-						'class' => '',
-					),
-					array(
-						'id' => 'link',
-						'type' => 'text',
-						'label' => __( 'Associate Member Link', 'members' ),
-						'class' => '',
-					),
-				),
 			),
     );
   }
