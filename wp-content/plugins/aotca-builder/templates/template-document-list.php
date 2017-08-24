@@ -100,7 +100,13 @@ $start = ($page_no-1)*$page;
          There are no documents available.
      </div>
 <?php endif;?>
- <?php if($documents):?>
+ <?php if($documents):
+    //  sort the documents according to descending order of date
+    usort($documents, function($a, $b)
+    {
+         return (strtotime($a['date']) < strtotime($b['date']));
+    });?>
+
    <div class="document-container">
        <ul class="naked">
            <?php for($i=$start; $i< min(count($documents),($start+$page)); $i++):?>

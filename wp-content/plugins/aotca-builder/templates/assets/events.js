@@ -35,6 +35,12 @@ function handleSelectChange(page, page_no=1){ //Initial function that gets calle
         $("#post_container").empty();
         $("#pagination_wrapper").empty();
 
+        // sort events according to descending order of date
+        final_data.sort(function(a,b) {
+            var d1 = Date.parse(a.event_date);
+            var d2 = Date.parse(b.event_date);
+            return (d2 > d1) ? 1 : ((d1 > d2) ? -1 : 0);
+        });
         var total_pages = Math.ceil(final_data.length/page);
         var start = (page_no-1)*page;
         var end = Math.min(final_data.length, start+page);
