@@ -221,6 +221,8 @@ textarea {
 }
 select {
 	padding: .7em;
+	border: 1px solid #C9C9C9;
+    color: #28367c
 }
 
 /* form input:focus */
@@ -413,6 +415,15 @@ img, textarea, input, #pagewrap, .pagewidth, #headerwrap, #header, #main-nav, #m
   justify-content: center;
   margin: 60px 0px;
 
+}
+
+#pagination_buttons, #pagination_previous, #pagination_next{
+	display: flex;
+    justify-content: center;
+}
+
+#pagination_select{
+	display: none;
 }
 
 #pagination_wrapper a, #pagination_wrapper button{
@@ -4428,19 +4439,9 @@ NAV BAR CSS
 /*ABOUT DROPDOWN TO ALIGN PROPERLY */
 #main-nav li:not(.themify-widget-menu):not(.has-mega-column):not(.has-mega-sub-menu) > ul
 {
-  margin-right: -165%;
+
 }
 
-/*NEWS DROPDOWN TO ALIGN PROPERLY */
-li#menu-item-17.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.has-sub-menu>ul
-{
-   margin-right: -44%;
-}
-
-#main-nav li:not(.themify-widget-menu) > ul
-{
-   background-color: #26378B;
-}
 
 #main-nav > li > a:hover
 {
@@ -4625,12 +4626,11 @@ nobr a img {
    font-size: 14px;
    z-index: 2;
    position: absolute;
-   padding: 0px 10px;
-   top: 130px;
+   padding: 20px 10px;
    color: white;
 }
 
-.module-feature-content p {
+p.president_msg  {
 	width: 60%;
 	margin: 2em auto;
 }
@@ -4683,8 +4683,19 @@ nobr a img {
     display: none;
 }
 
+.themify_builder_content-12 .sub_row_0-0-7 {
+	width: 90%;
+	margin: 0px auto;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+.themify_builder_content-12 .sub_row_0-0-7 .module-feature-content p{
+	width: 100%;
+	margin: 0px;
+}
+
 /* Fixed full width gap for feature front page */
-.sub_row_0-0-7
+/*.sub_row_0-0-7
 {
     width: 90%;
     margin: 0 auto;
@@ -4696,7 +4707,7 @@ nobr a img {
 {
 	width: 90%;
     margin: 0em auto;
-}
+}*/
 
  /*Hides the second row in desktop because it is only supposed to show in mobile */
 .sub_row_0-0-8
@@ -4707,26 +4718,14 @@ nobr a img {
 /* Fixed full width gap for feature front page */
 .sub_row_0-0-8
 {
-    width: 90%;
-    padding-left: 5%;
+    width: 80%;
     padding-bottom: 5%;
     padding-top: 8%;
+	margin: 0px auto;
 }
 
 .sub_row_0-0-8 img{
   margin-bottom: 0;
-}
-
-/*Image Gradient Effect */
-#img_wrapper::after{
-  display: block;
-  position: relative;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #000 100%);
-  height: 150px;
-  width: 100%;
-  content: '';
-  top:-150px;
-  margin-bottom: -150px;
 }
 
 /************************************************************************************
@@ -5179,6 +5178,17 @@ MOBILE FOOTER
 	margin-top: 0em;
 }
 
+#pagination_buttons, #pagination_previous, #pagination_next{
+	display: none;
+}
+
+#pagination_select{
+	display: flex;
+}
+#pagination_select select{
+	margin: 0px;
+}
+
 /************************************************************************************
  ABOUT PAGE MOBILE (POST ID: 196)
 *************************************************************************************/
@@ -5242,7 +5252,6 @@ MOBILE FOOTER
 
 .themify_builder_content-12 .module-feature-content p {
 	width: 100%;
-	margin: 2em auto;
 }
 
 /*Equalized Padding at bottom of presidents section (81.23px total)*/
@@ -5261,25 +5270,27 @@ MOBILE FOOTER
 }
 
 .themify_builder_content-12 .sub_row_0-0-8 p{
-	margin: 0em 0em;
-	top: 55%;
+	margin: 0em auto;
+	max-width: 350px;
 }
 
-.themify_builder_content-12 .sub_row_0-0-8 #img_wrapper::before{
-  content:'';
-  padding-bottom: 60px;
-  width: 100%;
+.themify_builder_content-12 .sub_row_0-0-8  #img_wrapper {
+	height: 60vw;
+	max-width: 350px;
+	max-height: 250px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	margin: 0px auto;
 }
+
+
 
 /* Removed featured image gap in responsive mode */
 .themify_builder_content-12 .module-feature.layout-icon-top .module-feature-image {
     display: none;
 }
 
-/* Showed our story header */
-.themify_builder_content-12 .module-feature-content p:nth-child(1){
-    margin-bottom: 1em;
-}
 .p17 {
 	line-height: 40px;
 }
@@ -5494,6 +5505,7 @@ CONTACT US PAGE MOBILE
 	    width: 80%; /* Could be more or less, depending on screen size */
 		margin: 30% auto;
 	}
+
 
 }
 
