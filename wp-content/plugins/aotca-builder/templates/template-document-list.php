@@ -129,36 +129,47 @@ $start = ($page_no-1)*$page;
     </ul>
    </div>
    <div id = "pagination_wrapper">
-    <?php
-    $previous_counter = 0;
-    $next_counter = 0;
-    for($i = 1; $i<=$total_pages; $i++){
-
-        if($page_no>1 && $previous_counter==0){?>
-            <form method="post" target="_self" action="<?php echo $_SERVER['REQUEST_URI']?>">
-                <input type="hidden" name="page_no" value="<?php echo $page_no-1?>"/>
-                <input type="hidden" name="pass" value="<?php echo $pass?>"/>
-                <button type="submit" class="custom_pagination">&laquo; Previous</button>
-            </form>
-        <?php
-        $previous_counter++;
-        }?>
-        <form method="post" target="_self" action="<?php echo $_SERVER['REQUEST_URI']?>">
-            <input type="hidden" name="page_no" value="<?php echo $i?>"/>
-            <input type="hidden" name="pass" value="<?php echo $pass?>"/>
-            <button type="submit" class="pagination<?php if ($page_no==$i) echo " active"?>"><?php echo $i?></button>
-        </form>
-    <?php
-    }
-    if($page_no!=$total_pages&&$next_counter==0){?>
-        <form method="post" target="_self" action="<?php echo $_SERVER['REQUEST_URI']?>">
-            <input type="hidden" name="page_no" value="<?php echo $page_no+1?>"/>
-            <input type="hidden" name="pass" value="<?php echo $pass?>"/>
-            <button type="submit" class="custom_pagination">Next &raquo;</button>
-        </form>
-    <?php
-        $next_counter++;
-    }?>
+       <?php
+       $previous_counter = $page_no-1;
+       $next_counter = $page_no+1;?>
+       <div id ="pagination_previous">
+           <?php if ($previous_counter > 0):?>
+               <form method="post" target="_self" action="<?php echo $_SERVER['REQUEST_URI']?>">
+                   <input type="hidden" name="page_no" value="<?php echo $page_no-1?>"/>
+                   <input type="hidden" name="pass" value="<?php echo $pass?>"/>
+                   <button type="submit" class="custom_pagination">&laquo; Previous</button>
+               </form>
+           <?php endif ;?>
+       </div>
+       <div id = "pagination_buttons">
+           <?php for($i = 1; $i<=$total_pages; $i++):?>
+               <form method="post" target="_self" action="<?php echo $_SERVER['REQUEST_URI']?>">
+                   <input type="hidden" name="page_no" value="<?php echo $i?>"/>
+                   <input type="hidden" name="pass" value="<?php echo $pass?>"/>
+                   <button type="submit" class="pagination<?php if ($page_no==$i) echo " active"?>"><?php echo $i?></button>
+               </form>
+           <?php endfor ;?>
+       </div>
+       <div id = "pagination_select">
+           <form id="select_page" method="post" target="_self" action="<?php echo $_SERVER['REQUEST_URI']?>">
+               <select onchange="mobilePagination()">
+                   <?php for($i = 1; $i<=$total_pages; $i++):?>
+                       <option value = "<?php echo $i?>" <?php if ($page_no==$i) echo "selected"?>>Page <?php echo $i?></option>
+                   <?php endfor ;?>
+               </select>
+               <input type="hidden" name="page_no" value="<?php echo $page_no?>"/>
+               <input type="hidden" name="pass" value="<?php echo $pass?>"/>
+           </form>
+       </div>
+       <div id ="pagination_next">
+           <?if ($next_counter <= $total_pages):?>
+               <form method="post" target="_self" action="<?php echo $_SERVER['REQUEST_URI']?>">
+                   <input type="hidden" name="page_no" value="<?php echo $page_no+1?>"/>
+                   <input type="hidden" name="pass" value="<?php echo $pass?>"/>
+                   <button type="submit" class="custom_pagination">Next &raquo;</button>
+               </form>
+           <?php endif ;?>
+       </div>
    </div>
    <?php endif;?>
         </div>
@@ -209,4 +220,9 @@ $start = ($page_no-1)*$page;
          $('#login-modal').hide();
      });
  });
+ function mobilePagination(){
+    var form = $('#select_page');
+    form.find('input[name="page_no"]').val(form.find('select :selected').val());
+    form.submit();
+ }
  </script>

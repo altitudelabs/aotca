@@ -132,11 +132,6 @@ td{
     /*height: 2em;*/
 }
 
-#form_container select {
-    border: 1px solid #C9C9C9;
-    color: #28367c
-}
-
 #post_container{
   margin-top: 20px;
   width: 100%;

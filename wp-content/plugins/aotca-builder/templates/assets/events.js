@@ -59,7 +59,7 @@ function handleSelectChange(page, page_no=1){ //Initial function that gets calle
               var $a_link = $("<a>", {href: link});
               var $p_title_text = $("<p>", {class: "title_text", text: title});
               var $img = $("<img>", {src: image });
-              var $img_wrapper = $("<div>", {"class":"img_wrapper"});
+              var $img_wrapper = $("<div>", {class:"img_wrapper"});
               var $p_location = $("<p>",{class: "location_text", text: location});
               var $div_wrapper = $("<div>",{class: "date_upcoming_wrapper"});
               var $p_date_text = $("<p>", {class: "date_text", text: date});
@@ -84,16 +84,30 @@ function handleSelectChange(page, page_no=1){ //Initial function that gets calle
 
         if (previous_counter > 0){
             var $a_previous_link = $("<a>", {onclick: ("handleSelectChange("+page+","+previous_counter+")"),text: "« Previous"});
-            $("#pagination_wrapper").append($a_previous_link);
+            var $div_previous = $("<div>", {id:"pagination_previous"});
+            $div_previous.append($a_previous_link);
+            $("#pagination_wrapper").append($div_previous);
         }
+        var $div_btns = $("<div>", {id:"pagination_buttons"});
         for (var i = 1; i <= total_pages; i++) {
-            previous_counter++;
             var $a_link = (page_no==i)?$("<a>", {class: "pagination active",onclick: ("handleSelectChange("+page+","+i+")"),text: i}): $("<a>", {class: "pagination", onclick: ("handleSelectChange("+page+","+i+")"), text: i});
-            $("#pagination_wrapper").append($a_link);
+            $div_btns.append($a_link);
         }
+        $("#pagination_wrapper").append($div_btns);
+        var $div_select = $("<div>", {id:"pagination_select"});
+        var $select = $("<select>", {onchange: ("mobilePagination("+page+")")});
+        for (var i = 1; i <= total_pages; i++) {
+            var $option = (page_no==i)? $("<option>", {value: i, text: "Page "+i, selected: true}):$("<option>", {value: i, text: "Page "+i});
+            $select.append($option);
+        }
+        $div_select.append($select);
+        $("#pagination_wrapper").append($div_select);
+
         if (next_counter <= total_pages){
             var $a_next_link = $("<a>", {onclick: ("handleSelectChange("+page+","+(next_counter)+")"),text: "Next »"});
-            $("#pagination_wrapper").append($a_next_link);
+            var $div_next = $("<div>", {id:"pagination_next"});
+            $div_next.append($a_next_link);
+            $("#pagination_wrapper").append($div_next);
         }
 
       }
@@ -102,4 +116,8 @@ function handleSelectChange(page, page_no=1){ //Initial function that gets calle
       console.log(textStatus);
       console.log(error);
     });
+}
+
+function mobilePagination(page){
+    handleSelectChange(page, $("#pagination_select").find("select :selected").val());
 }
