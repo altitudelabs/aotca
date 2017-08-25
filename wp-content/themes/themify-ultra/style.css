@@ -4439,6 +4439,7 @@ NAV BAR CSS
 /*ABOUT DROPDOWN TO ALIGN PROPERLY */
 #main-nav li:not(.themify-widget-menu):not(.has-mega-column):not(.has-mega-sub-menu) > ul
 {
+	left: 10px;
 
 }
 
