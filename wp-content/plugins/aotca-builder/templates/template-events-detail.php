@@ -148,13 +148,13 @@ function render_documents($name, $list_title = "", $render_divider = true) {
       <section class="sections">
         <h2>Sections</h2>
         <ul>
-          <li><a class="naked" href="#event-detail">Event Detail</a></li>
-          <li><a class="naked" href="#general-documents">General Information Documents</a></li>
-          <li><a class="naked" href="#conference-documents">International Tax Conference Documents</a></li>
-          <li><a class="naked" href="#general-council-documents">General Council Meeting</a></li>
-          <li><a class="naked" href="#general-meeting-documents">General Meeting</a></li>
-          <li><a class="naked" href="#sgatar-documents">SGATAR</a></li>
-          <li><a class="naked" href="#event-images">Event Photographs</a></li>
+          <li><a class="naked" onclick="scrollToAnchor('event-detail');">Event Detail</a></li>
+          <li><a class="naked" onclick="scrollToAnchor('general-documents');">General Information Documents</a></li>
+          <li><a class="naked" onclick="scrollToAnchor('conference-documents');">International Tax Conference Documents</a></li>
+          <li><a class="naked" onclick="scrollToAnchor('general-council-documents');">General Council Meeting</a></li>
+          <li><a class="naked" onclick="scrollToAnchor('general-meeting-documents');">General Meeting</a></li>
+          <li><a class="naked" onclick="scrollToAnchor('sgatar-documents');">SGATAR</a></li>
+          <li><a class="naked" onclick="scrollToAnchor('event-images');">Event Photographs</a></li>
         </ul>
       </section>
       <div class="divider" style="margin: 46px 0px;"></div>
@@ -222,6 +222,9 @@ function render_documents($name, $list_title = "", $render_divider = true) {
       </section>
       <script>
       var $ = window.jQuery;
+      function scrollToAnchor(aid){
+            $('html,body').animate({scrollTop: $("#"+aid).offset().top},'slow');
+        }
       $(document).ready(function() {
         $('.bxslider').bxSlider({
           pagerCustom: '#bx-pager',
