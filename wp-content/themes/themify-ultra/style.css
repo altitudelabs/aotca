@@ -4505,7 +4505,7 @@ FOOTER
 	font-weight: bold;
 }
 
-#footer-code #al a {
+#footer-code a#al {
 	text-transform: inherit;
 	margin: inherit;
 	font-weight: normal;
@@ -4756,7 +4756,7 @@ p.president_msg  {
    margin-top: 5%;
 }*/
 
-.themify_builder_content-5533 h4 {
+h4.legal {
 	margin-bottom: 0px;
 	padding-top: 15px;
 }
@@ -4923,9 +4923,14 @@ p.president_msg  {
  AOTCA OFFICER PAGE (POST ID: 7265)
 *************************************************************************************/
 
- .themify_builder_content-7265 .module_row:nth-of-type(2) .module_column p{
+ p.officers{
 	 color: #F4803E;
  }
+
+ h4.council{
+ 	padding-top: 30px;
+ }
+
 
 /************************************************************************************
  COMMITTEE PAGE
@@ -4995,25 +5000,25 @@ p.president_msg  {
 /************************************************************************************
  STATUTES PAGE (POST ID: 7306)
 *************************************************************************************/
-.themify_builder_content-7306 h4 {
+h4.statutes  {
 	padding-top: 40px;
     margin-bottom: 5px;
 }
 
-.themify_builder_content-7306 h4:first-of-type {
+h4:first-of-type.statutes  {
 	padding-top: 0px;
 }
 
-.themify_builder_content-7306 .list {
+.statutes.list {
 	margin-bottom: -1.8em;
 	color: #000;
 	font-weight: bold;
 }
 /*indened text*/
-.themify_builder_content-7306 .sub {
+.statutes.sub {
 	padding-left: 30px;
 }
-.themify_builder_content-7306 .sub-2 {
+.statutes.sub-2 {
 	padding-left: 60px;
 }
 
@@ -5320,19 +5325,14 @@ ORGANISATION PAGE MOBILE (POST ID: 5654)
 *************************************************************************************/
 
 /*Ensures links have 24px padding left and right */
-.themify_builder_content-7265 .module_row:nth-of-type(2) .module_column .tb-column-inner p{
+p.officers{
   padding-bottom: 21px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-/*Changes width of council paragraph to be 90% (Wrapper)*/
-.themify_builder_content-7265 .module_column_7265-2-0-2 .module-text{
-  width: 90%;
-}
-
 /*council paragrapg*/
-.themify_builder_content-7265 .module_row:nth-of-type(3) p{
+p.council{
 	padding-left: 0px;
   	padding-right: 0px;
 	line-height: 23px;
@@ -5520,7 +5520,7 @@ CONTACT US PAGE MOBILE
   /*About Us Page */
   /*AOTCA Officer Page */
   /*Changing the padding for AOTCA officers: position and name */
-  .themify_builder_content-7265 .module_row:nth-of-type(2) .module_column p {
+  p.officers{
 	width: auto;
     padding-left: 50px;
     padding-right: 50px;
