@@ -245,7 +245,7 @@ function render_documents($name, $list_title = "", $render_divider = true) {
                     },
                     success: function(response) {
                       if (response) {
-                        $('#modal-msg').html($('<a>',{href: response, text: 'Click here to download', download: true}));
+                        $('#modal-msg').html($('<a>',{href: response, text: 'Click here to download', download:""}));
                       }
                       else {
                           $('#modal-msg').html('Incorrect password');

@@ -135,8 +135,8 @@ $start = ($page_no-1)*$page;
        <div id ="pagination_previous">
            <?php if ($previous_counter > 0):?>
                <form method="post" target="_self" action="<?php echo $_SERVER['REQUEST_URI']?>">
-                   <input type="hidden" name="page_no" value="<?php echo $page_no-1?>"/>
-                   <input type="hidden" name="pass" value="<?php echo $pass?>"/>
+                   <input type="hidden" name="page_no" value="<?php echo $previous_counter?>"/>
+                   <input type="hidden" name="pass" value="<?php echo true?>"/>
                    <button type="submit" class="custom_pagination">&laquo; Previous</button>
                </form>
            <?php endif ;?>
@@ -145,8 +145,8 @@ $start = ($page_no-1)*$page;
            <?php for($i = 1; $i<=$total_pages; $i++):?>
                <form method="post" target="_self" action="<?php echo $_SERVER['REQUEST_URI']?>">
                    <input type="hidden" name="page_no" value="<?php echo $i?>"/>
-                   <input type="hidden" name="pass" value="<?php echo $pass?>"/>
-                   <button type="submit" class="pagination<?php if ($page_no==$i) echo " active"?>"><?php echo $i?></button>
+                   <input type="hidden" name="pass" value="<?php echo true?>"/>
+                   <button type="submit" class="pagination<?php if ($page_no==$i) echo ' active';?>"><?php echo $i?></button>
                </form>
            <?php endfor ;?>
        </div>
@@ -158,14 +158,14 @@ $start = ($page_no-1)*$page;
                    <?php endfor ;?>
                </select>
                <input type="hidden" name="page_no" value="<?php echo $page_no?>"/>
-               <input type="hidden" name="pass" value="<?php echo $pass?>"/>
+               <input type="hidden" name="pass" value="<?php echo true?>"/>
            </form>
        </div>
        <div id ="pagination_next">
-           <?if ($next_counter <= $total_pages):?>
+           <?php if ($next_counter <= $total_pages):?>
                <form method="post" target="_self" action="<?php echo $_SERVER['REQUEST_URI']?>">
                    <input type="hidden" name="page_no" value="<?php echo $page_no+1?>"/>
-                   <input type="hidden" name="pass" value="<?php echo $pass?>"/>
+                   <input type="hidden" name="pass" value="<?php echo true?>"/>
                    <button type="submit" class="custom_pagination">Next &raquo;</button>
                </form>
            <?php endif ;?>
@@ -192,7 +192,7 @@ $start = ($page_no-1)*$page;
                  },
                  success: function(response) {
                    if (response) {
-                       $('#modal-msg').html($('<a>',{href: response, text: 'Click here to download', download: true}));
+                       $('#modal-msg').html($('<a>',{href: response, text: 'Click here to download', download: ""}));
                    }
                    else {
                        $('#modal-msg').html('Incorrect password');
