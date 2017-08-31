@@ -93,9 +93,9 @@ $table_information = $settings['past_meetings_table'];
 		            <option value="months">Months</option>
 					<?php for ($month=1; $month <=12; $month++):?>
 						<?php if ($month == date("n")):?>
-							<option value="<?php echo date("M", mktime(0, 0, 0, $month))?>" selected><?php echo date("F", mktime(0, 0, 0, $month))?></option>
+							<option value="<?php echo $month ?>" selected><?php echo date("F", mktime(0, 0, 0, $month,1,date("Y")))?></option>
 						<?php else:?>
-							<option value="<?php echo date("M", mktime(0, 0, 0, $month))?>"><?php echo date("F", mktime(0, 0, 0, $month))?></option>
+							<option value="<?php echo $month ?>"><?php echo date("F", mktime(0, 0, 0, $month,1,date("Y")))?></option>
 						<?php endif;?>
 
 					<?php endfor;?>

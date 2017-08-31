@@ -32,9 +32,6 @@ $custom_query_args = array(
 //     'compare' => '='
 // ),
 );
-if($m_month!="Month" && $m_year!="Year"){
-    $m_month = date("n", strtotime($m_month));
-}
   $custom_query = new WP_Query( $custom_query_args );
 
   $events = array();
