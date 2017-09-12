@@ -168,10 +168,6 @@ body.fixed-header.page-loaded #headerwrap {
 }
 
 
-/* mobile menu active */
-.mobile_menu_active.mobile-menu-visible.sidemenu-right #headerwrap {
-	left: -300px;
-}
 /* header topbar site description */
 .mobile_menu_active.header-top-bar #headerwrap #site-description {
 	margin: 2px 0 0;
